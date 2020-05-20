@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.contact-msg {
+    max-width: 940px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 40px;
+    margin-bottom: 70px;
+}
+.formset dd.radiolist {
+    flex-wrap: wrap;
+    display: flex;
+    white-space: nowrap;
+	margin: 15px 0;
+}
+.formset dd.radiolist label {
+    margin-right: 15px;
+}
+label.check.formset {
+    margin: 20px 0;
+}
+label {
+    display: block;
+    margin-bottom: 25px;
+	vertical-align: middle;
+}
+.formset span {
+    font-weight: 700;
+}
+input {
+    padding: 15px;
+    font-size: 14px;
+    line-height: 1.6;
+    background-color: #e8e9ea;
+    border-radius: 3px;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 5px 0;
+}
+input[type="radio"] {
+    width: 15px;
+    height: 15px;
+    margin: 0 10px 5px;
+}
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin: 0 15px 0 0;
+    vertical-align: middle;
+}
+input[type="submit"], input[type="reset"] {
+    margin: 30px 15px 40px;
+    text-align: center;
+    width: 300px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 500;
+}
+input[type="submit"] {
+    background: #000;
+}
+input[type="reset"] {
+    color: #000;
+}
+textarea {
+    width: 100%;
+    min-height: 105px;
+    padding: 15px;
+    margin-bottom: 25px;
+    border: 1px solid #e8e9ea;
+    border-radius: 3px;
+    background: #e8e9ea;
+	font-weight: 700;
+}
+.private {
+    height: 300px;
+    overflow: scroll;
+    padding: 30px;
+    border: 1px solid #dfdfdf;
+}
+#policy dd {
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 980px) {
+.contact-msg {
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+}
+.private {
+	height: 150px;
+    padding: 15px;
+}
+.formset dd.radiolist label {
+    margin-bottom: 10px;
+}
+label {
+    margin-bottom: 10px;
+}
+input[type="submit"], input[type="reset"] {
+    margin: 15px auto 0;
+	}
+}

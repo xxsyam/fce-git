@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>採用についてのお問い合わせ　|　FCEエデュケーション</title>
+<meta name="description" content="株式会社FCEエデュケーションのサービス・企業情報・採用情報のお問い合わせはこちらから">
+<meta name="keywords" content="FCE,FCE エデュケーション,「7つの習慣<sub>&reg;</sub>」,アクティブラーニング,アンガーマネジメント">
+<meta property="og:title" content="FCE エデュケーション">
+<meta property="og:url" content="http://www.fc-education.co.jp/">
+<meta property="og:image" content="http://www.fc-education.co.jp../image/og.jpg">
+<meta property="og:type" content="website">
+<meta property="og:description" content="株式会社FCE エデュケーションのサービス・企業情報・採用情報のお問い合わせはこちらから">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link rel="stylesheet" href="../../css/sp_init_news.css" media="(max-width: 768px)">
+<link rel="stylesheet" href="../../css/pc_init_news.css" media="print,screen and (min-width: 769px)">
+<link rel="stylesheet" href="../../css/print.css" media="print">
+<!-- Analytics -->
+<script type="text/javascript">
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42678727-1', 'fce-group.jp');
+  ga('send', 'pageview');
+</script>
+<!-- End Analytics -->
+</head>
+
+<body id="contact_index">
+<header class="fixed">
+  <div id="HEAD_LINE" class="base_wrap">
+    <h1 id="LOGO_FCE"><a href="../../" title="FCE エデュケーション"><img src="../../image/logo_fcee.png" alt="FCE エデュケーション"></a></h1>
+    <nav>
+      <ul>
+        <li><a href="../../">ホーム</a></li>
+        <li><a href="../../service/"><i class="fas fa-sitemap"></i>サービス</a></li>
+        <li><a href="../../corporate/"><i class="far fa-building"></i>企業情報</a></li>
+        <li><a href="../../news/"><i class="fab fa-stack-overflow"></i>ニュース</a></li>
+        <li><a href="//fce-group.jp/recruit/" target="_blank"><i class="far fa-address-book"></i>採用情報</a></li>
+<li><a href="../../contact/"><i class="fab fa-stack-overflow"></i>お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+  <nav id="PANK">
+    <ul class="base_wrap">
+      <li><a href="../../">ホーム</a></li>
+      <li><a href="../../contact/">お問い合わせ</a></li>
+    </ul>
+  </nav>
+  <div id="KV_FIELD"></div>
+  <section id="CONTENTS_HEADER">
+  <h2>Contact<span>お問い合わせ</span></h2>
+  <nav id="TAB_LISTS">
+    <ul>
+      <li><a href="../../contact">サービス・企業情報について</a></li>
+      <li><a href="../../contact/media-info">取材・メディア掲載について</a></li>
+      <li class="active">採用について</li>
+      <li><a href="../../contact/etc-info">その他</a></li>
+    </ul>
+  </nav>
+  <div id="NEWS_UNIT">
+    <div class="list_wrapper active" data-tabindex="ser">
+      <h3>採用についてのお問い合わせ</h3>
+      <div class="contact-msg">
+        <div class="inner">
+          <form method="post" action="mail.php">
+            <div class="form">
+              <div class="formset">
+                <p><strong>※</strong>のある項目は入力が必須の項目です</p>
+                <span>エントリー<strong>※</strong></span>
+                <p><label><input type="radio" name="エントリー" value="新卒採用">新卒採用</label>
+                  <label><input type="radio" name="エントリー" value="中途採用">中途採用</label>
+                  <label><input type="radio" name="エントリー" value="その他お問い合わせ">その他お問い合わせ</label>
+                </p>
+
+                <label><span>氏名<strong>※</strong></span>
+                  <input type="text" name="所属教育機関名">
+                </label>
+                <label><span>フリガナ（氏名）<strong>※</strong></span>
+                  <input type="text" name="ルビ">
+                </label>
+				  <label><span>学校名・企業名<strong>※</strong></span>
+                  <input type="text" name="ルビ">
+                </label>
+				  <label><span>フリガナ（学校名・企業名等）<strong>※</strong></span>
+                  <input type="text" name="ルビ">
+                </label>
+
+                <label><span>生年月日</span>
+                  <input type="text" name="お役職">
+                </label>
+               <label><span>性別</span>
+                  <input type="text" name="お役職">
+                </label>
+
+				  <label><span>メールアドレス<strong>※</strong></span>
+                  <input type="text" name="Email">
+                </label>
+				  <label><span>電話番号<strong>※</strong></span>
+                  <input type="text" name="電話番号">
+                </label>
+				  <label><span>住所</span>
+                  <input type="text" name="住所">
+                </label>
+                <span>志望理由やご経歴/お問い合わせ内容<strong>※</strong></span>
+                <textarea name="志望理由やご経歴/お問い合わせ内容"></textarea>
+              </div>
+              <h4>個人情報の取り扱いについて</h4>
+              <div class="private">
+                <div id="policy">
+                  <h4>プライバシーポリシー</h4>
+                  <h4>株式会社FCEエデュケーション　個人情報保護方針</h4>
+                  <p>株式会社FCEエデュケーション(以下「当社」)は、当社が業務上使用する当社の顧客・取引関係者等の個人情報について、個人情報保護に関する法令およびその他の規範を遵守し、以下のとおり個人情報保護方針を定め、これを実行し維持してまいります。 </p>
+                  <h4 class="ac">記</h4>
+                  <dl>
+                    <dt>1.個人情報の取得について </dt>
+                    <dd>当社は、個人情報を取得する場合は利用目的を明示し、適正な手段によって取得します。</dd>
+                    <dt>2.個人情報の利用について</dt>
+                    <dd>当社は、個人情報を、取得に際して明示した利用目的の範囲内で、業務の遂行上必要な限りにおいて、利用します。当社は個人情報を第三者との間で共同利用し、または、個人情報の取扱いを第三者に委託する場合には、当該第三者につき厳正な調査を行ったうえ、秘密を保持させるために、適正な監督を行います。 </dd>
+                    <dt>3.個人情報の第三者への提供について </dt>
+                    <dd>当社は、法令に定める場合を除き、個人情報を事前に本人の同意を得ることなく、第三者に提供しません。 </dd>
+                    <dt>4.個人情報の管理について</dt>
+                    <dd>当社は、個人情報の正確性を保ち、これを安全に管理します。当社は、個人情報の紛失、破壊、改竄及び漏洩などを防止するため、不正アクセス、コンピュータウイルスや盗難、散逸等(電子媒体以外を含む)に対する適正な予防策を講じます。 </dd>
+                    <dt>5.個人情報の開示・訂正・利用停止・消去について</dt>
+                    <dd>当社は、本人が自己の個人情報について、開示・訂正・利用停止・消去等を求める権利を有していることを確認し、これらの要求がある場合には、速やかに対応します。 </dd>
+                    <dt>6.組織・体制</dt>
+                    <dd>当社は、個人情報保護管理者を任命し、個人情報の適正な管理を実施します。当社は、役員、従業員、派遣社員およびパートタイマーに対し、個人情報の保護及び適正な管理方法についての教育を実施し、日常業務における個人情報の適正な取扱いを徹底します。 </dd>
+                    <dt>7.クッキー（Cookie）の利用</dt>
+                    <dd>当社のウェブサイトでは、クッキーを利用しているページがあります。これはお客様の個人情報を収集を目的とするものではありません。当社はこの情報を元にホームページ改良や広告活動を行います。<br />
+                      Googleを含む第三者配信事業者によりインターネット上の様々なサイトに当サイトの広告が掲載されていますが、Googleを含む第三者配信事業者はCookieを使用して、当サイトへの過去のアクセス情報に基づいて広告を配信します。<br />
+                      お客様はGoogle広告のオプトアウトページにアクセスして、GoogleによるCookieの使用を無効にできます（または、Network Advertising Initiativeのオプトアウトページにアクセスして、第三者配信事業者によるCookieの使用を無効にできます）。</dd>
+                    <dt>8.法令等の遵守</dt>
+                    <dd>当社は、個人情報に関する法令およびその他の規範を遵守します。 </dd>
+                  </dl>
+                  <p class="text_right">2005年3月25日 制定<br />
+                    2015年12月15日 改定<br />
+                    株式会社FCEエデュケーション<br />
+                    代表取締役　鈴木 甲子雄 </p>
+                  <hr />
+                  <p class="text">なお、利用目的、提供範囲、開示等の請求方法は以下のとおりです。</p>
+                  <dl>
+                    <dt>◆利用目的および提供範囲</dt>
+                    <dd>当社が取得した個人情報は、当社・グループ会社・協力会社において、以下の目的で利用させていただきます。<br />
+                      &#9312;お客様ご本人からご注文・ご依頼いただきました商品・サービスのご提供のため<br />
+                      &#9313;ご本人にお役立ていただけると弊社が考える諸情報や弊社の商品・サービスに関する情報のご提供<br />
+                      &#9314;弊社商品・サービス等の品質向上、マーケティング、あるいは商品開発等に係る各種分析のため<br />
+                      &#9315;上記のほか、ご本人からご同意をいただいた目的のため</dd>
+                    <dt>◆個人情報の開示等の請求</dt>
+                    <dd>
+                      <dl>
+                        <dt>1.お問い合わせ窓口</dt>
+                        <dd>当社の個人情報の取扱に関するお問い合わせは、下記窓口までお願いいたします。個人情報の開示等に関する請求書をFAXまたは郵送にてお送りさせていただきます。
+                          <address>
+                          株式会社FCEエデュケーション<br />
+                          TEL 03-5908-1400
+                          </address>
+                        </dd>
+                        <dt>2.添付書類 </dt>
+                        <dd>開示等の請求に際しましては、下記必要書類を個人情報の開示等に関する請求書に添付して、簡易書留郵便にて請求先までご送付ください。
+                          <ul>
+                            <li>身分証明書として、下記書類のいずれか1通。
+                              <ul>
+                                <li>運転免許証のコピー<br />
+                                  本籍地の項目については、不必要ですので、油性ペンなどで消去いただきますようお願いいたします。<br />
+                                  現住所に住居変更されている場合には「裏面」のコピーも必要です。</li>
+                                <li>旅券（パスポート）のコピー</li>
+                                <li>国民年金手帳のコピー</li>
+                                <li>各種健康保険証（プラスチック製のものを含む）のコピー</li>
+                              </ul>
+                            </li>
+                            <li>ご本人の住民票。</li>
+                            <li>開示および利用目的の通知請求の場合には、手数料として1,000円分の切手または郵便小為替。</li>
+                          </ul>
+                        </dd>
+                      </dl>
+                    </dd>
+                    <dt>3.請求方法</dt>
+                    <dd>郵送のみで請求を受付させていただきます。個人情報の開示等の請求書に必要事項を全て記入し、身分証明書、住民票を同封（開示および利用目的の通知請求の場合には1,000円分の切手または郵便小為替も同封してください）の上、下記宛先まで封書で簡易書留郵便にて郵送してください。
+                      <address>
+                      〒163-0810<br />
+                      東京都新宿区西新宿2-4-1 新宿NSビル10階<br />
+                      株式会社FCEエデュケーション　行
+                      </address>
+                    </dd>
+                    <dt>4.回答方法</dt>
+                    <dd>お客様へのご回答は、ご本人の住民票に記載の住所に郵送させていただきます。また、当社からの回答につきましては、社内の調査期間として2週間程度お時間を頂戴いたします。</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <label class="check formset">
+              <input type="checkbox" value="利用規約に同意する" name="利用規約">
+              利用規約に同意する<strong>※</strong></label>
+            <p class="ac btn-wrap">
+              <input type="reset" value="クリア">
+              <input type="submit" value="送信内容を確認する">
+            </p>
+          </form>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+</main>
+<footer>
+  <div id="FOOTER_WRAPPER" class="base_wrap">
+    <div id="FOOTER_LOGO" class="pict_wrap"><a href="../../" title="FCE エデュケーション"><img src="../../image/logo_fcee_white.png" alt="FCE エデュケーション"></a></div>
+    <div id="FOOTER_LINKS">
+      <ul>
+        <li><a href="http://www.fce-group.jp/" target="_blank">FCEホールディングス</a></li>
+        <li><a href="http://www.training-c.co.jp/" target="_blank">FCEトレーニングカンパニー</a></li>
+        <li><a href="http://fce-pat.co.jp/" target="_blank">FCEプロセス＆テクノロジー</a></li>
+      </ul>
+      <ul>
+        <li><a href="https://find-activelearning.com/" target="_blank">Findアクティブラーナー</a></li>
+        <li><a href="http://foresight-planner.jp/" target="_blank">フォーサイト手帳</a></li>
+        <li><a href="http://www.7hj.jp/al/" target="_blank">7つの習慣Ｊ<sub>&reg;</sub>アクティブラーナー</a></li>
+      </ul>
+      <ul>
+        <li><a href="http://fce-publishing.co.jp/" target="_blank">FCEパブリッシング</a></li>
+        <li><a href="http://diningedge.co.jp/" target="_blank">ダイニングエッジインターナショナル</a></li>
+        <li class="footer-lin"><a href="http://www.challenge-cup.net/" target="_blank">チャレンジカップ</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="sp_display footer_contact"><a href="/contact/">お問い合わせ</a></div>
+<small>Copyright &copy; FCE Holdings. All Rights Reserved.</small> </footer>
+</body>
+</html>

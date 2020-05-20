@@ -1,0 +1,179 @@
+@import 'https://fonts.googleapis.com/css?family=Poppins:400,500,700';
+
+
+/********************
+animation setting
+********************/
+@-webkit-keyframes loadingAnim{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+        -webkit-transform: translate(100%);
+        transform: translate(100%);
+    }
+}
+@keyframes loadingAnim{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+        -webkit-transform: translate(100%);
+        transform: translate(100%);
+    }
+}
+/*
+@-webkit-keyframes loadingAnim_text{
+    0%{
+        opacity: 1;
+        color: #000;
+    }
+    50%{
+        color: #000;
+
+    }
+    100%{
+        opacity: .5;
+        color: #000;
+    }
+}
+@keyframes loadingAnim_text{
+    0%{
+        opacity: 1;
+        color: #000;
+    }
+    50%{
+        color: #000;
+    }
+    100%{
+        opacity: .5;
+        color: #000;
+    }
+}
+*/
+
+/********************
+loading effects
+********************/
+.loadingAnim{
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.loadingAnim_line{
+    line-height: 1;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    transition: all .5s cubic-bezier(.785, .135, .15, .86) 0s;/*box*/
+    transition-delay: .6s;/*box*/
+    text-align: center;
+}
+@media(max-width:600px){
+	.loadingAnim_line{
+	width: 280px;
+    height: 280px;
+	font-family: 'Noto Sans Japanese','Hiragino Sans','ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN','メイリオ',Meiryo;
+	}
+	.loadingAnim_line:before{
+    content: url(../svg/loding.png) ;
+	}	
+}
+.loadingAnim_line:after{
+    position: absolute;
+    z-index: 200;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 0;
+    height: 100%;
+    margin: auto auto auto 0;
+    content: ' ';
+	-webkit-animation: loadingAnim .8s ease-in-out .7s infinite normal backwards;
+    animation: loadingAnim .8s ease-in-out .7s infinite normal backwards;
+    background-color: #fff;*/*ブロック*/
+	
+    will-change: transform, width;
+}
+.loadingAnim_line:before{
+    line-height: 1;
+    display: block;
+    content: url(../svg/loding.svg) ;
+	-webkit-animation: fadeOut 1.5s ease .6s infinite alternate both;
+    animation: fadeOut 1.5s ease .6s infinite alternate both;
+	
+	/*-webkit-animation: loadingAnim_text .7s ease .1s infinite alternate both;
+    animation: loadingAnim_text .7s ease .1s infinite alternate both;
+	*/
+    color: #fff;
+    will-change: opacity;
+}
+.loaded .loadingAnim_line{
+    overflow: hidden;
+    height: 0;
+}
+.loaded .loadingAnim_line:after,
+.loaded .loadingAnim_line:before{
+    -webkit-animation: none;
+    animation: none;
+}
+.loaded .loadingAnim_line:before{
+	content: '';
+  /*  content: 'FCEグループ'; */
+}
+
+.loadingAnim:before,
+.loadingAnim:after{
+    line-height: 1;
+    position: fixed;
+    z-index: 199;
+    right: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    content: ' ';
+    transition: all .3s cubic-bezier(.785, .135, .15, .86) 0s;/*box*/
+    transition-delay: .3s;/*box*/
+    background-color: #fff;/*背景*/
+
+}
+.loadingAnim:before{
+    top: 0;
+}
+.loadingAnim:after{
+    bottom: 0;
+}
+
+.loaded .loadingAnim:before{
+    height: 0;
+    -webkit-transform: translateY(-1%);
+    -ms-transform: translateY(-1%);
+    transform: translateY(-1%);
+}
+.loaded .loadingAnim:after{
+    height: 0;
+    -webkit-transform: translateY(1%);
+    -ms-transform: translateY(1%);
+    transform: translateY(1%);
+}
