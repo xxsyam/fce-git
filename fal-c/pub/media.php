@@ -22,6 +22,8 @@
 <h3>2020</h3>
 
 <ul>
+  <li><span class="day">2020.05.21</span><span class="syutten">TOKYO MX「話題のアプリ ええじゃないか！」</span><span class="news-txt"><a href="https://www.value-press.com/pressrelease/243590" target="_blank">定額制オンライントレーニング「Smart Boarding」がアンタッチャブル柴田さんら出演のTV番組で紹介されました！～テレワーク社員用研修コースも無料公開～</a></span></li>
+  <li><span class="day">2020.05.19</span><span class="syutten">NHK NEWS WEB 首都圏 NEWSWEB</span><span class="news-txt"><a href="https://www3.nhk.or.jp/shutoken-news/20200519/1000049014.html" target="_blank">Find!Find!アクティブラーナー主催「先生向けオンライン勉強会」の取り組みが紹介されました</a></span></li>
 <li><span class="day">2020.05.19</span><span class="syutten">NHK「首都圏ニュース」</span><span class="news-txt">Find!アクティブラーナー主催「先生向けオンライン勉強会」の様子が紹介されました</span></li>
 <li><span class="day">2020.05.17</span><span class="syutten">テレビ朝日「サンデーステーション」</span><span class="news-txt">Find!アクティブラーナー主催「先生向けオンライン勉強会」の様子が紹介されました</span></li>
 <li><span class="day">2020.05.12</span><span class="syutten">お知らせ</span><span class="news-txt"><a href="https://www.value-press.com/pressrelease/242633" target="_blank">全国の「学校の先生」が結集し、オンライン勉強会をスタート！今後の「オンライン授業」対策に関する情報交換も</a></span></li>
