@@ -22,6 +22,7 @@
 <h3>2020</h3>
 
 <ul>
+  <li><span class="day">2020.05.26</span><span class="syutten">お知らせ</span><span class="news-txt">半日で600名申込殺到！学校の先生向け「オンライン授業導入」セミナー5／29・30開催～オンライン模擬授業や有識者対談も実施！6月に緊急追加開催も～</span></li>
 <li><span class="day">2020.05.19</span><span class="syutten">NHK 首都圏 NEWS WEB</span><span class="news-txt"><a href="https://www3.nhk.or.jp/shutoken-news/20200519/1000049014.html" target="_blank">Find!アクティブラーナー主催「先生向けオンライン勉強会」の取り組みが紹介されました</a></span></li>
 <li><span class="day">2020.05.19</span><span class="syutten">NHK「首都圏ニュース」</span><span class="news-txt">Find!アクティブラーナー主催「先生向けオンライン勉強会」の様子が紹介されました</span></li>
 <li><span class="day">2020.05.17</span><span class="syutten">テレビ朝日「サンデーステーション」</span><span class="news-txt">Find!アクティブラーナー主催「先生向けオンライン勉強会」の様子が紹介されました</span></li>
