@@ -74,12 +74,13 @@
 </div>
 </div>
 
+<!--
 <div class="movie_wrapper">
 <h3>学習塾・予備校関係者注目</h3>
 
 <p>学習塾の塾長や予備校講師が、今、最も注目しているコンテンツとは！？</p>
 
-<div class="pickup_moviebox"><a class="pict_wrap" href="#"><img src="/uploads/files/images/mv-jyuku.jpg" /></a><!-- リンク先不明 -->
+<div class="pickup_moviebox"><a class="pict_wrap" href="#"><img src="/uploads/files/images/mv-jyuku.jpg" /></a>
 
 <div>
 <p>学校の先生と同様、「教える」ことのプロである塾長や予備校講師が注目する上位5コンテンツを、ランキング形式にまとめました。</p>
@@ -88,7 +89,7 @@
 （&larr;バナーをクリックし、特設ページにてご覧ください）</p>
 </div>
 </div>
-</div>
+</div>-->
 
 <div class="movie_wrapper">
 <h3>未来の教育と世界の最先端事例</h3>
