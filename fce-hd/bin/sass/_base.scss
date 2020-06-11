@@ -1,0 +1,430 @@
+@import "_setting";
+
+//-----------------------------------------------------------------------------
+// Base
+//-----------------------------------------------------------------------------
+
+html, body{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  // overscroll-behavior: none;
+}
+html{
+  font-size: 12px;
+  @include pc{
+    font-size: 16px;
+  }
+}
+body {
+  font-family: 'Ubuntu', 'Noto Sans JP', sans-serif;
+  font-feature-settings: "palt";
+  -webkit-tap-highlight-color: transparent;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  &.txt-link{
+    display: inline;
+    text-decoration: underline;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// 背景ライン
+.bg-stripe{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    display: flex;
+    justify-content: space-around;
+    .line{
+        width: 12.5%;
+        min-height: 100vh;
+        background: #f0f0f0;
+        animation: line $easeInOutExpo 1s 1.8s both;
+    }
+    @keyframes line{
+        to{
+            width: 1px;
+        }
+    }
+}
+
+// 背景三角
+.bg-triangle{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    animation: fadeInUp $easeOutQuint 2s 3.5s both;
+    will-change: transform, opacity;
+    svg{
+      @include sp{
+        max-width: 80px;
+      }
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      &.svg-to-top{
+          animation: toTop linear 2s infinite both;
+          right: 0;
+      }
+      &.svg-to-bottom{
+          animation: toBottom linear 2s infinite both;
+      }
+    }
+    @keyframes toTop {
+        from{
+            transform: translateY(0);
+        }
+        to{
+            transform: translateY(-100vh);
+            opacity: 0;
+        }
+    }
+    @keyframes toBottom {
+        from{
+            transform: translateY(0);
+        }
+        to{
+            transform: translateY(100vh);
+            opacity: 0;
+        }
+    }
+}
+
+// レスポンシブ
+@include sp {
+  .pc{
+    display: none;
+  }
+}
+@include pc {
+  .sp{
+    display: none;
+  }
+}
+
+// 横幅
+.inner{
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+// z-index
+.wrapper{
+  padding-top: 57px;
+  @include pc{
+    padding-top: 87px;
+  }
+  position: relative;
+  @include z-index(contents);
+}
+h2, h3, ul, dl, p{
+  position: relative;
+  @include z-index(contents);
+}
+
+// 見出し
+h2{
+  font-size: 3.75rem;
+  font-weight: bold;
+  &.heading{
+    small{
+      display: block;
+      font-size: 0.9375rem;
+      font-weight: normal;
+    }
+  }
+}
+
+// スクロールアニメーション
+/*背景*/
+.bg-animation{
+    color: #fff;
+    position: relative;
+    &:after{
+        @include pseudo;
+        width: 0;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transition: $easeOutExpo 1s;
+        will-change: width;
+    }
+    > * {
+        position: relative;
+        @include z-index(contents);
+    }
+    &.inview{
+        &:after{    
+            width: 100%;    
+        }
+    }
+    &.rd:after{
+        background: $red;
+    }
+    &.bl:after{
+        background: $blue;
+    }
+}
+
+// 見出し
+.anim h2{
+  // position: relative;
+  // top: 300px;
+  transform: translateY(300px);
+  opacity: 0;
+  transition: all $easeOutQuint 1.5s;
+  will-change: transform;
+}
+.anim.inview h2{
+  // top: 0;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+// 見出し帯あり
+.heading-bg{
+  span{
+    margin-bottom: rem(10);
+    padding: .2em .5em;
+    display: inline-block;
+    position: relative;
+    line-height: 1.2;
+    color: transparent;
+    transition: all ease 1s 1s;
+    will-change: color;
+    &:after{
+      @include pseudo;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background: #000;
+      transition: all $easeInOutCubic 1s;
+      will-change: width;
+      z-index: -1;
+    }
+    @for $i from 1 through 2 {
+      &:nth-child(#{$i})::after{
+          transition-delay: $i * 400ms;
+      }
+    }
+  }
+  &.inview span{
+    color: #fff;
+    &:after{
+      width: 100%;
+    }
+  }
+  &.rd span:after{
+    background: $red;
+  }
+}
+
+/* パーティクル */
+.bg-particles{
+  width: 46%;
+  height: 100%;
+  max-height: 200px;
+  @include pc{
+    width: 40%;
+    max-height: 900px;
+  }
+  @include z-index(particle);
+  position: absolute;
+  object{
+    transform: translateY(100px);
+    @include pc{
+      transform: translateY(350px);
+    }
+    transform-origin: top;
+    transition: all $easeOutQuint .5s;
+    will-change: transform, opacity; 
+  }
+  .bg1{
+    width: 47%;
+    position: absolute;
+    left: 4%;
+    top: 0;
+    transition-delay: 300ms;
+  }
+  .bg2{
+    width: 47%;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transition-delay: 600ms;
+  }
+  .bg3{
+    width: 75%;
+    position: absolute;
+    left: -10%;
+    top: 45%;
+    transition-delay: 900ms;
+  }
+  .bg4{
+    width: 46%;
+    position: absolute;
+    right: 10%;
+    top: 53%;
+    transition-delay: 1200ms;
+  }
+  
+}
+.inview.bg-particles object{
+  transform: translateY(0);
+}
+
+//リスト
+.anim-list li{
+    position: relative;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all $easeOutQuint 1s;
+    @for $i from 1 to 10 {
+      &:nth-child(#{$i}){
+        transition-delay: $i * 350ms;
+      }
+    }
+}
+.inview .anim-list li{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 写真 */
+.photo{
+  position: relative;
+  overflow: hidden;
+  &:after{
+    @include pseudo;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    transition: all $easeOutQuint 1.5s;
+    will-change: left;
+  }
+}
+.inview .photo{
+  &:after{
+    left: 100%;
+  }
+}
+
+// ホバーエフェクト
+@media(hover:hover){
+  .hover-effect{    
+    .hover-img{
+      position: relative;
+      overflow: hidden;
+      display: block;
+      img{
+        transform: scale(1);
+        transition: all $easeOutQuint 1s;
+      }
+    }
+    &:hover .hover-img img{
+      transform: scale(1.2);
+    }
+
+  }
+}
+
+/* ボタン */
+.button{
+  max-width: 270px;
+  margin: 0 auto;
+  a{
+    padding: .8rem 0;
+    border: 2px solid #000;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    @include z-index(contents);
+    &:hover{
+      color: #000;
+    }
+    &:before{
+      @include pseudo;
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      left: 0;
+      background: #000;
+      z-index: -1;
+    }
+    &:after{
+      @include pseudo;
+      width: 0;
+      height: 100%;
+      bottom: 0;
+      left: -60%;
+      background: #fff;
+      transform: skew(50deg);
+      transition: all $easeOutQuint 1s;
+      z-index: -1;
+    }
+    &:hover:after{
+      width: 220%;      
+    }
+  }
+}
+
+// レイアウトFlex *PCのみflexの場合 classを使用
+@include pc{
+  .flex-between{
+    display: flex;
+    justify-content: space-between;
+  }
+  .flex-center{
+    display: flex;
+    justify-content: center;
+  }
+  .flex-wrap{
+    flex-wrap: wrap;
+  }
+  .align-center{
+    align-items: center;
+  }
+  .align-end{
+    align-items: flex-end;
+  }
+}
+
+//-----------------------------------------------------------------------------
+// Common Keyframe
+//-----------------------------------------------------------------------------
+
+@keyframes fadeInUp{
+    from{
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+//-----------------------------------------------------------------------------
+// Google Font
+//-----------------------------------------------------------------------------
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap');

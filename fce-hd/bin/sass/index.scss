@@ -1,0 +1,719 @@
+@charset "UTF-8";
+
+@import "_setting";
+@import "_reset";
+@import "_base";
+@import "_globalnav";
+
+//-----------------------------------------------------------------------------
+// Main Visual
+//-----------------------------------------------------------------------------
+
+// ローディング
+.loading{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    @include z-index(loading);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0;
+    color: #fff;
+    animation: fadeOut $easeInOutExpo 1.2s 1.5s  forwards,
+               slideOutRight $easeInOutExpo .5s 2.7s  forwards;
+    @keyframes slideOutRight {
+        to{
+            transform: translateX(9999px);
+        }
+    }
+    .logo{
+        width: 25%;
+        max-width: 128px;
+        margin: auto;
+        z-index: 1;
+        animation: fadeOut .85s .8s forwards;
+    }
+}
+
+// メインビジュアル
+.main-visual{
+    width: 100%;
+    min-height: 90vh;
+    padding: percent(500) 0 0;
+    @include landscape{
+        margin-bottom: 12rem;
+    }
+    @include pc{
+        min-height: 100vh;
+        padding: percent(200) 0 percent(500);
+    }
+    position: relative;
+    .catch{
+        font-size: 3.8rem;
+        @include pc{
+            font-size: 5.25rem; //84px
+        }
+        font-weight: bold;
+        letter-spacing: rem(5);
+        position: relative;
+        @include z-index(contents);
+        animation: fadeInUp $easeOutQuint 2s 4s both;
+    }
+    .lead{
+        font-size: 1.6rem;
+        @include pc{
+            font-size: 1.75rem; //28px
+        }
+        line-height: 1.78;
+        position: relative;
+        @include z-index(contents);
+        animation: fadeInUp $easeOutQuint 2s 5s both;
+    }
+    .particle-left{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        @include z-index(particle);
+        left: -4rem;
+        top: 30rem;
+        @include pc{
+            width: 70%;
+            left: 3rem;
+            top: 28rem;
+        }
+        @include landscape{
+            top: 23rem;
+        }
+        @include pc{
+            left: 0;
+            top: 26rem;
+        }
+        .b1{
+            width: 33%;
+            position: absolute;
+            left: -1.8%;
+            top: 0;
+            transform: translate(-999px, -999px) rotate(180deg);
+            animation: anim $easeInOutCubic 1s 3s forwards;
+        }
+        .y1{
+            width: 85%;
+            position: absolute;
+            left: 10%;
+            top: 0;
+            transform: translate(999px, -1999px) rotate(-90deg);
+            animation: anim $easeInOutCubic 1s forwards;
+        }
+        transform: skew(-70deg);
+        animation: anim $easeOutQuint 3s 3.2s forwards,
+                   mvLeft $easeInCubic 4s 3s;
+    }
+
+    .particle-right{
+        width: 100%;
+        @include pc{
+            width: 80%;
+        }
+        max-width: 1270px;
+        height: 100%;
+        position: absolute;
+        @include z-index(particle);
+        right: -8%;
+        top: 20rem;
+        @include landscape{
+            top: 2rem;
+        }
+        @include pc{
+            top: 3.375rem;
+        }
+        .y2{
+            width: 16.9%;
+            position: absolute;
+            top: -2%;
+            left: 63%;
+            transform: translate(-1999px, -1999px) rotate(180deg);
+            animation: anim $easeInOutCubic 1s forwards;
+        }
+        .b2{
+            width: 34%;
+            position: absolute;
+            top: 13%;
+            left: 65%;
+            transform: translate(-999px, -1999px) rotate(180deg);
+            animation: anim $easeInOutCubic 1s forwards;
+        }
+        .y3{
+            width: 31%;
+            position: absolute;
+            top: 41%;
+            right: 4%;
+            transform: translate(0px, -1999px) rotate(-360deg);
+            animation: anim $easeInOutCubic 1s forwards;
+        }
+        .r1{
+            width: 65%;
+            position: absolute;
+            left: 0;
+            top: 41%;
+            transform: translate(0px, -999px) scale(2) rotate(180deg);
+            animation: anim $easeInOutCubic 1s forwards;
+        }
+        transform: rotate(-50deg);
+        animation: anim $easeOutQuint 2.5s 3.5s forwards,
+                   mvRight $easeInCubic 4s 3s;
+    }
+
+    @for $i from 1 through 8 {
+        .particle:nth-child(#{$i}){
+            animation-delay: 3000 + $i * 220ms;
+        }
+    }
+
+    @keyframes anim {
+        to{
+            transform: translate(0) skew(0) rotate(0) scale(1);
+        }
+    }
+    @keyframes fadeOut{
+        from{
+            opacity: 1;
+            filter:blur(0);
+        }
+        to{
+            opacity: 0;
+            filter:blur(10px);
+        }
+    }
+    @keyframes mvLeft {
+        0%{
+            transform: translateY(0) scale(1);
+        }
+        85%{
+            transform: translate(10rem,7rem) scale(2);
+        }
+        100% {
+            transform: translateY(0) scale(1);
+        }
+    }
+    @keyframes mvRight {
+        0%{
+            transform: translateY(0) scale(1);
+        }
+        85%{
+            transform: translate(0rem,-3rem) scale(1.8);
+        }
+        100% {
+            transform: translateY(0) scale(1);
+        }
+    }
+
+}
+
+//-----------------------------------------------------------------------------
+// section共通
+//-----------------------------------------------------------------------------
+
+// 見出し
+h2{
+    margin-bottom: 4rem;
+    @include pc{
+        margin-bottom: 6rem;
+    }
+}
+//見出しとボタンが横並びのパターン
+.section-header{
+    h2{
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .button{
+        min-width: 270px;
+        text-align: right;
+    }
+}
+//背景色ありのセクション
+.bg-animation{
+    &:after{
+        transform: skewY(0);
+    }
+    &.inview{
+        &:after{
+            transform: skewY(-5deg);
+        }
+    }
+}
+
+//-----------------------------------------------------------------------------
+// What’s FCE
+//-----------------------------------------------------------------------------
+
+.whats{
+    margin-bottom: 14rem;
+    position: relative;
+    .bg-particles{
+        position: absolute;
+        left: 5%;
+        top: 72%;
+        @include pc{
+            left: 0;
+            top: 20%;
+        }
+    }
+    .message{
+        margin-bottom: 6rem;
+        @include pc{
+            padding-left: 30%;
+        }
+        h3{
+            margin-bottom: 1rem;
+            font-size: rem(33);
+            font-weight: bold;
+        }
+    }
+    .message2{
+        padding-left: 50%;
+        h3{
+            margin-bottom: 1rem;
+            font-size: rem(33);
+        }
+    }
+}
+
+//-----------------------------------------------------------------------------
+// Team! FCE
+//-----------------------------------------------------------------------------
+
+.team{
+    margin-bottom: 14rem;
+    padding: 8rem 0;
+    h2{
+        text-align: center;
+        animation-delay: 1s;
+    }
+    ul{
+        @include landscape{
+            @include flex($align: flex-start);
+            flex-wrap: wrap;
+        }
+        li{
+            max-width: 283px;
+            margin: 0 2.5%;
+            @include sp{
+                margin: 0 auto 3rem;
+            }
+            @include landscape{
+                width: 38%;
+            }
+        }
+        @for $i from 1 through 4 {
+            li:nth-child(#{$i}){
+                background: url(../img/team_#{$i}.png) no-repeat center center;
+                background-size: contain;
+                animation-delay: 1s + 200 * $i ms;
+            }
+        }
+        h3{
+            margin-bottom: 1rem;
+            text-align: center;
+            font-size: rem(30);
+            strong{
+                font-size: rem(41);
+            }
+        }
+        p{
+            margin-bottom: 2rem;
+            line-height: 2.1;
+            font-size: rem(17);
+        }
+        dl{
+            dt{
+                margin-bottom: 1rem;
+            }
+            dd{
+                padding-left: 2rem;
+                line-height: 2.1;
+            }
+        }
+    }
+}
+
+//-----------------------------------------------------------------------------
+// さぁ、次は何を変えようか？
+//-----------------------------------------------------------------------------
+
+.next{
+    position: relative;
+    @include sp{
+        padding-bottom: 8rem;
+    }
+    @include pc{
+        padding-bottom: 48%;
+    }
+    h2{
+        max-width: 11em;
+        @include sp{
+            font-size: 2.2rem;
+        }
+    }
+    .box-left{
+        position: absolute;
+        left: 0;
+        z-index: 11;
+        @include sp{
+            top: 11rem;
+        }
+        @include pc{
+            width: 60%;
+            top: 5rem;
+        }
+    }
+    .button{
+        @include sp{
+            margin-top: 20rem;
+        }
+        @include landscape{
+            margin-top: 37rem;
+        }
+        @include pc{
+            margin-top: 16rem;
+        }
+    }
+    @include pc{
+        .box-right{
+            width: 52%;
+            position: absolute;
+            right: 0;
+        }
+    }
+    .bg-particles{
+        width: 77%;
+        height: 120%;
+        position: absolute;
+        left: 35%;
+        top: -16%;
+    }
+
+}
+
+//-----------------------------------------------------------------------------
+// Service
+//-----------------------------------------------------------------------------
+
+.service{
+    padding: 8rem 0;
+    color: #fff;
+    position: relative;
+    .section-header{
+        margin-bottom: 6rem;
+        @include flex($justify: flex-between, $align: flex-end);
+        .button{
+            width: 78px;
+            min-width: auto;
+            max-width: 78px;
+            height: 72px;
+            @include flex($align: flex-end);
+        }
+    }
+    ul{
+        @include flex();
+        flex-wrap: wrap;
+        li{
+            width: 44%;
+            @include pc{
+                width: 22%;
+            }
+            margin: 0 1% 7%;
+            padding-right: 1rem;
+            .hover-img{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+//-----------------------------------------------------------------------------
+// FaCE！
+//-----------------------------------------------------------------------------
+
+.face{
+    padding: 6rem 0;
+    @include pc{
+        padding: 10rem 0;
+    }
+    position: relative;
+    .section-header{
+        margin-bottom: 6rem;
+    }
+    @include sp{
+        h2{
+            margin-bottom: 3rem;
+        }
+    }
+    &-nav{
+        @include pc{
+            width: 70%;
+        }
+        font-size: rem(15);
+        font-weight: bold;
+        ul{
+            @include flex($justify: space-between);
+        }
+    }
+    .articles {
+        margin-bottom: 3rem;
+        @include pc {
+            margin-bottom: 5rem;
+        }
+        @include flex($justify: space-between);
+        flex-wrap: wrap;
+        li{
+            width: 48%;
+            @include pc{
+                width: 28%;
+            }
+            margin: 0 0 3rem 0;
+            box-shadow: 11px 13px 27px rgba(#000, .08);
+            &:nth-child(3n){
+                margin-right: 0;
+            }
+            dl{
+                padding: rem(35) rem(20) rem(20);
+                background: #fff;
+                .tag{
+                    padding: 0 1rem;
+                    background: #000;
+                    color: #fff;
+                    font-size: rem(13);
+                }
+                .date{
+                    color: #9B9B9B;
+                    font-size: rem(13);
+                }
+                dd{
+                    margin-top: rem(20);
+                    line-height: 1.68;
+                }
+            }
+        }
+    }
+}
+
+//-----------------------------------------------------------------------------
+// News
+//-----------------------------------------------------------------------------
+
+.news{
+    margin-bottom: 8rem;
+    @include pc{
+        margin-bottom: 15rem;
+    }
+    .section-header{
+        @include pc{
+            margin-right: 6rem;
+        }
+        .button{
+            @include sp{
+                margin: 2rem auto 4rem;
+            }
+            @include pc{
+                max-width: 156px;
+                min-width: 156px;
+                margin-top: 4rem;
+            }
+
+        }
+    }
+    ul li{
+        margin-bottom: rem(40);
+        border-bottom: solid 1px #b7b7b7;
+    }
+}
+
+//-----------------------------------------------------------------------------
+// Recruit
+//-----------------------------------------------------------------------------
+
+.recruit{
+    @extend .team;
+    margin-bottom: 0;
+    padding: 5rem 0 0rem;
+    @include pc {
+        padding: 10rem 0 1rem;
+    }
+    &:before{
+        @include pseudo;
+        width: 0;
+        height: 84%;
+        left: 0;
+        bottom: rem(-100);
+        background: $red;
+        transition: $easeOutExpo 1s;
+    }
+    &.inview:before{
+        width: 100%;
+    }
+    p{
+        text-align: center;
+        font-size: rem(40);
+    }
+}
+
+
+
+
+/* 以下、命令上書きしたり調整するために追記 */
+.button{
+  a{
+    padding: 1rem 0;
+
+    &:after{
+      -webkit-transform: skew(50deg);
+      -ms-transform: skew(50deg);
+      transform: skew(50deg);
+      -webkit-transition: all cubic-bezier(.22,1,.36,1) 0.5s;
+      -o-transition: all cubic-bezier(.22,1,.36,1) 0.5s;
+      transition: all cubic-bezier(.22,1,.36,1) 0.5s;
+    }
+  }
+}
+
+.bg-animation.inview:after{
+  -webkit-transform: skewY(5deg);
+    -ms-transform: skewY(5deg);
+    transform: skewY(5deg);
+}
+@media(min-width:980px){
+  .team{
+    padding: 8rem 0 20rem;
+
+    ul{
+      li{
+        &:nth-of-type(2){
+          top:100px !important;
+        }
+        &:nth-of-type(3){
+          top:200px !important;
+        }
+      }
+    }
+  }
+}
+
+.face-nav{
+  width: 70%;
+  line-height: 1.7;
+}
+
+.service{
+  position: relative;
+  z-index: 99;
+}
+.news{
+  display: flex;
+  position: relative;
+
+  @media(max-width:979px){
+    flex-wrap: wrap;
+    margin-bottom: 10rem;
+  }
+
+  .section-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right:30px;
+    position: relative;
+
+    @media(max-width:979px){
+      margin-bottom:0;
+      position: static;
+    }
+
+    @media(min-width:980px){
+      h2{
+        margin-bottom:3rem;
+      }
+    }
+
+    .button{
+      position: absolute;
+      right:0; top:55px;
+
+      @media(max-width:979px){
+        top:100%;
+        right:calc(50% - 270px);
+        left:calc(50% - 270px);
+      }
+    }
+
+  }
+  ul{
+    li{
+      margin-bottom:0;
+      display: flex;
+      padding:15px 0;
+
+      @media(max-width:979px){
+        flex-wrap: wrap;
+      }
+
+      time,span{
+        display:inline-block;
+        line-height:1.7;
+      }
+
+      time{
+        min-width:120px;
+        @media(max-width:979px){
+          min-width:80px;
+        }
+      }
+      span.meta{
+        min-width:130px;
+
+        &:before{
+          content:"・";
+          display:inline-block;
+          margin-right:3px;
+        }
+      }
+      span.text{
+        @media(max-width:979px){
+          width:100%;
+        }
+      }
+    }
+  }
+}
+
+.recruit{
+  padding-top:18rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  h2{
+    margin-bottom:0;
+  }
+}
+
+.slick-prev,.slick-next{
+
+}
+.slick-dots{
+  bottom: -110px !important;
+  @media(max-width:979px){
+    bottom: -80px !important;
+  }
+
+  li{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width:20px !important;
+  }
+}

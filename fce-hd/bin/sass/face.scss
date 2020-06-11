@@ -1,0 +1,271 @@
+@charset "UTF-8";
+
+@import "_setting";
+@import "_reset";
+@import "_base";
+@import "_globalnav";
+@import "_subpage";
+
+//-----------------------------------------------------------------------------
+// Face
+//-----------------------------------------------------------------------------
+
+// メインビジュアル
+.main-visual{
+    padding: rem(30) 0 rem(108);
+    @include pc{
+        padding-top: rem(78);
+    }
+    .mv-inner{
+        position: relative;
+        .particle-left{
+            position: absolute;
+            top: -3rem;
+            left: 4rem;
+            @include pc{
+                top: 20rem;
+                left: 20rem;
+            }
+            svg{
+                width: 100%;
+            }
+        }
+        .particle-right{
+            width: 72%;
+            position: absolute;
+            top: 0rem;
+            right: -3rem;
+            @include pc{
+                top: 3rem;
+                right: -15rem;
+            }            
+        }
+    }
+    @include pc{
+        .flex-center{
+            flex-direction: row-reverse;
+            .mv-left{
+                max-width: 741px;
+            }
+            .mv-right{
+                max-width: 420px;
+                padding-left: rem(60);
+            }
+        }
+    }
+    .photo:after{
+        transition-delay: 2.5s;
+    }
+    h2{
+        margin-bottom: rem(48);
+        transition-delay: 2s;
+    }
+    .date{
+        margin-bottom: rem(20);
+        position: relative;
+        @include z-index(contents);
+    }
+    .lead{
+        margin-bottom: rem(57);
+        font-size: rem(24);
+        position: relative;
+        @include z-index(contents);
+    }
+    .button{
+        max-width: 400px;
+        @include sp{
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+// セクション共通
+.tag{
+    padding: .2em 2em;
+    font-size: rem(13);
+    background: #000;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    @include z-index(contents);
+}
+.date{
+    text-align: right;
+    font-size: rem(15);
+}
+
+// Pick up
+.pickup{
+    margin-bottom: 8rem;
+    h2{
+        margin-bottom: rem(77);
+        @include pc{
+            transition-delay: 2.5s;
+        }
+    }
+    ul {
+        @include flex($justify: space-between);
+        flex-wrap: wrap;
+        li{
+            width: 48%;
+            @include pc{
+                width: 28%;
+            }
+            margin: 0 0 3rem 0; 
+            box-shadow: 11px 13px 27px rgba(#000, .08);
+            &:nth-child(3n){
+                margin-right: 0;
+            }
+            dl{
+                padding: rem(35) rem(20) rem(20);
+                background: #fff;
+                dd{
+                    margin-top: rem(20);
+                    line-height: 1.68;
+                }
+            }
+        }
+    }
+}
+
+// Articles
+.articles{
+    margin-bottom: 8rem;
+    .face-nav{
+        margin-bottom: rem(60);
+        font-size: rem(15);
+        font-weight: bold;
+        ul{
+            @include sp{
+                margin-top: 2rem;
+                @include flex($justify: flex-start);
+                flex-wrap: wrap;
+                li{
+                    margin-right: .7rem;
+                }
+            }
+            @include pc{
+                @include flex($justify: flex-end);
+                li{
+                    margin-left: rem(64);
+                }
+            }
+        }
+    }
+    .article-list{
+        li{
+            margin-bottom: rem(62);
+            a{
+                @include flex($align: flex-start);
+            }
+        }
+    }
+    .article-left{
+        @include pc{
+            padding-right: rem(57);
+        }
+        figure{
+            margin-right: rem(19);
+        }
+        dl{
+            padding-top: rem(5);
+        }
+        dt{
+            margin-bottom: rem(30);
+        }
+        dd{
+            font-size: rem(19);
+            line-height: 1.7;
+        }
+        .button{
+            max-width: 575px;
+            @include sp{
+                margin-bottom: 2rem;
+            }
+            a{
+                padding: 1.2rem 0;
+            }
+        }
+    }
+    .ranking{
+        max-width: 523px;
+        padding: rem(56) rem(33);
+        background: #f8f8f8;
+        h3{
+            margin-bottom: rem(40);
+            font-size: rem(50);
+            font-weight: bold;
+        }
+        .article-list{
+            li{
+                position: relative;
+                @for $i from 1 through 5 {
+                    &:nth-child(#{$i}):after{
+                        @include pseudo;
+                        content: "#{$i}";
+                        width: 25px;
+                        height: 25px;
+                        padding-top: 3px;
+                        left: -12px;
+                        top: -12px;
+                        display: inline-block;
+                        text-align: center;
+                        font-size: rem(17);
+                        border-radius: 50%;
+                        background: $yellow;
+                    }
+                }
+            }
+            dt{
+                margin-bottom: rem(17);
+            }
+            dd{
+                font-size: rem(15);
+            }
+            figure{
+                margin-right: rem(13);
+            }
+        }
+    }
+}
+
+// #One Story
+.onestory{
+    @extend .pickup;
+    @include pc{
+        padding-bottom: 12rem;
+    }
+    position: relative;
+    h2{
+        text-align: center;
+        transition-delay: 0s;
+    }
+    .particle-left{
+        position: absolute;
+        @include sp{
+            bottom: 3rem;
+            left: 2rem;
+            width: 72%;
+        }
+        @include pc{
+            bottom: 0;
+            left: 20rem;
+        }
+        svg{
+            width: 100%;
+        }
+    }
+    .particle-right{
+        width: 72%;
+        position: absolute;
+        @include sp{
+            bottom: 14rem;
+            right: -3rem;
+        }
+        @include pc{
+            bottom: 2rem;
+            right: -15rem;
+        }
+    }
+}
+

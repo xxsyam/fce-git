@@ -1,0 +1,75 @@
+//-----------------------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------------------
+
+$designSize: 1440;
+$easeInOutExpo: cubic-bezier(0.87, 0, 0.13, 1);
+$easeInCubic: cubic-bezier(0.32, 0, 0.67, 0);
+$easeInOutCubic: cubic-bezier(0.65, 0, 0.35, 1);
+$easeOutExpo: cubic-bezier(0.16, 1, 0.3, 1);
+$easeOutQuint: cubic-bezier(0.22, 1, 0.36, 1);
+$red: #EF001F;
+$yellow: #FFF100;
+$blue: #35ABEB;
+$layer: (
+  loading: 40,
+  header: 30,
+  contents: 20,
+  particle: 10
+);
+
+//-----------------------------------------------------------------------------
+// Function
+//-----------------------------------------------------------------------------
+
+@function rem($pixels, $context: 16){
+  @return $pixels / $context * 1rem;
+}
+@function percent($value){
+  @return $value / $designSize * 100%;
+}
+
+//-----------------------------------------------------------------------------
+// mixin
+//-----------------------------------------------------------------------------
+
+// media PC
+@mixin pc($width-media:980px){
+  @media only screen and (min-width:$width-media){
+    @content;
+  }
+}
+
+//SP横向き
+@mixin landscape($width-media-s:415px, $width-media-l:979px){
+  @media only screen and (min-width:$width-media-s) and (max-width:$width-media-l){
+    @content;
+  }
+}
+
+// media SP
+@mixin sp($width-media:979px){
+  @media only screen and (max-width:$width-media){
+    @content;
+  }
+}
+
+// レイアウト
+@mixin flex($justify: center, $align: center){
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// before, after
+@mixin pseudo{
+  width: 100%;
+  display: block;
+  position: absolute;
+  content: "";
+}
+
+// z-index
+@mixin z-index($key){
+  z-index: map-get($layer, $key);
+}

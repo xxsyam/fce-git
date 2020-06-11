@@ -1,0 +1,291 @@
+@charset "UTF-8";
+
+@import "_setting";
+@import "_reset";
+@import "_base";
+@import "_globalnav";
+@import "_subpage";
+
+//-----------------------------------------------------------------------------
+// About
+//-----------------------------------------------------------------------------
+
+//メインビジュアル
+.main-visual{
+    padding: rem(136) 0 rem(46);
+    .breadcrumb {
+        margin-top: rem(130);
+        a{
+            display: inline;
+        }
+    }
+}
+
+// Mission
+.mission{
+    margin: 8rem auto 10rem;
+    &-top{
+        position: relative;
+        @include pc{
+            padding-bottom: rem(670);
+        }
+    }
+    .box-left{
+        margin-top: 14%;
+        @include pc{
+            width: 58%;
+            position: absolute;
+            top: 5%;
+            left: 0;
+            z-index: 1;
+        }
+        h3{
+            max-width: 11em;
+            top: -.5em;
+            @include sp{
+                width: 110%;
+            }
+        }
+        .photo{
+            position: absolute;
+            top: 0;
+        }
+    }
+
+    .box-right{
+        padding: rem(40);
+        background: #f5f5f5;
+        font-size: rem(17);
+        @include pc{
+            width: 58%;
+            padding-right: rem(120);
+            position: absolute;
+            right: 0;
+            z-index: 2;
+        }
+    }
+    .future{
+        padding: rem(50) 0 0;
+        @include pc{
+            padding: rem(250) 0 rem(240);
+        }
+        position: relative;
+        .bg-particles{
+            right: -10%;
+            top: 68%;
+            @include pc{
+                top: 4%;
+            }
+        }
+    }
+}
+
+// FCE’s DNA
+.dna{
+    margin-bottom: 10rem;
+    h2{
+        text-align: right;
+    }
+    .dna-lists{
+        @include pc{
+            li{
+                width: 33.3333%;
+                @for $i from 2 to 4 {
+                    &:nth-child(#{$i}){
+                        margin-top: rem(52 * $i);
+                    }
+                }
+            }
+        }
+        @include sp{
+            li{
+                margin-top: 4rem;
+            }
+        }
+        
+        dl{
+            dt{
+                margin-bottom: rem(34);
+                text-align: center;
+                font-size: rem(20);
+                font-weight: bold;
+                letter-spacing: -1.2px;
+                line-height: 1.75;
+            }
+            dd{
+                padding: rem(50) rem(45);
+                background: #000;
+                color: #fff;
+                line-height: 1.6;
+            }
+            
+        }
+    }
+}
+
+// Challenge! Change! FCE
+.challenge{
+    margin-bottom: rem(88);
+    .inner{
+        position: relative;
+    }
+    .bg-animation{
+        padding: 2rem 2rem 25rem;
+        @include landscape{
+            padding-bottom: 30rem;
+        }
+        @include pc{
+            max-width: 918px;
+            padding: rem(86) rem(120) rem(604);
+            left: rem(-126);
+        }
+    }
+    &-photo{
+        width: 100%;
+        position: absolute;
+        top: 32%;
+        right: 0;
+        h3{
+            display: inline-block; 
+            text-align: right;
+            font-size: rem(24);
+            @include sp{
+                width: 111%;
+                margin-top: 22%;
+                right: 4%;
+            }
+            @include landscape{
+                margin-top: 0;
+            }
+            @include pc{
+                max-width: 18em;
+                float: right;
+            }
+        }
+        .photo{
+            width: 90%;
+            position: absolute;
+            top: 84%;
+            right: 5%;
+            @include pc{
+                width: 60%;
+                top: 43%;
+                right: 17%;
+            }
+        }
+    }
+}
+
+// 教育を変える
+.education{
+    margin-bottom: rem(240);
+    position: relative;
+    h2{
+        font-size: rem(30);
+        @include sp{
+            margin-bottom: 3rem;
+        }
+        @include pc{
+            position: absolute;
+            right: 0;
+            top: 32%;
+        }
+        strong{
+            font-size: rem(42);
+        }
+        small{
+            font-size: rem(17);
+        }
+    }
+    .photo-box{
+        max-width: 600px;
+        margin-bottom: rem(40);
+        background: #fff;
+        box-shadow: 11px 13px 27px rgba(#000, .08);
+        position: relative;
+        opacity: 0;
+        transform: translateY(100px);
+        transition: all $easeOutQuint 1s;
+        @include z-index(contents);
+        &.center{
+            margin: auto;
+            clear: both;
+        }
+        &.right{
+            margin-top: rem(40);
+            float: right;
+            &:after{
+                display: block;
+                clear: both;
+            }
+        }
+        dl{
+            padding: rem(24) rem(16);
+            dt{
+                margin-bottom: 1rem;
+                font-size: rem(18);
+                font-weight: bold;
+            }
+            dd{
+                font-weight: bold;
+            }
+        }
+    }
+    .photo-box.inview{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .bg-particles{
+        right: -15%;
+        top: 7%;
+    }
+}
+
+// 働くを変える
+.work{
+    @extend .education;
+    h2{
+        top: 43%;
+        left: 0;
+        right: auto;
+        text-align: right;
+    }
+    .bg-particles{
+        right: auto;
+        left: 0;
+        top: 28%;
+    }
+}
+
+// 人生を変える
+.life{
+    @extend .education;
+    .bg-particles{
+        min-height: 900px;
+        right: -15%;
+        top: -16%;
+    }
+}
+
+// 下部ページナビ
+.bottom-nav{
+  margin-bottom: 10rem;
+  background: rgba(#000, .7);
+  color: #fff;
+  position: relative;
+  @include z-index(contents);
+  li{
+    text-align: center;
+    @include pc{
+        width: 50%;
+    }
+    a{
+      padding: 5rem 0;
+      font-size: rem(48);
+      small{
+        display: block;
+        font-size: rem(17);
+      }
+    }
+  }
+}

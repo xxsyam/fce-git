@@ -1,0 +1,36 @@
+@import "_setting";
+
+//-----------------------------------------------------------------------------
+// 下層ページ共通
+//-----------------------------------------------------------------------------
+
+// ローディングがないのでdelayを0に
+.bg-stripe .line{
+  animation-delay: 0s;
+}
+// ラインのアニメーションが終わってからコンテンツを出す
+.wrapper{
+  animation: fadeInUp $easeOutQuint 1.5s 2.2s both;
+}
+//下層ページメインビジュアル
+.main-visual{
+    padding: rem(166) 0;
+    position: relative;
+    &:after{
+        transition-delay: 2s;
+    }
+    .main-bg{
+        width: 68%;
+        position: absolute;
+        right: -5%;
+        bottom: -14%;
+        @include pc{
+          bottom: -47%;
+        }
+        animation: fadeInUp $easeOutQuint 1s 3s both;
+    }
+}
+//下層ページ中見出し
+h3{
+  font-size: rem(40);
+}
