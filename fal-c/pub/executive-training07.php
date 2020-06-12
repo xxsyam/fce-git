@@ -1,6 +1,6 @@
 <section id="EXECUTIVE-TRAINING-DETAIL">
 <div id="CONTENT_HEADER">
-<h2>管理職・リーダー独占インタビュー<span>（計2本）</span></h2>
+<h2>管理職・リーダー独占インタビュー<span>（計3本）</span></h2>
 
 <p>全国で活躍する管理職・リーダーの先生方への独占インタビューをお届けします。組織運営やリーダーシップなど、日頃、学校経営で大切にしていることから今後の課題・展望まで、詳しくお伝えしていきます。<br />
 （順次更新してまいります）</p>
@@ -9,17 +9,22 @@
 <div class="contents_data_wrapper">
 <h3>【管理職・リーダー独占インタビュー】</h3>
 
-<h4>（2動画）</h4>
+<h4>（3動画）</h4>
 
 <div class="movie_wrap col02">
 <dl>
-<dt>（松原 肇氏）塾を母体として誕生した超進学校が、なぜ本気で授業改革に取り組むのか [9分26秒]</dt>
+<dt>（松原 肇氏）塾を母体として誕生した超進学校が、なぜ本気で授業改革に取り組むのか</dt>
 <dd><iframe allowfullscreen="" frameborder="0" height="100%" src="https://api01-platform.stream.co.jp/apiservice/plt3/Mjc3Mg%3d%3d%23Mjc3OQ%3d%3d%23280%23168%230%233FE2BBDBE400%23Mjo5OmQ6ZjsxMA%3d%3d%23" width="100%"></iframe></dd>
 </dl>
 
 <dl>
 <dt>（星野明宏氏）全国から注目される静岡聖光学院をプロデュースする元電通マン校長が大切にしていることとは</dt>
 <dd><iframe allowfullscreen="" frameborder="0" height="100%" src="https://api01-platform.stream.co.jp/apiservice/plt3/Mjc3Mg%3d%3d%23Mjg2Mw%3d%3d%23280%23168%230%233FE2BBDBE400%23Mjo5OmQ6ZjsxMA%3d%3d%23" style="position:absolute" width="100%"></iframe></dd>
+</dl>
+
+<dl>
+<dt>（有明得良人氏）都立高校元校長が語る管理職としての心構えと教師としての在り方とは</dt>
+<dd><iframe src="https://api01-platform.stream.co.jp/apiservice/plt3/Mjc3Mg%3d%3d%23Mjg5MA%3d%3d%23280%23168%230%233FE2BBDBE400%23Mjo5OmQ6ZjsxMA%3d%3d%23" width="100%" height="100%" style="position:absolute" frameborder="0" allowfullscreen></iframe></dd>
 </dl>
 </div>
 </div>
