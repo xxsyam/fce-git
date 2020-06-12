@@ -53,7 +53,7 @@
               臆病だった私が「毎日が〇〇だ！」と考え方を変えたらHRアワードで最優秀賞受賞！？　#OneStory
             </p>
             <div class="button">
-              <a href="#">詳しく見る</a>
+              <a href="./face_detail.php">詳しく見る</a>
             </div>
           </div>
 

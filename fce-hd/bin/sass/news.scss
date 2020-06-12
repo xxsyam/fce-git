@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+@import "_setting";
+@import "_reset";
+@import "_base";
+@import "_globalnav";
+@import "_subpage";
+
+//-----------------------------------------------------------------------------
+// Service
+//-----------------------------------------------------------------------------
+
+//メインビジュアル
+.main-visual{
+  margin-bottom: 13rem;
+
+  .heading,.breadcrumb{
+    color:#000;
+  }
+}
+
+//カテゴリナビ
+.category_nav{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin:8rem auto 3rem;
+  padding-bottom:0.35rem;
+  border-bottom:3px solid #000;
+
+  li{
+    margin:0 3%;
+    display: flex;
+    align-items: center;
+
+    a{
+      font-size: rem(24);
+      transition : all 0.5s ease 0s;
+
+      &:hover,&.active{
+        color:$blue;
+      }
+    }
+  }
+}
+
+//ニュースリスト
+.news_list{
+  article{
+    margin-bottom:4rem;
+
+    ul{
+      li{
+        margin-bottom:0;
+        display: flex;
+        padding:15px 0;
+        border-bottom: solid 1px #b7b7b7;
+
+        a{
+          &:hover{
+            color:$blue;
+          }
+        }
+
+        @media(max-width:979px){
+          flex-wrap: wrap;
+        }
+
+        time,span{
+          display:inline-block;
+          line-height:1.7;
+        }
+
+        time{
+          min-width:120px;
+          @media(max-width:979px){
+            min-width:80px;
+          }
+        }
+        span.meta{
+          min-width:130px;
+
+          &:before{
+            content:"・";
+            display:inline-block;
+            margin-right:3px;
+          }
+        }
+        span.text{
+          @media(max-width:979px){
+            width:100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+//ニュース本体
+.news_detail{
+  margin-bottom:rem(55);
+
+  h3{
+    font-size: 1.3rem;
+    margin-bottom:rem(15);
+  }
+  ul{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-bottom:rem(5);
+
+    li{
+      display: flex;
+      align-items: center;
+      align-content: center;
+    }
+  }
+  time{
+    display: block;
+    text-align: right;
+    margin-bottom:rem(35);
+  }
+
+  .eyecatch{
+    margin-bottom:rem(35);
+
+    img{
+      width:100%;
+    }
+  }
+
+  .content_field{
+    margin-bottom:rem(35);
+
+    p{
+      margin-bottom:rem(15);
+      line-height: 2;
+    }
+  }
+}

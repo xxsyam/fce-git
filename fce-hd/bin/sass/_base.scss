@@ -167,8 +167,8 @@ h2{
         @include z-index(contents);
     }
     &.inview{
-        &:after{    
-            width: 100%;    
+        &:after{
+            width: 100%;
         }
     }
     &.rd:after{
@@ -176,6 +176,9 @@ h2{
     }
     &.bl:after{
         background: $blue;
+    }
+    &.yr:after{
+        background: $yellow;
     }
 }
 
@@ -251,7 +254,7 @@ h2{
     }
     transform-origin: top;
     transition: all $easeOutQuint .5s;
-    will-change: transform, opacity; 
+    will-change: transform, opacity;
   }
   .bg1{
     width: 47%;
@@ -281,7 +284,7 @@ h2{
     top: 53%;
     transition-delay: 1200ms;
   }
-  
+
 }
 .inview.bg-particles object{
   transform: translateY(0);
@@ -328,7 +331,7 @@ h2{
 
 // ホバーエフェクト
 @media(hover:hover){
-  .hover-effect{    
+  .hover-effect{
     .hover-img{
       position: relative;
       overflow: hidden;
@@ -381,7 +384,7 @@ h2{
       z-index: -1;
     }
     &:hover:after{
-      width: 220%;      
+      width: 220%;
     }
   }
 }

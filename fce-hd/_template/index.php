@@ -88,7 +88,12 @@
 
       <h2 class="heading">What’s FCE<small>FCEグループとは</small></h2>
 
-
+      <div class="bg-particles anim">
+        <object class="bg1 particle animateme" type="image/svg+xml" data="/bin/image/bg_1.svg"></object>
+        <object class="bg3 particle animateme" type="image/svg+xml" data="/bin/image/bg_3.svg"></object>
+        <object class="bg2 particle animateme" type="image/svg+xml" data="/bin/image/bg_2.svg"></object>
+        <object class="bg4 particle animateme" type="image/svg+xml" data="/bin/image/bg_4.svg"></object>
+      </div>
 
       <ul class="anim-list">
         <li class="message">
@@ -170,6 +175,13 @@
           <span>さぁ、</span>
           <span>次は何を変えようか？</span>
         </h2>
+
+        <div class="bg-particles anim">
+          <object class="bg1 particle" type="image/svg+xml" data="/bin/image/bg_1.svg"></object>
+          <object class="bg3 particle" type="image/svg+xml" data="/bin/image/bg_3.svg"></object>
+          <object class="bg2 particle" type="image/svg+xml" data="/bin/image/bg_2.svg"></object>
+          <object class="bg4 particle" type="image/svg+xml" data="/bin/image/bg_4.svg"></object>
+        </div>
 
         <div class="button">
           <a href="#">View More</a>
@@ -359,12 +371,12 @@
         </div>
       </div>
       <ul>
-        <li><time>2018/02/16</time><span class="meta">お知らせ</span><span class="text">FCEグループが「働きがいのある会社」女性ランキングで、５位にランクインしました。</span></li>
-        <li><time>2018/02/09 </time><span class="meta">プレスリリース</span><span class="text">FCEグループが「働きがいのある会社」ランキングで、6年連続ベストカンパニーの1社に選ばれました</span></li>
-        <li><time>2018/02/05 </time><span class="meta">プレスリリース</span><span class="text">ダイニングエッジインターナショナルが運営する串カツ田中『川口店』が串カツ田中フォーラムにて優秀店舗に選ばれました。</span></li>
-        <li><time>2017/04/10 </time><span class="meta">お知らせ</span><span class="text">「フードビズ」に掲載された出店力総チェックで「がブリチキン。」は居酒屋バル業態の中では4位にランクインしました</span></li>
-        <li><time>2017/02/10 </time><span class="meta">露出</span><span class="text">「働きがいのある会社ランキング」で、5年連続ベストカンパニーの1社に選ばれました</span></li>
-        <li><time>2016/02/12</time><span class="meta">露出</span><span class="text">「働きがいのある会社」ランキングで、4年連続ベストカンパニーの1社に選ばれました</span></li>
+        <li><time>2018.02.16</time><span class="meta">お知らせ</span><span class="text">FCEグループが「働きがいのある会社」女性ランキングで、５位にランクインしました。</span></li>
+        <li><time>2018.02.09 </time><span class="meta">プレスリリース</span><span class="text">FCEグループが「働きがいのある会社」ランキングで、6年連続ベストカンパニーの1社に選ばれました</span></li>
+        <li><time>2018.02.05 </time><span class="meta">プレスリリース</span><span class="text">ダイニングエッジインターナショナルが運営する串カツ田中『川口店』が串カツ田中フォーラムにて優秀店舗に選ばれました。</span></li>
+        <li><time>2017.04.10 </time><span class="meta">お知らせ</span><span class="text">「フードビズ」に掲載された出店力総チェックで「がブリチキン。」は居酒屋バル業態の中では4位にランクインしました</span></li>
+        <li><time>2017.02.10 </time><span class="meta">露出</span><span class="text">「働きがいのある会社ランキング」で、5年連続ベストカンパニーの1社に選ばれました</span></li>
+        <li><time>2016.02.12</time><span class="meta">露出</span><span class="text">「働きがいのある会社」ランキングで、4年連続ベストカンパニーの1社に選ばれました</span></li>
       </ul>
     </section>
 

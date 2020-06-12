@@ -12,18 +12,11 @@
 
 //メインビジュアル
 .main-visual{
-    padding: rem(136) 0 rem(46);
-    .breadcrumb {
-        margin-top: rem(130);
-        a{
-            display: inline;
-        }
-    }
 }
 
 // Mission
 .mission{
-    margin: 8rem auto 10rem;
+    margin: 0 auto 10rem;
     &-top{
         position: relative;
         @include pc{
@@ -102,7 +95,7 @@
                 margin-top: 4rem;
             }
         }
-        
+
         dl{
             dt{
                 margin-bottom: rem(34);
@@ -118,7 +111,7 @@
                 color: #fff;
                 line-height: 1.6;
             }
-            
+
         }
     }
 }
@@ -146,7 +139,7 @@
         top: 32%;
         right: 0;
         h3{
-            display: inline-block; 
+            display: inline-block;
             text-align: right;
             font-size: rem(24);
             @include sp{
