@@ -146,7 +146,21 @@ h2{
       font-weight: normal;
     }
   }
+  &.sub_heading{
+    display:inline-block;
+    font-size: 2.25rem;
+    margin-bottom:0.5rem;
+    padding-bottom:0.5rem;
+    border-bottom:1px solid #fff;
+
+    small{
+      margin-left:15px;
+      font-size: 0.9375rem;
+      font-weight: normal;
+    }
+  }
 }
+
 
 // スクロールアニメーション
 /*背景*/

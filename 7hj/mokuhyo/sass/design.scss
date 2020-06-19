@@ -97,17 +97,25 @@ section{
 }
 
 h2{
-  margin-bottom:35px;
+  margin-bottom:45px;
 
   span,strong{
     display:block;
     text-align: center;
   }
   span{
-    font-size:16px;
+    font-size:18px;
+
+    @include sp(){
+      font-size:16px;
+    }
   }
   strong{
-    font-size:32px;
+    font-size:35px;
+
+    @include sp(){
+      font-size:19px;
+    }
   }
 }
 
@@ -134,6 +142,14 @@ h2{
       border-radius: 50%;
       background:#fff;
       padding: 25px;
+
+      @include sp(){
+        width:100%;
+        max-height:200px;
+        margin:0 2% 20px;
+        border-radius: 0;
+        padding: 15px;
+      }
 
       dl{
         @include Flex_Center();
@@ -373,14 +389,15 @@ h2{
       position: relative;
       z-index:10;
       background:#fbf9de;
-      margin:0 2% 55px;
-      max-width:510px;
+      margin:0 3% 55px;
+      max-width:490px;
       width:45%;
       padding:150px 5% 45px;
       text-align: center;
 
       @include sp(){
         width:90%;
+        padding:150px 4% 45px;
       }
 
       &:before{
@@ -490,7 +507,7 @@ h2{
 
 
 
-      a{
+      span{
         color:#000;
         text-decoration: none;
         font-size:18px;
@@ -503,13 +520,13 @@ h2{
         }
       }
 
-      &:nth-of-type(1) a:after{
+      &:nth-of-type(1) span:after{
         background:url(../image/icon-manga_01.png) no-repeat center center / contain;
       }
-      &:nth-of-type(2) a:after{
+      &:nth-of-type(2) span:after{
         background:url(../image/icon-manga_02.png) no-repeat center center / contain;
       }
-      &:nth-of-type(3) a:after{
+      &:nth-of-type(3) span:after{
         background:url(../image/icon-manga_03.png) no-repeat center center / contain;
       }
     }
@@ -549,7 +566,7 @@ h2{
       }
     }
     div{
-      width:50%;
+      width:60%;
 
       @include sp-w(){
         width:100%;
@@ -578,6 +595,8 @@ h2{
 
         @include sp-w(){
           width:100%;
+          padding:25px;
+          font-size:16px;
           margin-bottom:35px;
         }
       }
@@ -594,7 +613,24 @@ h2{
     margin:auto;
     padding:35px;
     background:#fff;
-    border:5px solid #ffda00;
+
+    @include sp(){
+      padding:25px;
+    }
+
+
+    &:nth-of-type(1){
+      border:5px solid #ffda00;
+      margin-bottom:35px;
+    }
+    &:nth-of-type(2){
+      border:5px solid #eee;
+
+      p{
+        text-align: center;
+        margin-bottom:35px;
+      }
+    }
 
     a{
       @include Flex_Center();
@@ -617,6 +653,7 @@ h2{
 
 // footer setting
 footer{
+  background:#000;
   div{
     small{
       max-width:$max-width;
@@ -630,8 +667,53 @@ footer{
     }
     &:nth-of-type(2){
       background:#000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+      max-width: $max-width;
+      margin:auto;
+
+      @include sp-w(){
+        flex-direction: column;
+      }
+
+      ul{
+        display: flex;
+        align-items: center;
+        align-content: center;
+
+        @include sp(){
+          margin-top:15px;
+        }
+
+        li{
+          line-height: 1;
+          &:nth-of-type(1){
+            margin-right:10px;
+            border-right:1px solid #fff;
+            padding-right:10px;
+          }
+          a{
+            color:#fff;
+            text-decoration: none;
+          }
+        }
+      }
       small{
         text-align: right;
+        padding:10px 0;
+        margin:0;
+
+        @include sp(){
+          text-align: center;
+          line-height: 1.2;
+
+          span{
+            display:block;
+          }
+        }
+
       }
     }
   }

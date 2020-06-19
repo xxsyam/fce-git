@@ -242,6 +242,20 @@ h2.heading small {
 	font-weight: normal;
 }
 
+h2.sub_heading {
+	display: inline-block;
+	font-size: 2.25rem;
+	margin-bottom: 0.5rem;
+	padding-bottom: 0.5rem;
+	border-bottom: 1px solid #fff;
+}
+
+h2.sub_heading small {
+	margin-left: 15px;
+	font-size: 0.9375rem;
+	font-weight: normal;
+}
+
 /*背景*/
 .bg-animation {
 	color: #fff;
@@ -1142,6 +1156,51 @@ h3 {
 	min-height: 900px;
 	right: -15%;
 	top: -16%;
+}
+
+.spoint_wrap {
+	display: flex;
+	margin: 80px 0;
+}
+
+.spoint_wrap dt {
+	font-size: 2.5rem;
+	line-height: 1.65;
+	white-space: nowrap;
+}
+
+.spoint_wrap dd {
+	padding-left: 100px;
+}
+
+@media only screen and (max-width: 979px) {
+	.spoint_wrap dd {
+		padding-left: 30px;
+	}
+}
+
+.spoint_wrap dd h3, .spoint_wrap dd p {
+	margin-bottom: 35px;
+}
+
+.spoint_wrap.sub_data {
+	margin-left: 10%;
+}
+
+@media only screen and (max-width: 979px) {
+	.spoint_wrap.sub_data {
+		margin-left: 0;
+	}
+}
+
+.spoint_wrap.sub_sub_data {
+	margin-left: 20%;
+}
+
+@media only screen and (max-width: 979px) {
+	.spoint_wrap.sub_sub_data {
+		margin-left: 0;
+	}
 }
 
 .bottom-nav {

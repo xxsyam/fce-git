@@ -29,7 +29,7 @@
 </head>
 
 <body class="lp">
-  <div id="kv-field"><a href="#contact_field" class="btn_parts type_a">お問い合わせ</a></div>
+  <div id="kv-field"><a href="/class/" class="btn_parts type_a">近くの教室を探す</a></div>
 
   <main>
     <section id="about">
@@ -61,8 +61,7 @@
           <div class="pict_wrap"><img src="./image/pict-dragon.png"></div>
           <div class="text_wrap">
             <p>『ドラゴン桜』は、累計発行部数800万部を誇る、三田紀房さん作の漫画です。弁護士・桜木建二が、平均偏差値36の学校の生徒を1年で東大合格に導くサクセスストーリーが描かれています。<br>
-              2003年から2007年まで、講談社の漫画雑誌『モーニング』にて連載され、平成17年度文化庁メディア芸術祭マンガ部門優秀賞受賞。2018年からは『ドラゴン桜2』も連載開始されました。</p>
-              <p>多くの受験テクニックや勉強法を紹介するとともに、その教育法や斬新な「学び方」も話題に。2005年にTBSにてドラマ化し、2020年にはドラマ化続編が公開予定！</p>
+              2003年から2007年まで、講談社の漫画雑誌『モーニング』にて連載され、平成17年度文化庁メディア芸術祭マンガ部門優秀賞受賞。2018年からは『ドラゴン桜2』も連載開始されました。<br>多くの受験テクニックや勉強法を紹介するとともに、その教育法や斬新な「学び方」も話題に。2005年にTBSにてドラマ化し、2020年にはドラマ化続編が公開予定！</p>
           </div>
         </div>
       </div>
@@ -126,9 +125,9 @@
       <div class="pict_wrap"><img src="./image/pict_manga.png"></div>
 
       <ul>
-        <li><a href="#">マンガを読む</a></li>
-        <li><a href="#">シェアして学ぶ</a></li>
-        <li><a href="#">実践して体験する</a></li>
+        <li><span>マンガを読む</span></li>
+        <li><span>シェアして学ぶ</span></li>
+        <li><span>実践して体験する</span></li>
       </ul>
     </section>
 
@@ -146,12 +145,18 @@
         <h2><strong>お問い合わせ</strong><span>近くの教室へまずは問い合わせだ！</span></h2>
         <a href="/class/" class="btn_parts type_a">近くの教室を探す</a>
       </div>
+
+			<div class="contact_wrap">
+        <h2><strong>プログラムの導入をお考えの方へ</strong></h2>
+				<p>「7つの習慣Ｊ<sub>&reg;</sub>」プログラムは、全国の多くの教育機関や学習塾において、<br>子どもたちの総合的な成長を支える特色あるプログラムとしてご活用いただいています。</p>
+        <a href="/introduction/" class="btn_parts type_a">プログラム導入について</a>
+      </div>
     </section>
   </main>
 
   <footer>
     <div><small>Copyright &copy; FCE Education Inc. All Rights Reserved.</small></div>
-    <div><small>&copy;三田紀房/コルク　「7つの習慣<sub>&reg;</sub>」および「7つの習慣J<sub>&reg;</sub>」はフランクリン・コヴィー・ジャパン社の登録商標です。</small></div>
+    <div><ul><li><a href="/privacy-policy/">プライバシーポリシー</a></li><li><a href="/corporate/">会社概要</a></li></ul><small><span>&copy;三田紀房/コルク</span>　<span>「7つの習慣<sub>&reg;</sub>」および「7つの習慣J<sub>&reg;</sub>」はフランクリン・コヴィー・ジャパン社の登録商標です。</span></small></div>
   </footer>
 
 </body>

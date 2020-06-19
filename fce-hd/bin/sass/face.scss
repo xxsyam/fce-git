@@ -11,10 +11,18 @@
 //-----------------------------------------------------------------------------
 
 // メインビジュアル
+.category_list{
+  .main-visual{
+    padding: rem(30) 0 rem(1);
+  }
+}
 .main-visual{
     padding: rem(30) 0 rem(108);
     @include pc{
         padding-top: rem(78);
+    }
+    &.wt *{
+      color:#000;
     }
     .mv-inner{
         position: relative;
@@ -81,17 +89,18 @@
 
 // セクション共通
 .tag{
-    padding: .2em 2em;
-    font-size: rem(13);
+    padding: .2em 1em;
+    font-size: rem(11);
     background: #000;
     color: #fff;
+    white-space: nowrap;
     display: inline-block;
     position: relative;
     @include z-index(contents);
 }
 .date{
     text-align: right;
-    font-size: rem(15);
+    font-size: rem(12);
 }
 
 // Pick up
@@ -154,7 +163,7 @@
     }
     .article-list{
         li{
-            margin-bottom: rem(62);
+            margin-bottom: rem(42);
             a{
                 @include flex($align: flex-start);
             }
@@ -189,7 +198,7 @@
     }
     .ranking{
         max-width: 523px;
-        padding: rem(56) rem(33);
+        padding: rem(56) rem(33) rem(5);
         background: #f8f8f8;
         h3{
             margin-bottom: rem(40);
@@ -302,7 +311,22 @@
   }
 }
 
+.category_list{
+  .detail_face-nav{
+    position: relative;
+
+    a{
+      color:#fff !important;
+    }
+  }
+}
+
 .face_detail{
+  &.category_list{
+    section{
+      padding:1rem 0 3rem !important;
+    }
+  }
   section{
     padding:8rem 0 3rem;
 

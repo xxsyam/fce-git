@@ -321,10 +321,10 @@
     <aside>
       <nav class="bottom-nav inner">
         <ul class="flex-center flex-wrap">
-          <li class="hover-effect"><a class="hover-img" href="">Starting Poing<small>チャレンジはここからはじまった</small></a></li>
-          <li class="hover-effect"><a class="hover-img" href="">History<small>チャレンジの歩み</small></a></li>
-          <li class="hover-effect"><a class="hover-img" href="">Team! FCE<small>FCEチーム</small></a></li>
-          <li class="hover-effect"><a class="hover-img" href="">About FCE<small>FCEチーム</small></a></li>
+          <li class="hover-effect"><a class="hover-img" href="./starting_point.php">Starting Poing<small>チャレンジはここからはじまった</small></a></li>
+          <li class="hover-effect"><a class="hover-img" href="./history.php">History<small>チャレンジの歩み</small></a></li>
+          <li class="hover-effect"><a class="hover-img" href="./team.php">Team! FCE<small>FCEチーム</small></a></li>
+          <li class="hover-effect"><a class="hover-img" href="./about_fce.php">About FCE<small>FCEチーム</small></a></li>
         </ul>
       </nav>
     </aside>

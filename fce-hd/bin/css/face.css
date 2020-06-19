@@ -844,6 +844,10 @@ h3 {
 	margin: auto;
 }
 
+.category_list .main-visual {
+	padding: 1.875rem 0 0.0625rem;
+}
+
 .main-visual {
 	padding: 1.875rem 0 6.75rem;
 }
@@ -852,6 +856,10 @@ h3 {
 	.main-visual {
 		padding-top: 4.875rem;
 	}
+}
+
+.main-visual.wt * {
+	color: #000;
 }
 
 .main-visual .mv-inner {
@@ -935,10 +943,11 @@ h3 {
 }
 
 .tag {
-	padding: .2em 2em;
-	font-size: 0.8125rem;
+	padding: .2em 1em;
+	font-size: 0.6875rem;
 	background: #000;
 	color: #fff;
+	white-space: nowrap;
 	display: inline-block;
 	position: relative;
 	z-index: 20;
@@ -946,7 +955,7 @@ h3 {
 
 .date {
 	text-align: right;
-	font-size: 0.9375rem;
+	font-size: 0.75rem;
 }
 
 .pickup, .onestory {
@@ -1031,7 +1040,7 @@ h3 {
 }
 
 .articles .article-list li {
-	margin-bottom: 3.875rem;
+	margin-bottom: 2.625rem;
 }
 
 .articles .article-list li a {
@@ -1079,7 +1088,7 @@ h3 {
 
 .articles .ranking {
 	max-width: 523px;
-	padding: 3.5rem 2.0625rem;
+	padding: 3.5rem 2.0625rem 0.3125rem;
 	background: #f8f8f8;
 }
 
@@ -1282,6 +1291,18 @@ h3 {
 	align-items: center;
 	align-content: center;
 	color: #fff;
+}
+
+.category_list .detail_face-nav {
+	position: relative;
+}
+
+.category_list .detail_face-nav a {
+	color: #fff !important;
+}
+
+.face_detail.category_list section {
+	padding: 1rem 0 3rem !important;
 }
 
 .face_detail section {
