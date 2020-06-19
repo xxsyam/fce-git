@@ -38,8 +38,8 @@
   <!-- 背景LINE -->
   <div class="bg-stripe"></div>
 
-  <nav class="detail_face-nav">
-    <ul>
+  <nav class="detail_face-nav anim">
+    <ul class="inview">
       <li><a href="#">ALL</a></li>
       <li><a href="#">仲間たち</a></li>
       <li><a href="#">出来事</a></li>
@@ -79,6 +79,9 @@
             <div class="box_glay"><p>テキストの背景をグレーにテキストの背景をグレーにテキストの背景をグレーにテキストの背景をグレーに</p></div>
 
             <h4 class="midashi_type-a">見出し２</h4>
+            <p class="strong_line">太字のテキスト太字のテキスト</p>
+            <p>普通のテキスト普通のテキスト<strong>「途中の文字を太字に」</strong>普通のテキスト普通のテキスト普通のテキスト普通のテキスト普通のテキスト普通のテキスト普通のテキスト普通のテキスト</p>
+
             <h4 class="midashi_type-b">見出し３</h4>
 
             <dl class="talk_line">
@@ -89,6 +92,43 @@
               <dt>発言者名</dt>
               <dd>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
             </dl>
+
+            <p>途中に画像を挿入</p>
+            <p><img src="/bin/image/img_1.png"></p>
+
+            <div class="box_glay-border"><p>テキストを罫線で囲って背景はグレーテキストを罫線で囲って背景はグレーテキストを罫線で囲って背景はグレーテキストを罫線で囲って背景はグレー</p></div>
+
+            <ul>
+              <li>リスト1</li>
+              <li>リスト1</li>
+              <li>リスト1</li>
+              <li>リスト1</li>
+            </ul>
+
+            <ol>
+              <li>リスト2</li>
+              <li>リスト2</li>
+              <li>リスト2</li>
+              <li>リスト2</li>
+            </ol>
+
+            <div class="box_glay-border">
+              <ul>
+                <li>罫線つきリスト1</li>
+                <li>罫線つきリスト1</li>
+                <li>罫線つきリスト1</li>
+                <li>罫線つきリスト1</li>
+              </ul>
+            </div>
+
+            <div class="box_glay-border">
+              <ol>
+                <li>罫線つきリスト2</li>
+                <li>罫線つきリスト2</li>
+                <li>罫線つきリスト2</li>
+                <li>罫線つきリスト2</li>
+              </ol>
+            </div>
 
 
           </div>

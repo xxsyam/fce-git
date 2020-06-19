@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+p {
+	margin-bottom: 2.1875rem;
+}
+
+p.strong_line {
+	font-weight: bold;
+}
+
+strong {
+	font-weight: bold;
+}
+
+.box_glay {
+	background: #f5f5f5;
+	padding: 15px;
+	margin-bottom: 2.1875rem;
+}
+
+.box_glay p:last-of-type {
+	margin-bottom: 0;
+}
+
+.box_glay-border {
+	border-radius: 6px;
+	border: 1px solid #ddd;
+	background: #fafafa;
+	padding: 15px;
+	margin-bottom: 2.1875rem;
+}
+
+.box_glay-border p:last-of-type,
+.box_glay-border ul:last-of-type, .box_glay-border ol:last-of-type {
+	margin-bottom: 0;
+}
+
+h4 {
+	font-size: 22px;
+	margin-bottom: 2.1875rem;
+}
+
+h4.midashi_type-a {
+	border-bottom: 3px solid #000;
+}
+
+h4.midashi_type-b {
+	background: #f5f5f5;
+	padding: 15px;
+}
+
+.talk_line {
+	display: flex;
+	margin-bottom: 2.1875rem;
+}
+
+.talk_line dt, .talk_line dd {
+	font-size: 14px;
+	line-height: 2;
+}
+
+.talk_line dt {
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+.talk_line dt:after {
+	content: "：";
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+ul, ol {
+	margin-bottom: 2.1875rem;
+}
+
+ul li:before {
+	content: "・";
+	display: inline-block;
+	margin-right: 5px;
+}
+
+ol {
+	padding-left: 1.2em;
+}
+
+ol li {
+	counter-increment: cnt;
+	text-indent: -1.2em;
+}
+
+ol li::before {
+	content: counter(cnt) ".";
+	margin-right: 5px;
+}

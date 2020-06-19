@@ -587,7 +587,8 @@ h2.heading small {
 
 @media only screen and (min-width: 980px) {
 	.header {
-		padding: 20px 70px 20px 20px;
+		/*padding: 20px 70px 20px 20px;*/
+		padding: 10px 60px 10px 20px;
 	}
 }
 
@@ -1256,8 +1257,10 @@ h3 {
 	padding: 10px;
 	position: fixed;
 	width: 100vw;
-	top: 85px;
+	top: 65px;
 	z-index: 99;
+	animation: fadeInUp cubic-bezier(0.22, 1, 0.36, 1) 2.5s 3.2s both;
+	animation-delay: 2900ms;
 }
 
 .detail_face-nav ul {
@@ -1375,6 +1378,19 @@ h3 {
 	margin-bottom: 0;
 }
 
+.face_detail section .article-left .content_field .box_glay-border {
+	border-radius: 6px;
+	border: 1px solid #ddd;
+	background: #fafafa;
+	padding: 15px;
+	margin-bottom: 2.1875rem;
+}
+
+.face_detail section .article-left .content_field .box_glay-border p:last-of-type,
+.face_detail section .article-left .content_field .box_glay-border ul:last-of-type, .face_detail section .article-left .content_field .box_glay-border ol:last-of-type {
+	margin-bottom: 0;
+}
+
 .face_detail section .article-left .content_field h4 {
 	font-size: 22px;
 	margin-bottom: 2.1875rem;
@@ -1408,6 +1424,30 @@ h3 {
 	content: "：";
 	display: inline-block;
 	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.face_detail section .article-left .content_field ul, .face_detail section .article-left .content_field ol {
+	margin-bottom: 2.1875rem;
+}
+
+.face_detail section .article-left .content_field ul li:before {
+	content: "・";
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.face_detail section .article-left .content_field ol {
+	padding-left: 1.2em;
+}
+
+.face_detail section .article-left .content_field ol li {
+	counter-increment: cnt;
+	text-indent: -1.2em;
+}
+
+.face_detail section .article-left .content_field ol li::before {
+	content: counter(cnt) ".";
 	margin-right: 5px;
 }
 

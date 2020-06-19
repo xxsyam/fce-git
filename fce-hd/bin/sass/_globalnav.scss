@@ -3,7 +3,8 @@
     width: 100%;
     padding: 2%;
     @include pc{
-        padding: 20px 70px 20px 20px;
+        /*padding: 20px 70px 20px 20px;*/
+        padding: 10px 60px 10px 20px;
     }
     position: fixed;
     @include z-index(header);
@@ -30,7 +31,7 @@
         position: fixed;
         z-index: 2;
         left: 0;
-        top: 0; 
+        top: 0;
         border: 7px solid $red;
         background: #fff;
         color: $red;
@@ -49,12 +50,12 @@
                 @include pc{
                     margin-bottom: 4%;
                 }
-                animation: fadeInUp $easeOutQuint 1s both; 
+                animation: fadeInUp $easeOutQuint 1s both;
                 @include sp{
                     dl{
                         margin-bottom: 5%;
                     }
-                }   
+                }
             }
             @for $i from 1 through 3 {
                 .globalmenu-block:nth-child(#{$i}){
@@ -82,7 +83,7 @@
                         }
                     }
                 }
-            } 
+            }
         }
         &-bottom{
             width: 100%;
@@ -120,7 +121,7 @@
                 transform-origin: center center;
             }
         }
-         
+
         &.open svg{
             fill: $red;
             .middle{

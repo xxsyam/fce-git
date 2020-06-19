@@ -278,6 +278,10 @@ h2.heading small {
 	background: #35ABEB;
 }
 
+.bg-animation.yr:after {
+	background: #FFF100;
+}
+
 .anim h2 {
 	transform: translateY(300px);
 	opacity: 0;
@@ -583,7 +587,8 @@ h2.heading small {
 
 @media only screen and (min-width: 980px) {
 	.header {
-		padding: 20px 70px 20px 20px;
+		/*padding: 20px 70px 20px 20px;*/
+		padding: 10px 60px 10px 20px;
 	}
 }
 
@@ -788,6 +793,55 @@ h2.heading small {
 
 h3 {
 	font-size: 2.5rem;
+}
+
+.pagination {
+	margin-bottom: 2.8125rem;
+}
+
+.pagination ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+}
+
+.pagination ul li {
+	margin: 0 3px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+}
+
+.pagination ul li a:nth-of-type(2) {
+	margin-left: 3px;
+}
+
+.pagination ul li a, .pagination ul li span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	text-decoration: none;
+	color: #000;
+	border: 1px solid #000;
+}
+
+.pagination ul li span {
+	color: #fff;
+	background: #000;
+}
+
+.pagination.nextprev_type ul {
+	justify-content: space-between;
+	max-width: 200px;
+	margin: auto;
 }
 
 .category_nav {

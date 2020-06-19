@@ -275,8 +275,10 @@
   padding:10px;
   position: fixed;
   width:100vw;
-  top:85px;
+  top:65px;
   z-index:99;
+  animation: fadeInUp $easeOutQuint 2.5s 3.2s both;
+  animation-delay: 300 + 200 * 13 + ms;
 
   ul{
     display: flex;
@@ -392,6 +394,18 @@
             margin-bottom:0;
           }
         }
+        .box_glay-border{
+          border-radius:6px;
+          border:1px solid #ddd;
+          background:#fafafa;
+          padding:15px;
+          margin-bottom:rem(35);
+
+          p:last-of-type,
+          ul:last-of-type,ol:last-of-type{
+            margin-bottom:0;
+          }
+        }
 
         h4{
           font-size:22px;
@@ -427,6 +441,30 @@
             }
           }
           dd{
+          }
+        }
+
+        ul,ol{
+          margin-bottom:rem(35);
+        }
+
+        ul{
+          li:before{
+            content:"・";
+            display:inline-block;
+            margin-right:5px;
+          }
+        }
+        ol{
+          padding-left: 1.2em;
+
+          li {
+            counter-increment: cnt;
+            text-indent: -1.2em;
+            &::before {
+              content: counter(cnt)'.';
+              margin-right: 5px;
+            }
           }
         }
       }
