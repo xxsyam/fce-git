@@ -64,8 +64,7 @@
     <h2><span>不朽の人生バイブル×東大合格勉強メソッド</span><strong>「なりたい自分になる」</strong><span>目標達成の原理原則を体験するプログラム</span></h2>
     <div class="method_wrapper flex_wrapper center two">
       <div class="method_wrap">
-        <h3><img src="./image/logo-7h.svg"><svg xmlns="https://www.7hj.jp/mokuhyo/image/logo-7h.svg" width="0">
-</svg><span>とは</span></h3>
+        <h3><object type="image/svg+xml" data="./image/logo-7h.svg"></object><span>とは</span></h3>
         <div class="pict_wrap"><img src="./image/pict-7hj.png"></div>
         <div class="text_wrap">
           <p>『7つの習慣』は全世界で4000万部、日本でも240万部売れた「不朽のバイブル」とも言われる世界的ベストセラーです。アメリカのスティーブン・R・コヴィー博士が、世界中の著名人や歴史的な偉人の生き方や考え方、行動などを検証し、彼らに共通する習慣を7つにまとめたものです。<br>
@@ -73,7 +72,7 @@
         </div>
       </div>
       <div class="method_wrap">
-        <h3><img src="./image/logo-dragon.svg"><svg xmlns="https://www.7hj.jp/mokuhyo/image/logo-dragon.svg" width="0"><span>とは</span></h3>
+        <h3><object type="image/svg+xml" data="./image/logo-dragon.svg"></object><span>とは</span></h3>
         <div class="pict_wrap"><img src="./image/pict-dragon.png"></div>
         <div class="text_wrap">
           <p>『ドラゴン桜』は、累計発行部数800万部を誇る三田紀房さん作の漫画です。弁護士・桜木建二が、平均偏差値36の学校の生徒を1年で東大合格に導くサクセスストーリーが描かれ、平成17年度文化庁メディア芸術祭マンガ部門優秀賞受賞。</p>
@@ -83,7 +82,7 @@
     </div>
   </section>
   <section id="about_7hj">
-    <h2><img src="./image/logo-7hj.svg"><span>とは</span></h2>
+    <h2><object type="image/svg+xml" data="./image/logo-7hj.svg"></object><span>とは</span></h2>
     <div class="text_wrap">
       <p>「すべての子どもたちをアクティブラーナー（能動的学修者）に」<br class="pc_display">
         主体性を引き出し、課題発見能力、課題解決能力を育む<br class="pc_display">
@@ -169,12 +168,12 @@
       <div class="pict_wrap"><img src="//www.7hj.jp/wp-content/themes/7hj/images/search_school.png" /></div>
     </div>
   </section>
-  <section id="contact"> 
+  <section id="contact">
     <!-- <div class="contact_wrap">
         <h2><strong>お問い合わせ</strong><span>近くの教室へまずは問い合わせだ！</span></h2>
         <a href="/class/" class="btn_parts type_a">近くの教室を探す</a>
       </div> -->
-    
+
     <div class="contact_wrap">
       <h2>プログラムの導入をお考えの方へ</h2>
       <p>「7つの習慣Ｊ<sub>&reg;</sub>」プログラムは、全国の多くの教育機関や学習塾において、<br>
