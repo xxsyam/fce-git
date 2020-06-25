@@ -71,12 +71,12 @@
             その内容は企業研修としても体系化され、今や米国フォーチュン100社の90%、グローバル・フォーチュン500社の75%に導入され、世界147カ国にて展開されています。また学校教育においても、アメリカなど5カ国で4000を超える学校にて導入されています。</p>
         </div>
       </div>
-      <div class="method_wrap">
+      <div class="method_wrap dragon">
         <h3><object type="image/svg+xml" data="./image/logo-dragon.svg"></object><span>とは</span></h3>
         <div class="pict_wrap"><img src="./image/pict-dragon.png"></div>
         <div class="text_wrap">
           <p>『ドラゴン桜』は、累計発行部数800万部を誇る三田紀房さん作の漫画です。弁護士・桜木建二が、平均偏差値36の学校の生徒を1年で東大合格に導くサクセスストーリーが描かれ、平成17年度文化庁メディア芸術祭マンガ部門優秀賞受賞。</p>
-          <p>2018年からは『ドラゴン桜2』が連載開始し、今回は、偏差値50の生徒が東大を目指している。受験テクニック・勉強法だけではなく、その教育法や、デジタル時代だからこその斬新かつ、本質的な「学び方」も話題に。2005年にTBSにてドラマ化し、2021年にも続編が公開予定！</p>
+          <p>2018年からは『ドラゴン桜2』が連載開始し、今回は、偏差値50の生徒が東大を目指しています。受験テクニック・勉強法だけではなく、その教育法や、デジタル時代だからこその斬新かつ、本質的な「学び方」も話題に。2005年にTBSにてドラマ化し、2021年にも続編が公開予定！</p>
         </div>
       </div>
     </div>
@@ -135,7 +135,7 @@
   <section id="manga_field">
     <h2><strong>マンガで学ぶ！実践して、体験する！</strong><span>桜木先生からのメッセージを読み解こう。</span></h2>
     <p>授業でマンガを読み、気づきを振り返る。<br>
-      先生や塾の友達とシェアしながら進めます。<br>
+      先生や塾の友達とシェアしながら進めます。<br>
       そして具体的に「なりたい自分になる」行動計画をたて、実行しよう。</p>
     <div class="pict_wrap"><img src="./image/pict_manga.png"></div>
     <ul>
@@ -149,7 +149,7 @@
       <div>
         <h2><strong>「これからの学び方」を体験しよう！</strong><span>桜木先生、そして新たな仲間と学ぶ4日間</span></h2>
         <div class="text_wrap">君の「目標達成」に向けて、<br class="pc_display">
-          俺も伴走するぞ！<br>
+          俺も伴走するぞ！<br>
           新しい自分にチャレンジする4日間。<br>
           君の参加をまっている！</div>
       </div>
@@ -162,7 +162,7 @@
         <h3>お近くの教室を探す</h3>
         <p>「7つの習慣Ｊ<sub>&reg;</sub>」を体験してみませんか？<br />
           まずは資料請求・無料体験にお問い合わせください。</p>
-		  <p><small>未実施校もあるので<br class="is-sp">詳細はお近くの校舎にお問合せください。</small></p>
+		  <p><small>一部未実施校もございます。<br class="is-sp">詳細はお近くの校舎にお問合せください。</small></p>
         <div class="btns center_btn"><a href="/class/" class="btn_parts type_a">近くの教室を探す</a></div>
       </div>
       <div class="pict_wrap"><img src="//www.7hj.jp/wp-content/themes/7hj/images/search_school.png" /></div>
