@@ -1203,6 +1203,31 @@ h3 {
 	}
 }
 
+.spoint_wrap .pict_wraps {
+	display: flex;
+	justify-content: space-between;
+}
+
+.spoint_wrap .pict_wraps.one img {
+	width: 40%;
+}
+
+.spoint_wrap .pict_wraps.two img {
+	width: 48%;
+}
+
+.spoint_wrap .pict_wraps.three img {
+	width: 48%;
+}
+
+.spoint_wrap .pict_wraps img {
+	margin: 0 2%;
+}
+
+.spoint_wrap .pict_wraps.right {
+	justify-content: flex-end;
+}
+
 .bottom-nav {
 	margin-bottom: 10rem;
 	background: rgba(0, 0, 0, 0.7);

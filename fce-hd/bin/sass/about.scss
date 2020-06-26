@@ -294,6 +294,26 @@
       margin-left:0;
     }
   }
+
+  .pict_wraps{
+    display:flex;
+    justify-content: space-between;
+
+    &.one{
+      img{ width:40%; }
+    }
+    &.two{
+      img{ width:48%; }
+    }
+    &.three{
+      img{ width:48%; }
+    }
+    img{ margin:0 2%; }
+
+    &.right{
+      justify-content: flex-end;
+    }
+  }
 }
 
 
