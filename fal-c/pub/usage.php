@@ -5,11 +5,12 @@
 <div class="mb40">
 <h2 class="section_title">1. 今週のオススメ</h2>
 
-<p class="ac">【新作!!】（髙橋知典弁護士）コンプライアンス講座　学校内ハラスメント２</p>
+<p class="ac">【新作!!】（髙橋知典弁護士）コンプライアンス講座　学校内ハラスメント３</p>
 
-<div id="KV_MOVIE"><a href="/set/3910/con/3911?2005new_TOPPanel" onclick="ga('send', 'event', 'click', 'link', '無料今週のオススメ画像', {'nonInteraction': 1});"><img src="/uploads/files/images/panels/1_hara2.jpg" /></a> <!--p>「新しいのに懐かしい」。幼稚園に実装された学びの空間（状況）デザインを、園長と建築家が徹底解説！さらに、育児・子育て体験サービス「家族留学」を提供する若手起業家とともに、未来の幼児教育を語ります！</p-->
+<div id="KV_MOVIE"><a href="/set/3974/con/3975?2006_Posusume" onclick="ga('send', 'event', 'click', 'link', '無料今週のオススメ画像', {'nonInteraction': 1});"><img src="/uploads/files/images/panels/2_hara3.jpg" /></a>
+<!--p>「新しいのに懐かしい」。幼稚園に実装された学びの空間（状況）デザインを、園長と建築家が徹底解説！さらに、育児・子育て体験サービス「家族留学」を提供する若手起業家とともに、未来の幼児教育を語ります！</p-->
 
-<div class="play_btn_wrapper"><a href="/set/3910/con/3911?2005new_TOPPanel" onclick="ga('send', 'event', 'click', 'link', '無料今週のオススメボタン', {'nonInteraction': 1});">すぐに視聴する</a></div>
+<div class="play_btn_wrapper"><a href="/set/3974/con/3975?2006_Posusume" onclick="ga('send', 'event', 'click', 'link', '無料今週のオススメボタン', {'nonInteraction': 1});">すぐに視聴する</a></div>
 </div>
 </div>
 </div>
@@ -18,13 +19,14 @@
 <div>
 <h2 class="section_title">新作&amp;ピックアップ動画３選！</h2>
 
+
 <div class="movie_wrapper">
 <div class="movie_wrap">
-<div class="movie_box"><a href="/set/3915/con/3916?2005new_TOPPanel"><img src="/uploads/files/images/panels/2_coach_sm.jpg" /><span>【新作!!】（白崎あゆみ氏・森真貴子氏）コーチング基礎講座２［04～11］</span></a></div>
 
-<div class="movie_box"><a href="/set/3923/con/3924?2005new_TOPPanel"><img src="/uploads/files/images/panels/5_tsm_s.jpg" /><span>【新作!!】講義とグループワークのバランスがポイント！出題者の意図を読み解く数学AL</span></a></div>
+<div class="movie_box"><a href="/set/3971/con/3972?2006_Posusume"><img src="/uploads/files/images/panels/5_shizusei.jpg" /><span>【新作!!】Zoomとロイロノートを用いたオンライン授業実践例</span></a></div>
+<div class="movie_box"><a href="/set/3990/con/3991?2006_Posusume"><img src="/uploads/files/images/panels/6_shisabb.jpg" /><span>【新作!!】【板書編】今すぐ実践！通常の授業スタイルを活かしたオンラインでの学び</span></a></div>
+<div class="movie_box"><a href="/set/3992/con/3993?2006_Posusume"><img src="/uploads/files/images/panels/7_shisaipad.jpg" /><span>【新作!!】【iPad編】今すぐ実践！通常の授業スタイルを活かしたオンラインでの学び</span></a></div>
 
-<div class="movie_box"><a href="/set/3931/con/3932?2005new_TOPPanel"><img src="/uploads/files/images/panels/6_khu.jpg" /><span>【新作!!】外国人観光客へのボランティアガイドで学ぶ コミュニケーションスキル</span></a></div>
 </div>
 </div>
 </div>
