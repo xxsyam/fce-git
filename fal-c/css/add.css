@@ -1,0 +1,356 @@
+@charset "UTF-8";
+.base_section {
+	padding: 80px 5%;
+}
+
+@media (max-width: 640px) {
+	.base_section {
+		padding: 40px 5%;
+	}
+}
+
+.base_section * {
+	line-height: 1.8;
+}
+
+.base_section .base_wrapper {
+	max-width: 1100px;
+	margin: auto;
+}
+
+.base_section .base_wrapper .inner {
+	max-width: 1000px;
+	margin: auto;
+}
+
+.base_section .base_wrapper h3 {
+	text-align: center;
+	margin-bottom: 35px;
+	color: #0365bf;
+}
+
+.base_section .base_wrapper h3 span, .base_section .base_wrapper h3 strong {
+	display: block;
+}
+
+.base_section .base_wrapper h3 span {
+	font-size: 20px;
+}
+
+.base_section .base_wrapper h3 strong {
+	font-size: 32px;
+}
+
+.pict_list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 100%;
+}
+
+@media (max-width: 640px) {
+	.pict_list {
+		flex-direction: column;
+	}
+}
+
+.pict_list li {
+	margin: 0 2%;
+}
+
+.pict_list li span {
+	display: block;
+	background-size: cover;
+}
+
+.pict_list li span:nth-of-type(1) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	min-width: 300px;
+	min-height: 300px;
+	background: #ccc;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+.pict_list li span:nth-of-type(1) img {
+	margin: auto;
+	max-width: 100%;
+}
+
+.pict_list li span:nth-of-type(2) {
+	margin-top: 10px;
+	font-weight: 600;
+}
+
+@media (max-width: 640px) {
+	.pict_list li:not(:last-of-type) {
+		margin-bottom: 35px;
+	}
+}
+
+.line_list {
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
+	padding: 35px;
+}
+
+.line_list li {
+	line-height: 2;
+}
+
+.seminors_wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+@media (max-width: 640px) {
+	.seminors_wrapper {
+		flex-direction: column;
+	}
+}
+
+.seminors_wrapper .seminor_wrap {
+	width: 32%;
+}
+
+@media (max-width: 640px) {
+	.seminors_wrapper .seminor_wrap {
+		width: 100%;
+	}
+}
+
+.seminors_wrapper .seminor_wrap .text_wrap {
+	margin: 15px 0 0;
+	text-align: left;
+}
+
+@media (max-width: 640px) {
+	.seminors_wrapper .seminor_wrap .text_wrap {
+		margin-bottom: 35px;
+	}
+}
+
+.seminors_wrapper .seminor_wrap .text_wrap h4 {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.seminors_wrapper .seminor_wrap .text_wrap dl {
+	display: flex;
+}
+
+.seminors_wrapper .seminor_wrap .text_wrap dl dt {
+	white-space: nowrap;
+}
+
+#CONTENTS_TITLE {
+	padding: 45px 0;
+	min-height: 35vh;
+	background: #fff url(/uploads/files/images/onlinesalon/mv_bg.jpg) center center/cover;
+}
+
+#CONTENTS_TITLE .base_wrapper .inner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+@media (max-width: 640px) {
+	#CONTENTS_TITLE .base_wrapper .inner img {
+		width: 100%;
+	}
+}
+
+#CONTENTS_TITLE .base_wrapper .pict_list li:nth-of-type(1) span:nth-of-type(1) {
+	background: url(/uploads/files/images/onlinesalon/pict_01.jpg) no-repeat 90% top;
+}
+
+#CONTENTS_TITLE .base_wrapper .pict_list li:nth-of-type(2) span:nth-of-type(1) {
+	background: url(/uploads/files/images/onlinesalon/pict_02.jpg) no-repeat 40% top;
+}
+
+#CONTENTS_TITLE .base_wrapper .pict_list li:nth-of-type(3) span:nth-of-type(1) {
+	background: url(/uploads/files/images/onlinesalon/pict_03.jpg) no-repeat 100% top;
+}
+
+#CONTENTS_TITLE .base_wrapper h2 span, #CONTENTS_TITLE .base_wrapper h2 strong {
+	display: block;
+}
+
+#CONTENTS_TITLE .base_wrapper h2 span {
+	font-size: 16px;
+	font-weight: 600;
+	padding-bottom: 15px;
+}
+
+#CONTENTS_TITLE .base_wrapper h2 strong {
+	margin-bottom: 15px;
+}
+
+#CONTENTS_TITLE .base_wrapper h2 strong img {
+	max-width: 560px;
+}
+
+#CONTENTS_TITLE .base_wrapper h3 {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 55px;
+}
+
+#CONTENTS_TITLE .base_wrapper p {
+	margin-bottom: 45px;
+}
+
+#CATCH_FIELD .inner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+#CATCH_FIELD .inner > p {
+	display: inline-block;
+	text-align: left;
+	margin-bottom: 45px;
+}
+
+#CATCH_FIELD .inner .detail_wrap {
+	border: 1px solid #0365bf;
+	padding: 35px;
+	text-align: left;
+}
+
+#TOKUTEN_FIELD {
+	background: #fff url(/uploads/files/images/onlinesalon/tokuten_bg.jpg) center center/cover;
+}
+
+#TOKUTEN_FIELD .inner .pict_list:nth-of-type(1) li span:nth-of-type(1) {
+	background-color: #0365bf;
+}
+
+#TOKUTEN_FIELD .inner .pict_list:nth-of-type(2) {
+	margin-bottom: 45px;
+}
+
+#TOKUTEN_FIELD .inner .pict_list:nth-of-type(2) li span:nth-of-type(1) {
+	background-color: #fff;
+}
+
+#TOKUTEN_FIELD .inner h4 {
+	text-align: center;
+	margin: 35px;
+	font-size: 20px;
+}
+
+#NEXT_SEMINORS .inner {
+	margin-top: 45px;
+	border: 1px solid #0365bf;
+	padding: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+#NEXT_SEMINORS .inner .btn_add {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	margin-top: 45px;
+}
+
+#NEXT_SEMINORS .inner .btn_add a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	padding: 10px 40px;
+	color: #0365bf;
+	font-size: 20px;
+	font-weight: 600;
+	background: #fff45c;
+	border-radius: 100px;
+}
+
+#NEXT_SEMINORS .inner .btn_add a:hover {
+	opacity: 0.75;
+}
+
+#SALONS_PARTICIPATION {
+	background: #fff url(/uploads/files/images/onlinesalon/mv_bg.jpg) center center/cover;
+}
+
+#SALONS_PARTICIPATION h4, #SALONS_PARTICIPATION p {
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+#SALONS_PARTICIPATION h4 {
+	color: #ff0909;
+	font-size: 20px;
+}
+
+#SALONS_PARTICIPATION dl, #ENROLLMENT_ATTENTION dl {
+	margin-bottom: 45px;
+}
+
+#SALONS_PARTICIPATION dl dt, #ENROLLMENT_ATTENTION dl dt {
+	display: inline-block;
+	color: #0365bf;
+	margin-bottom: 15px;
+	font-size: 20px;
+	font-weight: 600;
+	border-bottom: 1px solid #0365bf;
+}
+
+#SALONS_PARTICIPATION dl dd ul li:before, #ENROLLMENT_ATTENTION dl dd ul li:before {
+	content: "・";
+	display: inline-block;
+	margin-right: 5px;
+}
+
+#SALONS_PARTICIPATION dl dd p, #ENROLLMENT_ATTENTION dl dd p {
+	text-align: left;
+}
+
+#SALONS_PARTICIPATION dl dd p a, #ENROLLMENT_ATTENTION dl dd p a {
+	color: #0365bf;
+}
+
+/*# sourceMappingURL=add.css.map */

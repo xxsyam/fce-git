@@ -321,7 +321,9 @@ a.showf span.jp{ display:none; }
     width: 100%;
     height: 100%;
     max-height: 800px;
+    max-height: 80%;
     min-height: 700px;
+    min-height: 85vh;
     left: 0;
     text-align: center;
     -webkit-transition: .5s ease-in-out;
@@ -390,7 +392,7 @@ a.showf span.jp{ display:none; }
     flex-wrap: wrap;
 }
 .open #global-nav-none .bana-wrap div {
-    width: 45%;
+    width: 45%; margin:auto;
 }
 .open #global-nav-none .bana-wrap div a {
     font-size: 20px;
@@ -824,13 +826,13 @@ footer {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
-a#group-fce,a#p-policy {
+a#group-fce,a#p-policy,a#p-contact {
     line-height: 70px;
     color: #fff;
     margin-left: 30px;
     font-size: 0.9em;
 }
-a#group-fce i,a#p-policy i {
+a#group-fce i,a#p-policy i ,a#p-contact i {
     margin: -3px 5px 0 0;
 }
 p#copyright {
@@ -876,7 +878,7 @@ p#copyright {
     position: static;
     text-align: center;
 }
-a#group-fce,a#p-policy {
+a#group-fce,a#p-policy,a#p-contact {
     line-height: 30px;
     margin-left: 10px;
 }
@@ -4061,9 +4063,9 @@ nav.cls ul li a {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
+    -webkit-justify-content: center;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: center;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -4278,6 +4280,6 @@ form .form .formset dd.radiolist label{
 }
 
 
-a#p-policy{
+a#p-contact{
   margin-right:auto;
 }
