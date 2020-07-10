@@ -1,0 +1,25 @@
+
+// Header setting
+header{
+  border-top:3px solid $red-e;
+
+  .base_wrapper{
+    @include Max-Wrap();
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    #hd-logo{
+      padding:15px 0;
+
+      a{
+        cursor: pointer;
+      }
+    }
+
+    @include sp-w(){
+      padding:0 3%;
+    }
+
+  }
+}

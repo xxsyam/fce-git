@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+$image_path:/bin/image;
+$media_path:/bin/image;
+
+$base_bg: #fff;
+
+$bk-a:#333;
+$bk-b:#555;
+$bk-c:#ccc;
+$bk-d:#1a1a1a;
+$bk-e:#595757;
+$bk-f:#bdbdbd;
+$bk-g:#c6c6c6;
+$bk-h:#ebebeb;
+$bk-i:#dcdcdc;
+$bk-j:#f8f8f8;
+$bk-k:#f2f2f2;
+$bk-l:#808080;
+
+$red-a:#df1614;
+$red-b:#ff0000;
+$red-c:#cc0000;
+$red-d:#ffe3e3;
+$red-e:#ef001f;
+
+
+$blue-a:#0070cf;
+$blue-b:#064777;
+$blue-c:#23cced;
+$blue-d:#005297;
+$blue-e:#1ce8e1;
+$blue-f:#1eb5bf;
+$blue-g:#23b8c5;
+
+$color-a:#bc995d;
+$color-b:#dacab4;
+$color-c:#d0b78c;
+$color-d:#8b6118;
+
+
+$color-y:#000;
+$color-z:#fff;
+
+$base-font: Roboto, 游ゴシック体, YuGothic, "Yu Gothic M", "游ゴシック Medium", "Yu Gothic Medium", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN W3", HiraKakuProN-W3, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+
+$mincho-font:'Noto Serif JP', serif;
+
+$text-shadow:0 0 5px rgba($bk-a , 0.5);
+
+@mixin fontsize($size: 24, $base: 16) {
+  @if $size == 10  {
+    font-size: $size + px;
+    font-size: ($size / ($base * 0.625)) + rem;
+  } @else if $size == 12 {
+    font-size: $size + px;
+    font-size: ($size / ($base * 0.625)) + rem;
+  } @else if $size == 14 {
+    font-size: $size + px;
+    font-size: ($size / ($base * 0.625)) + rem;
+  } @else {
+    font-size: $size + px;
+    font-size: ($size / ($base * 0.625)) + rem;
+    @include tab-w(){
+      font-size: $size + px;
+      font-size: ($size / ($base * 0.625)) + rem;
+    }
+    @include tab(){
+      $size:$size * 0.98;
+      font-size: $size + px;
+      font-size: ($size / ($base * 0.625)) + rem;
+    }
+    @include sp(){
+      $size:$size * 0.94;
+      font-size: $size + px;
+      font-size: ($size / ($base * 0.625)) + rem;
+    }
+  }
+}
+@mixin mb($size) {
+  margin-bottom: $size + px !important;
+  @include tab(){
+    margin-bottom: ($size / 1.3) + px !important;
+  }
+  @include sp(){
+    margin-bottom: ($size / 2) + px !important;
+  }
+}
+@mixin pb($size) {
+  padding-bottom: $size + px !important;
+  @include tab(){
+    padding-bottom: ($size / 1.3) + px !important;
+  }
+  @include sp(){
+    padding-bottom: ($size / 2) + px !important;
+  }
+}
+
+@mixin mt($size) {
+  margin-top: $size + px !important;
+  @include tab(){
+    margin-top: ($size / 1.3) + px !important;
+  }
+  @include sp(){
+    margin-top: ($size / 2) + px !important;
+  }
+}
+@mixin pt($size) {
+  padding-top: $size + px !important;
+  @include tab(){
+    padding-top: ($size / 1.3) + px !important;
+  }
+  @include sp(){
+    padding-top: ($size / 2) + px !important;
+  }
+}
+
+@mixin Flex_Center($direction:row,$wrap:nowrap){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+@mixin Flex_Wrapper($direction:row,$wrap:wrap,$justify:flex-start){
+  display: flex;
+  justify-content:$justify;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $ieopacity: ($opacity * 100);
+  filter: alpha(opacity=$ieopacity);
+}
+
+@mixin Max-Wrap(){
+  margin:auto;
+  max-width:1040px;
+}
+
+$wide:1280px;
+$pc:    1024px;
+$tab-w: 1023px;
+$tab:    798px;
+$sp-o:   641px;
+$sp-w:   640px;
+$sp:     480px;
+
+@mixin wide(){
+  @media (min-width: ($wide)){
+    @content;
+  }
+}
+@mixin pc(){
+  @media (min-width: ($pc)){
+    @content;
+  }
+}
+@mixin tab-w(){
+  @media (max-width: ($tab-w)){
+    @content;
+  }
+}
+@mixin tab(){
+  @media (max-width: ($tab)){
+    @content;
+  }
+}
+@mixin sp-o(){
+  @media (min-width: ($sp-o)){
+    @content;
+  }
+}
+@mixin sp-w(){
+  @media (max-width: ($sp-w)){
+    @content;
+  }
+}
+@mixin sp(){
+  @media (max-width: ($sp)){
+    @content;
+  }
+}
+
+@mixin Font_Icon(){
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+@mixin Font_Icon-VAF(){
+  display:inline-block;
+  font-family: 'vaf-fonts' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

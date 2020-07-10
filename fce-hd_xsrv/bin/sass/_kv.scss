@@ -1,0 +1,48 @@
+
+// KV setting
+#KV_FIELD{
+  background:$bk-i;
+
+  .slider_wrapper{
+    @include Max-Wrap();
+    background:$bk-g;
+    min-height:55vh;
+    width:100%;
+
+    .slick-prev:before, .slick-next:before{
+      @include Font_Icon-VAF();
+      content: "\e923";
+      @include fontsize(32);
+      color:$color-z;
+    }
+    .slick-next{
+    }
+    .slick-prev{
+      left: -40px;
+    }
+    .slick-next:before{
+    }
+    .slick-prev:before{
+      transform: rotate(-180deg);
+    }
+  }
+}
+
+// MV setting
+#MV_FIELD{
+  background:$bk-i no-repeat center center / cover;
+  min-height:35vh;
+  width:100vw;
+  @include Flex_Center();
+
+  h1{
+    @include fontsize(30);
+    color:$color-z;
+  }
+}
+.kigyo #MV_FIELD{ background-image:url("#{$image_path}/mv_kigyo.jpg"); }
+.kigyo.gaiyo #MV_FIELD{ background-image:url("#{$image_path}/mv_kigyo_gaiyo.jpg"); }
+.kigyo.daihyo #MV_FIELD{ background-image:url("#{$image_path}/mv_kigyo_daihyo.jpg"); }
+.kigyo.houshin #MV_FIELD{ background-image:url("#{$image_path}/mv_kigyo_houshin.jpg"); }
+.kigyo.yakuin #MV_FIELD{ background-image:url("#{$image_path}/mv_kigyo_yakuin.jpg"); }
+.jigyo #MV_FIELD{ background-image:url("#{$image_path}/mv_jigyo.jpg"); }

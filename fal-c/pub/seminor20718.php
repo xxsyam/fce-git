@@ -1,6 +1,7 @@
 <section class="base_section" id="CONTENTS_TITLE">
 <div class="base_wrapper">
-<h2><span>新しい学びの形「Find！オンラインサロン」</span><strong><span>開設記念オンラインセミナー</span><span>第1弾<br>オンラインでアクティブ・ラーニング実践編</span></strong></h2>
+<h2><span>新しい学びの形「Find！オンラインサロン」</span><strong><span>開設記念オンラインセミナー</span><span>第1弾<br />
+オンラインでアクティブ・ラーニング実践編</span></strong></h2>
 
 <h3>7月18日（土）13:30～15:30　開催決定！</h3>
 
@@ -10,19 +11,26 @@
 
 <section class="base_section" id="CONTENTS_CATCH">
 <div class="base_wrapper">
-<h3>4日間で<strong>1,400</strong>名超が申し込んだオンラインセミナー<br>
-「オンライン授業導入＜基礎研修編＞」の“応用編”を開催！</h3>
+<h3>4日間で<strong>1,400</strong>名超が申し込んだオンラインセミナー<br />
+「オンライン授業導入＜基礎研修編＞」の&ldquo;応用編&rdquo;を開催！</h3>
 
 <div class="point_wraps">
-<p>この度、Find！アクティブラーナーは、先生方の新しい学びの場として「Find！オンラインサロン」を開設いたします。<br>
-一部会員（プレミアムorダイヤモンドプラン会員）を対象とした限定のFacebookグループにて、弊社コンテンツを通じたメンバー間のコミュニケーションや、定期開催するオンラインセミナーの質疑応答等を行う場として、より学びの深まる機会を提供すべくご用意いたしました。</p>
+<p>この度、Find！アクティブラーナーは、先生方の新しい学びの場として「Find！オンラインサロン」を開設いたします。<br />
+一部会員（プレミアム、ダイヤモンドプラン会員）を対象とした限定のFacebookグループにて、弊社コンテンツを通じたメンバー間のコミュニケーションや、定期開催するオンラインセミナーの質疑応答等を行う場として、より学びの深まる機会を提供すべくご用意いたしました。</p>
 
-<div class="pict_wrap"><img src="/uploads/files/images/seminor/20718/online.png"></div>
-
-<p>今回は、その「Find！オンラインサロン」を皆様にご利用いただく機会も兼ね、開設記念のオンラインセミナー「オンラインでアクティブ・ラーニング実践編」を開催いたします。<br>
-前回開催にて頂いた「オンライン授業でもアクティブ・ラーニングはできるのか」「応用編を知りたい」というご要望にお応えする内容となりますので、ぜひこの機会にご参加ください。</p>
+<div class="pict_wrap">
+  <ul class="pict_list">
+    <li><span></span><span>最先端の教育知識や<br>スキルを身につけたい</span></li>
+    <li><span></span><span>全国の教員と<br>学びを共有したい</span></li>
+    <li><span></span><span>新しい取り組みに<br>チャレンジしたい</span></li>
+  </ul>
+  <p>※Find！オンラインサロンの詳細は別途案内ページをご確認ください</p>
 </div>
 
+<p>今回は、その「Find！オンラインサロン」を皆様にご利用いただく機会も兼ね、開設記念のオンラインセミナー「オンラインでアクティブ・ラーニング実践編」を開催いたします。<br />
+前回開催にて頂いた「オンライン授業でもアクティブ・ラーニングはできるのか」「応用編を知りたい」というご要望にお応えする内容となりますので、ぜひこの機会にご参加ください。</p>
+</div>
+</div>
 </section>
 
 <section class="base_section" id="CONTENTS_GAIYO">
@@ -30,21 +38,22 @@
 <h3>オンラインセミナー概要</h3>
 
 <article>
+<div class="pict_wrap"><img src="/uploads/files/images/seminor/20718/online.png"></div>
+
 <h4>日時</h4>
 
 <ul class="list_date">
 <li><span>2020年</span><strong>7月18日(土) 13:30～15:30</strong></li>
 </ul>
-
 </article>
 
 <article>
-<h4>参加費</h4>
+<h4>セミナー参加費</h4>
 
-<p>2,200円(税込)<br>
-※Find！アクティブラーナー個人プレミアムorダイヤモンドプラン会員の方は“無料”でご参加いただけます<br>
-※お支払い方法、お申し込みにつきましてはページ下部でご案内いたします</p>
-
+<p>2,200円(税込)<br />
+※Find！アクティブラーナー個人プレミアム、ダイヤモンドプラン会員の方は、“無料”で本セミナーにご参加いただけます<br />
+各プランの詳細は<a href="https://find-activelearning.com/premiumMember/info?utm_source=FALseminarLP&utm_medium=HP&utm_campaign=200703_seminarLP_N" target="_blank" style="display:inline;">コチラ</a><br>
+※セミナー参加費のお支払い方法、お申し込みにつきましてはページ下部でご案内いたします</p>
 </article>
 
 <article>
@@ -69,18 +78,16 @@
 
 <section class="base_section" id="CONTENTS_TOKUTEN">
 <div class="base_wrapper">
-<h3>Find!オンラインサロン利用者限定特典</h3>
-
+<h3>プレミアム、ダイヤモンドプラン会員限定特典</h3>
 
 <div id="CATCH_IMAGES">
-  <div class="pict_wrap"><img src="/uploads/files/images/seminor/20718/pub_seminor_00.jpg"></div>
-  <div class="text_wrap">
-    <p>セミナー終了後2週間（本開催分は2020年7月31日（金）まで）は、Find！オンラインサロン（Facebookグループ）内のスレッド（分科会）にて、参加者の皆様から頂きました質問に対して、講師が順に回答していきます。<br><br>
-    講師とのコミュニケーション、質疑応答を通じて、より理解を深めたいという方は、ぜひオンラインサロンにご参加ください。</p>
-  </div>
+<div class="pict_wrap"><img src="/uploads/files/images/seminor/20718/pub_seminor_00.jpg" /></div>
+
+<div class="text_wrap">
+<p>セミナー終了後2週間（本開催分は2020年7月31日（金）まで）は、特別招待されるFind！オンラインサロン（Facebookグループ）内のスレッドにて、参加者の皆様から頂きました質問に対して、講師が順にお答えしていきます。<br>
+講師とのコミュニケーション、質疑応答を通じて、より理解を深めたいという方は、ぜひオンラインサロンをご利用ください。	</p>
 </div>
-
-
+</div>
 </div>
 </section>
 
@@ -91,6 +98,7 @@
 <div id="KOUENSHA_WRAP">
 <div class="kouensha_unit">
 <h4>メイン講師</h4>
+
 <div class="pict_wrap"><img src="/uploads/files/images/seminor/teachers/teraura.jpg" /></div>
 
 <p><span>株式会社学び代表取締役<br />
@@ -99,6 +107,7 @@
 
 <div class="kouensha_unit">
 <h4>モデレーター</h4>
+
 <div class="pict_wrap"><img src="/uploads/files/images/seminor/teachers/nakajima.jpg" /></div>
 
 <p><span>元全国高等学校長協会教育課程研究委員長<br />
@@ -114,21 +123,23 @@
 <div class="base_wrapper">
 <h3>お申込みの流れ</h3>
 
-<h4 class="line">セミナー＆オンラインサロンに“無料”で参加できる、個人のプレミアムプラン会員、ダイヤモンドプラン会員の方へ</h4>
+<h4 class="line">セミナー＆オンラインサロンに&ldquo;無料&rdquo;で参加できる、個人のプレミアムプラン会員、ダイヤモンドプラン会員の方へ</h4>
+
 <p>※セミナーへのお申し込みは、ログイン後トップページに表示されている赤枠内の案内よりお申し込みください</p>
 
 <h4 class="mt40px">★まだ会員ではない方、無料会員の皆様へ★</h4>
-<p><span class="fred">いまプレミアムプラン、もしくはダイヤモンドプランにご参加いただけますと、本セミナーへ“無料”でご参加いただけます！さらに、ご登録初月はプラン費用も無料でご利用いただけますので、ぜひこの機会にご登録ください。</span><br><br>
-プレミアムプラン、ダイヤモンドプランへのご登録はコチラ↓↓<br>
-<a href="/premiumMember/info?utm_source=FALseminarLP&utm_medium=HP&utm_campaign=200703_seminarLP_N" target="_blank">https://find-activelearning.com/premiumMember/info?utm_source=FALseminarLP&utm_medium=HP&utm_campaign=200703_seminarLP_N</a></p>
 
-<p>※プレミアムプラン、もしくはダイヤモンドプランへご参加された際は、プラン参加後の（ログイン後）トップページにある赤枠の案内よりお申し込みください<br>
-※「Find！オンラインサロン」に関するご案内は、お申し込みいただいたメールアドレス宛に、追ってご連絡いたします</p>
+<p><span class="fred">いまプレミアムプラン、もしくはダイヤモンドプランにご登録いただけますと、本セミナーへ“無料”でご参加いただけます！さらに、ご登録初月はプラン費用も無料（※クレジットカード決済のみ）でご利用いただけますので、ぜひこの機会にご登録ください。</span><br />
+<br />
+プレミアムプラン、ダイヤモンドプランへのご登録はコチラ&darr;&darr;<br />
+<a href="/premiumMember/info?utm_source=FALseminarLP&amp;utm_medium=HP&amp;utm_campaign=200703_seminarLP_N" target="_blank">https://find-activelearning.com/premiumMember/info?utm_source=FALseminarLP&amp;utm_medium=HP&amp;utm_campaign=200703_seminarLP_N</a></p>
+
+<p>※プレミアムプラン、もしくはダイヤモンドプランへご登録された際は、ログイン後トップページにある赤枠の案内よりお申し込みください</p>
 
 <h4 class="line mt40px">セミナー費用（2,200円）をお支払いいただき、ご参加される方へ</h4>
-<p>※無料会員の方は、ログイン後トップページにある赤枠の案内よりお申し込みください<br>
-※まだ会員でない方は、以下無料会員へご登録されてからお申し込みください</p>
 
+<p>※無料会員の方は、ログイン後トップページにある赤枠の案内よりお申し込みください<br />
+※まだ会員でない方は、以下無料会員へご登録されてからお申し込みください</p>
 
 <ol class="mt40px">
 <li><span>Step.１</span>以下、「お申し込み（無料会員登録）」ボタンをクリックし、無料会員へご登録いただきます。</li>
@@ -139,22 +150,19 @@
 
 <div class="pict_wrap"><img src="/uploads/files/images/seminor/03/pub_seminor03_04.jpg" /></div>
 
-<div class="btn_regs"><a href="/member/authRegister?utm_source=FALseminarLP&utm_medium=HP&utm_campaign=200703_seminarLP_N" target="_blank">お申し込み（無料会員登録）</a></div>
+<div class="btn_regs"><a href="/member/authRegister?utm_source=FALseminarLP&amp;utm_medium=HP&amp;utm_campaign=200703_seminarLP_N" target="_blank">お申し込み（無料会員登録）</a></div>
 </div>
-
 </section>
 
 <section class="base_section" id="JIMUKYOKU_FIELD">
 <div class="base_wrapper">
 <h4>お問い合わせ先</h4>
-<p>Find！アクティブラーナー事務局<br>
+
+<p>Find！アクティブラーナー事務局<br />
 <a href="mailto:info@find-activelearning.com">info@find-activelearning.com</a></p>
 </div>
 </section>
-
-
-<style type="text/css">
-.base_section{
+<style type="text/css">.base_section{
   padding:80px 5%;
 }
 .base_section a{
@@ -504,5 +512,76 @@
 #JIMUKYOKU_FIELD h4{
   color:#035ac0;
   font-size:18px;
+}
+
+/* 20200709変更のための追記変更 */
+#CONTENTS_CATCH .pict_list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 100%;
+  margin-bottom:45px;
+}
+
+@media (max-width: 640px) {
+	.pict_list {
+		flex-direction: column;
+	}
+}
+
+.pict_list li {
+	margin: 0 2%;
+}
+
+.pict_list li span {
+	display: block;
+	background-size: cover;
+}
+
+.pict_list li span:nth-of-type(1) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	min-width: 300px;
+	min-height: 300px;
+	background: #ccc;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+.pict_list li span:nth-of-type(1) img {
+	margin: auto;
+	max-width: 100%;
+}
+.pict_list li span:nth-of-type(2) {
+	margin-top: 10px;
+	font-size:17px;
+	font-weight: 600;
+}
+@media (max-width: 640px) {
+	.pict_list li:not(:last-of-type) {
+		margin-bottom: 35px;
+	}
+}
+#CONTENTS_CATCH .pict_list li:nth-of-type(1) span:nth-of-type(1) {
+	background: url(/uploads/files/images/onlinesalon/pict_01.jpg) no-repeat 90% top;
+}
+#CONTENTS_CATCH .pict_list li:nth-of-type(2) span:nth-of-type(1) {
+	background: url(/uploads/files/images/onlinesalon/pict_02.jpg) no-repeat 40% top;
+}
+#CONTENTS_CATCH .pict_list li:nth-of-type(3) span:nth-of-type(1) {
+	background: url(/uploads/files/images/onlinesalon/pict_03.jpg) no-repeat 100% top;
+}
+#CONTENTS_GAIYO article>.pict_wrap{
+  margin:0 auto 35px;
 }
 </style>

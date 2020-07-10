@@ -1,0 +1,74 @@
+/*
+* ＊＊＊＊＊＊＊＊＊＊ Origin Design Settings
+* Written by  VAF
+* @author     VAF
+* @copyright  Author
+* @version    1.2.5 (xx/06/2020)
+* ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+
+.pc_display{display:block;}
+.sp_display{display:none;}
+
+@include tab(){
+  .pc_display{display:none !important;}
+  .sp_display{display:block !important;}
+}
+
+html,body{
+  overflow-x: hidden;
+}
+input{
+  line-height:1;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  @include fontsize(14);
+  font-family:$base-font;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height:1.8;
+  font-feature-settings: "pkna" 1;
+  background:$base_bg;
+  color:$bk-a;
+}
+header,main,footer,section,a,nav,.base_section{
+  position:relative;
+}
+a{
+  display: inline-block;
+  text-decoration: none;
+  color:$bk-a;
+
+  &:hover{
+    opacity: 0.75;
+    color:$red-e;
+  }
+}
+header,main,footer{
+  width:100vw;
+}
+main{
+  z-index:1;
+}
+section{
+  z-index:1;
+  background:$color-z;
+
+  article{
+  }
+}
+.base_section{
+}
+.base_wrapper{
+  @include Max-Wrap();
+}
+.pict_wrap{
+  img{
+    max-width:100%;
+  }
+}
+object{
+  pointer-events: none;
+}

@@ -1,34 +1,39 @@
-<div id="HELP_PAGE" class="inner">
+<div class="inner" id="HELP_PAGE">
+<div class="helpcategory_wrap" id="HELP_A">
+<h3>会員登録・削除の方法について</h3>
 
-  <div id="HELP_A" class="helpcategory_wrap">
-    <h3>会員登録・削除の方法について</h3>
-    <ul>
-      <li><a href="/uploads/files/tool/findactivelearner_system_manual_ver3.5.pdf" target="_blank">先生の利用登録がしたい</a></li>
-      <li><a href="/uploads/files/tool/findactivelearner2020manual.pdf" target="_blank">たくさんの先生の利用登録を一括でしたい</a></li>
-      <li><a href="/uploads/files/tool/Find!activelearner2020.pptx" target="_blank">転任、退職した先生の登録を削除したい</a></li>
-    </ul>
-  </div>
-
-  <div id="HELP_B" class="helpcategory_wrap">
-    <h3>先生方への利用案内、利用促進について</h3>
-    <ul>
-      <li><a href="/uploads/files/tool/Find!activeleaner2020slidesample.pdf" target="_blank">先生方に活用ガイダンスがしたい</a></li>
-      <li><a href="/uploads/files/tool/findactivelearnerloginpractice.pdf" target="_blank">テーマ別のオススメコンテンツが知りたい</a></li>
-      <li><a href="/uploads/files/tool/findkokuchimailrei.pdf" target="_blank">分掌ごとのオススメコンテンツが知りたい</a></li>
-    </ul>
-  </div>
-
-  <div id="HELP_C" class="helpcategory_wrap">
-    <h3>その他の操作について</h3>
-    <ul>
-      <li><a href="/uploads/files/tool/kensyuimage0331.pdf" target="_blank">学校のオリジナル動画をアップロードしたい</a></li>
-      <li><a href="/uploads/files/tool/zenkokuninki2019.pdf" target="_blank">活用状況が知りたい</a></li>
-    </ul>
-  </div>
+<ul>
+  <li><a href="/uploads/files/tool/help1.pdf" target="_blank">先生の利用登録がしたい</a></li>
+  <li><a href="/uploads/files/tool/help2.pdf" target="_blank">たくさんの先生の利用登録を一括でしたい</a></li>
+  <li><a href="/uploads/files/tool/help3.pdf" target="_blank">転任、退職した先生の登録を削除したい</a></li>
+  <li><a href="/uploads/files/tool/help4.pdf" target="_blank">会員IDとPWを先生方に知らせたい</a></li>
+</ul>
 </div>
 
-<style>
-#HELP_PAGE{}
+<div class="helpcategory_wrap" id="HELP_B">
+<h3>先生方への利用案内、利用促進について</h3>
+
+<ul>
+  <li><a href="/uploads/files/tool/help5.pdf" target="_blank">他校でうまくった運用方法が知りたい</a></li>
+  <li><a href="/uploads/files/tool/help6.pdf" target="_blank">他校での活用事例が知りたい</a></li>
+  <li><a href="/uploads/files/tool/help7.pdf" target="_blank">先生方に活用ガイダンスがしたい</a></li>
+  <li><a href="/uploads/files/tool/help8.pdf" target="_blank">テーマ別のオススメコンテンツが知りたい</a></li>
+  <li><a href="/uploads/files/tool/help9.pdf" target="_blank">分掌ごとのオススメコンテンツが知りたい</a></li>
+</ul>
+</div>
+
+<div class="helpcategory_wrap" id="HELP_C">
+<h3>その他の操作について</h3>
+
+<ul>
+  <li><a href="/uploads/files/tool/help10.pdf" target="_blank">システム管理者を追加、変更したい</a></li>
+  <li><a href="/uploads/files/tool/help11.pdf" target="_blank">学校のオリジナル動画をアップロードしたい</a></li>
+  <li><a href="/uploads/files/tool/help12.pdf" target="_blank">トップページを学校オリジナルにしたい</a></li>
+  <li><a href="/uploads/files/tool/help13.pdf" target="_blank">活用状況が知りたい</a></li>
+</ul>
+</div>
+</div>
+<style type="text/css">#HELP_PAGE{}
 .helpcategory_wrap{
   margin-bottom:45px;
 }

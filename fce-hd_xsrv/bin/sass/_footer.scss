@@ -1,0 +1,87 @@
+
+// Footer setting
+footer{
+   #page_top{
+    border-top:1px solid $red-e;
+    border-bottom:1px solid $red-e;
+
+    a{
+      @include Flex_Center();
+      @include fontsize(24);
+      padding:35px 5%;
+      color:$red-e;
+    }
+  }
+  #footer_menu{
+    @include Max-Wrap();
+    @include Flex_Center();
+    justify-content: space-between;
+
+    @include tab(){
+      flex-wrap:wrap;
+      justify-content: flex-start;
+    }
+
+    li{
+      width:calc(100% / 6);
+      @include Flex_Center();
+      padding:35px 0;
+      @include tab(){
+        width:calc(100% / 3);
+        padding:15px 0;
+      }
+      @include  sp(){
+        width:calc(100% / 1);
+      }
+
+      a{
+      }
+    }
+  }
+  #fce_groups-lists{
+    background:$bk-j;
+    @include Flex_Center(column);
+    @include pt(55);
+    @include pb(55);
+
+    #footer_logo{
+      @include pb(35);
+
+      object,img{
+        max-width:220px;
+      }
+    }
+
+    ul{
+      @include Max-Wrap();
+      @include Flex_Center(row,wrap);
+      justify-content: flex-start;
+      padding:0 3%;
+
+      li{
+        width:calc(100% / 4);
+        text-align: left;
+        white-space: nowrap;
+
+        @include tab-w(){
+          width:calc(100% / 2);
+        }
+        @include  sp(){
+          width:calc(100% / 1);
+          text-align: center;
+        }
+
+        a{
+        }
+      }
+    }
+  }
+  small{
+    @include Flex_Center();
+    width:100vw;
+    padding:5px 3%;
+    color:$color-z;
+    background:$bk-l;
+    @include fontsize(14);
+  }
+}

@@ -1,0 +1,352 @@
+
+// second pages
+.second_pages{
+  .two_line{
+    display: flex;
+    justify-content: space-between;
+    @include mb(120);
+
+    @include  tab(){
+      padding-left:3%;
+      padding-right:3%;
+    }
+    @include  sp-w(){
+      flex-direction: column;
+    }
+  }
+
+  h2{
+    @include fontsize(32);
+    @include mb(85);
+  }
+
+  #MAIN_FIELD{
+    width:100%;
+    margin-right:100px;
+
+    .base_unit{
+      @include mb(85);
+
+      &:not(:nth-of-type(4)){
+        border-bottom:1px solid $bk-c;
+        @include pb(85);
+      }
+
+      h3{
+        @include fontsize(28);
+        @include mb(35);
+
+        &.img_title{
+          text-align: center;
+
+          img,object{
+            margin:auto;
+          }
+        }
+      }
+
+      p{
+        strong{
+          @include fontsize(24);
+        }
+      }
+
+      .sub_unit{
+        h4{
+          @include fontsize(16);
+          font-weight:600;
+
+          span{
+            display: block;
+            font-weight:normal;
+            @include mb(35);
+            @include fontsize(14);
+          }
+        }
+
+        &:not(:last-of-type){
+          @include pb(55);
+        }
+      }
+    }
+
+    .fcehd_unit{
+      h3{
+        @include fontsize(18);
+        @include mb(35);
+        display: inline-block;
+        color:$red-e;
+        border:1px solid $red-e;
+        padding:10px 100px;
+      }
+      .sub_unit{
+        h4{
+          @include fontsize(28);
+          color:$red-e;
+        }
+
+        &:not(:last-of-type){
+          @include pb(55);
+        }
+      }
+    }
+  }
+}
+
+// 企業ページ限定：会社概要
+.kigyo.gaiyo{
+  #MAIN_FIELD{
+    &>dl{
+      display: flex;
+      @include mb(35);
+
+      &>dt{
+        width:35%;
+      }
+      &>dd{
+        width:65%;
+
+        p{
+          &:not(:last-of-type){
+            @include mb(35);
+          }
+        }
+      }
+      @include  sp-w(){
+        flex-direction: column;
+
+        dt,dd{
+          width:100%;
+        }
+        dt{
+          font-weight:600;
+        }
+      }
+    }
+    iframe{
+      width:100%;
+    }
+  }
+}
+
+// 企業ページ限定：代表メッセージ
+.kigyo.daihyo{
+  #MAIN_FIELD{
+    .base_unit{
+      border:none;
+      @include pb(0);
+    }
+    p:last-of-type{
+      @include mt(55);
+      text-align: right;
+    }
+  }
+}
+
+// 企業ページ限定：役員紹介
+.kigyo.yakuin{
+  #MAIN_FIELD{
+    .yakuin_unit{
+      @include mb(85);
+    }
+
+    h3{
+      span,strong{}
+      span{
+        @include fontsize(14);
+      }
+      strong{
+        display: block;
+        @include fontsize(24);
+        @include mb(15);
+      }
+    }
+  }
+}
+
+
+.jigyo{
+  #MAIN_FIELD{
+    margin-right:0;
+
+    @include  tab(){
+      padding-left:3%;
+      padding-right:3%;
+    }
+
+    h3{
+      display: flex;
+      align-items: flex-end;
+
+      @include  sp-w(){
+        flex-direction: column;
+        align-items: baseline;
+      }
+
+      span,strong{
+        display: inline-block;
+      }
+
+      span{
+        @include fontsize(16);
+        @include mb(10);
+      }
+      strong{
+        @include fontsize(30);
+        margin-right:30px;
+      }
+    }
+    .base_unit:nth-of-type(1){
+      border:none;
+    }
+
+    .flex_unit{
+      display: flex;
+      justify-content: space-between;
+
+      @include  sp-w(){
+        flex-direction: column;
+      }
+
+      .box_unit{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        @include  sp-w(){
+          width:100% !important;
+          &:not(:last-of-type){
+            @include mb(35);
+          }
+        }
+        h4{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          @include mb(15);
+
+          span,strong{
+            text-align: center;
+          }
+          span{
+            @include fontsize(16);
+          }
+          strong{
+            @include fontsize(32);
+          }
+        }
+        .box{
+          flex: 1 0 auto;
+        }
+      }
+
+      &.three{
+        .box_unit{
+          width:30%;
+        }
+      }
+      &.arw_type{
+        .box_unit{
+          position: relative;
+
+          .box{
+            position: relative;
+            text-align: left;
+            border:1px solid $red-e;
+            padding:15px;
+            width:100%;
+          }
+
+          &:nth-of-type(2){
+            @include sp-w(){
+              padding:20px 0;
+            }
+            .box{
+              &:before,&:after{
+                position: absolute;
+                display: inline-block;
+                content:"";
+                width:30px; height:55px;
+                background:url("#{$image_path}/arw-red_r.png") no-repeat center center / contain;
+                top:calc(50% - 25px);
+
+                @include sp-w(){
+                  display:none;
+                }
+              }
+              &:before{
+                left:-39px;
+                @include tab(){
+                  left:-30px;
+                }
+              }
+              &:after{
+                right:-42px;
+                @include tab(){
+                  right:-35px;
+                }
+              }
+            }
+
+            @include sp-w(){
+              &:before,&:after{
+                position: absolute;
+                display: inline-block;
+                content:"";
+                width:30px; height:55px;
+                background:url("#{$image_path}/arw-red_r.png") no-repeat center center / contain;
+                left:calc(50% - 15px) !important;
+                transform: rotate(90deg);
+              }
+              &:before{
+                top:-20px;
+              }
+              &:after{
+                bottom:-40px;
+              }
+            }
+          }
+        }
+      }
+
+      &.lnk_type{
+        .box_unit{
+          @include sp-w(){
+            @include mb(55);
+          }
+        }
+        h4{
+          border:1px solid $bk-a;
+          padding:20px 3%;
+
+          strong{
+            @include fontsize(16);
+          }
+        }
+        dl{
+          dt{
+            font-weight:600;
+          }
+          dd{
+            @include mb(15);
+          }
+        }
+        a{
+          color:$red-e;
+        }
+      }
+    }
+    .base_unit:nth-of-type(3),.base_unit:nth-of-type(5){
+      .lnk_type:after{
+        content:"";
+        display:inline-block;
+      }
+    }
+    .base_unit:nth-of-type(3){
+      .lnk_type:after{ width:30%; }
+    }
+    .base_unit:nth-of-type(5){
+      .lnk_type:after{ width:60%; }
+    }
+  }
+}

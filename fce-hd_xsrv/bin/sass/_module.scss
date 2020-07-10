@@ -1,0 +1,32 @@
+
+// Pank setting
+.pank{
+  border-top:1px solid $bk-i;
+  border-bottom:1px solid $bk-i;
+  @include mb(130);
+
+  ul{
+    display: flex;
+
+    @include tab(){
+      padding:0 3%;
+    }
+
+    li{
+      display: flex;
+      align-items: center;
+      color:$bk-a;
+      @include pt(10);
+      @include pb(10);
+
+      &:not(:last-of-type):after{
+        @include Font_Icon-VAF();
+        content: "\e923";
+        display: inline-block;
+        margin:0 5px 0 10px;
+      }
+
+    }
+  }
+
+}
