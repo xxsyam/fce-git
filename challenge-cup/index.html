@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>チャレンジカップ公式サイト｜全国の小・中・高・専門学校生を対象とした「チャレンジすることで自分を変える」キャンペーンチャレンジカップの公式サイトです。</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<meta name="Keywords" content="やる気,チャレンジ,挑戦,チャレンジカップ,チャレンジカップ2018" lang="ja" xml:lang="ja" />
+<meta name="Description" content="全国の小・中・高・専門学校生を対象とした「チャレンジすることで自分を変える」キャンペーンチャレンジカップの公式サイトです。" lang="ja" xml:lang="ja" />
+<meta name="author" content="株式会社 FCEエデュケーション" lang="ja" xml:lang="ja" />
+<meta name="copyright" content="Copyright (C) 2011-2017 Challenge Cup" lang="ja" xml:lang="ja" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/skeleton.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/colorbox.css" />
+<link rel="icon" type="image/png" href="dist/images/favicon.png">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/css3-animate-it.js"></script>
+<script src="js/script.js"></script>
+<script src="js/jquery.colorbox.js"></script>
+<script src="js/jquery.color.min.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script type="text/javascript">
+function CountdownTimer(elm,tl,mes){
+ this.initialize.apply(this,arguments);
+}
+CountdownTimer.prototype={
+ initialize:function(elm,tl,mes) {
+  this.elem = document.getElementById(elm);
+  this.tl = tl;
+  this.mes = mes;
+ },countDown:function(){
+  var timer='';
+  var today=new Date();
+  var day=Math.floor((this.tl-today)/(24*60*60*1000));
+  var hour=Math.floor(((this.tl-today)%(24*60*60*1000))/(60*60*1000));
+  var min=Math.floor(((this.tl-today)%(24*60*60*1000))/(60*1000))%60;
+  var sec=Math.floor(((this.tl-today)%(24*60*60*1000))/1000)%60%60;
+  var me=this;
+
+  if( ( this.tl - today ) > 0 ){
+   if (day) timer += '<span class="day">'+day+':</span>';
+   if (hour) timer += '<span class="hour">'+hour+':</span>';
+   timer += '<span class="min">'+this.addZero(min)+':</span><span class="sec">'+this.addZero(sec)+'</span>';
+   this.elem.innerHTML = timer;
+   tid = setTimeout( function(){me.countDown();},10 );
+  }else{
+   this.elem.innerHTML = this.mes;
+   return;
+  }
+ },addZero:function(num){ return ('0'+num).slice(-2); }
+}
+
+function count(){
+var day = new Date();
+var saleday = new Date('2018/11/30 00:00:00');//エントリー終了日時を入力
+if((saleday - day) > 0) {
+ var text = 'エントリー終了まで :';//エントリー終了されるまでの文言を入力
+ var tl = new Date('2018/11/30 00:00:00');//エントリー終了日時を入力
+ var timer = new CountdownTimer('count',tl);
+ timer.countDown();
+ target = document.getElementById("text");
+ target.innerHTML = text;
+}else{
+ var text = 'チャレンジ終了まで : ';//チャレンジ終了までの文言を入力
+ var tl = new Date('2019/03/30 23:59:59');//チャレンジ終了日時を入力
+ var timer = new CountdownTimer('count',tl,'エントリー開始まで');//エントリー終了後の文言を入力
+ timer.countDown();
+ target = document.getElementById("text");
+ target.innerHTML = text;
+	}
+}
+
+window.onload=function(){
+ count();
+}
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-441412-10']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+<header id="header" role="banner">
+  <div class="head-h1">
+    <div class="container clearfix">
+      <h1 class="leadtext">アクティブラーナー育成を目的とした小・中・高校生対象の「チャレンジすることで自分を変える」 チャレンジカップの公式サイトです。</h1>
+    </div>
+  </div>
+  <div id="top-head">
+    <div class="inner">
+      <div id="mobile-head">
+        <p class="logo"><a href="index.html"><img src="images/logo.png" width="244" height="64" alt="チャレンジカップ経済産業省第3回キャリア教育アワード奨励賞受賞"/></a></p>
+        <div id="nav-toggle">
+          <div><span></span> <span></span> <span></span> </div>
+        </div>
+      </div>
+      <nav id="global-nav" role="navigation">
+        <ul>
+          <li><a href="about.html">チャレンジカップとは</a></li>
+          <li><a href="entry_howto.html">チャレンジカップ参加方法</a></li>
+          <!--li><a href="japan.html">エントリー速報</a></li-->
+
+          <li><a href="history.html">過去の開催</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+	<!--
+<div class="sp_header_btn">
+  <div class="sp_btn_doc"> <a href="http://www.challenge-cup.net/grandprix.html" target="_blank" class="btn_doc"> <img src="images/kansensp.png" width="150" height="30" alt="観戦申し込み"></a> </div>
+  <div class="sp_btn_oc"> <a href="http://www.challenge-cup.net/cc/entry/form_entry.html" class="btn_oc"> <img src="images/formsp.png" width="150" height="30" alt="エントリーフォーム"> </a> </div>
+</div>
+-->
+<!-- /sp_header_btn -->
+<div id="main-visualWrap">
+<div id="main-visual">
+
+    <div id="countwrap">
+      <div class="container">
+        <div id="count" class="degital">99:12:99:12</div>
+        <a class="button button-primary" href="http://www.challenge-cup.net/cc/entry/form_entry.html">エントリーフォーム</a></div>
+    </div>
+  </div>
+</div>
+<!-- main-visualWrap -->
+<!-- tabout -->
+
+<!--<section id="entry-top-bana" class="section">
+  <div class="container">
+<!--
+<div class="pc"> <a href="/entry_howto.html" target="_blank"><img src="images/top-entry-pc.jpg" alt="参加受付中!!"/></a> </div>
+<div class="sp"> <a href="/entry_howto.html" target="_blank"><img src="images/top-entry-sp.jpg" class="img-responsive" alt="参加受付中!!"/></a> </div>
+-->
+    <!--<div class="pc"> <a href="/gp.html" target="_blank"><img src="images/gp_kekka.jpg" alt="結果発表"/></a> </div>
+    <div class="sp"> <a href="/gp.html" target="_blank"><img src="images/gp_kekka_sp.jpg" class="img-responsive" alt="結果発表"/></a> </div>
+  </div>
+</section>-->
+
+<section id="tabout" class="tabout">
+  <div class="container">
+  <!-- <div class="whats-title"><img src="images/whats.png" alt="What's チャレンジカップ"/></div> -->
+    <div class="row">
+      <div class="four columns">
+      <div class="whats-title"><img src="images/whats.png" alt="What's チャレンジカップ"/></div>
+      <img src="images/movie01.png" alt="チャレンジカップキックオフムービー" class="img-responsive" /></div>
+      <div class="columns tmsg">
+          <h2 class="tabout-heading">株式会社FCEエデュケーションが主催する小学生～高校生を対象とした「自分で決めた目標に挑戦する」大会です。<br>
+これまで13年間でのべ13万人の子ども達が参加し、夢や目標に向かって全力で取り組むその姿は小説やテレビドラマにもなりました。<br>
+大会にエントリーする条件はたった一つ。「半年後の目標を、自分たちで決めること」<br>
+その目標に対してどれだけ本気で挑戦し、どれだけ成長できたかを全国の教育機関の専門家達が審査、表彰します。<br>
+特に優秀なチャレンジと評価されたチャレンジャー達には副賞が贈られるのと同時に<br>
+その活動内容は教材化され、来年・再来年のチャレンジャーの成長のきっかけとなります。<br>
+近年、入試改革やアクティブ・ラーニング型授業の広がりなどにみられるように、子ども達を「アクティブラーナー（能動的学修者）」とすることが教育の最大テーマにもなってきています。<br>
+チャレンジカップは、アクティブラーナー育成を目的とした、誰でも参加できる日本最大級のイベントです。 </h2>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- tabout -->
+<!--
+<section id="grandprix-top" class="section">
+  <div class="container">
+    <div class="pc"> <a href="/gp.html" target="_blank"><img src="images/gp_kekka.jpg" alt="結果発表"/></a> </div>
+    <div class="sp"> <a href="/gp.html" target="_blank"><img src="images/gp_kekka_sp.jpg" class="img-responsive" alt="結果発表"/></a> </div>
+  </div>
+</section>
+-->
+<!--
+<section id="grandprix-top" class="section">
+  <div class="container">
+   <div class="row">
+		  <div class="pc finaltop">
+
+		  <a href="/cc/award_final.html" target="_blank"><img src="images/final_pc.jpg" alt="全国審査結果発表"/></a>
+
+		  <a href="/cc/gp.html" target="_blank"><img src="images/gp_kekka.jpg" alt="グランプリ決定戦結果発表"/></a>
+		  </div>
+		  <div class="sp finaltop">
+
+		  <a href="/cc/award_final.html" target="_blank"><img src="images/final_sp.jpg" class="img-responsive" alt="全国審査結果発表"/></a>
+
+		  <a href="/cc/gp.html" target="_blank"><img src="images/gp_kekka_sp.jpg" class="img-responsive" alt="グランプリ決定戦結果発表"/></a><strong></strong>
+		  </div>
+	  </div>
+    <div class="row">
+      <div class="columns tmsg">
+        <h2 class="tabout-heading"><span><img src="images/grand_whats.png" alt="What's グランプリ決定戦"/></span><br>
+          全国約2万人のチャレンジャーから、最優秀賞8組、審査員特別賞22組、BEST100賞80組、入賞156組が決定。その最優秀賞8組が東京に集い活動報告プレゼンを実施、グランプリを決定する大会が「グランプリ決定戦」です。<br>
+その発表からは、同姓代の子ども達であれば大きな刺激を、大人にとっても「明日から自分もチャレンジしよう」という気づきをもらえます。4月23日（日）開催。<br>観戦は無料なので、ぜひお申込みください。 </h2>
+      </div>
+      <div class="four columns"><a href="//www.youtube.com/embed/4-hlRl2F9Lk?rel=0" class="youtube" title="チャレンジカップキックオフムービー"><img src="images/movie04.png" alt="グランプリ決定戦とは？" /></a>
+        <iframe class="sp" width="100%" height="200" src="//www.youtube.com/embed/4-hlRl2F9Lk?rel=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="pcenter pt1em clear"><a class="button button-primary" href="about.html">チャレンジカップとは</a></div>
+    </div>
+
+	  <p id="finaltop" class="pcenter mt20"><a class="button button-primary" href="/grandprix.html">グランプリ決定戦観戦お申込み</a></p>
+  </div>
+</section>
+-->
+<!-- grandprix-top -->
+
+<div id="main" role="main">
+  <section class="section values">
+    <div class="container">
+      <div class="row">
+        <div class="four columns entrytop"><a href="entry_howto.html"><img src="images/entryhow.png" class="img-responsive" alt=""/></a>
+<!--
+<div class="four columns entrytop"><a href="japan.html"><img src="images/entrytop.png" class="img-responsive" alt=""/></a>
+		  <p class="kumi degital"><span id="kumi">2669</span></p>
+          <p class="ninzu degital"><span id="ninzu">21526</span></p>
+-->
+
+        </div>
+        <div class="eight columns movietop">
+          <figure class="greenf"><a href="//www.youtube.com/embed/PvaGDwegUTA?list=UU0PYB2OCXXMM2U8nGScc7nw" class="youtube" title="チャレンジカップ公式応援ソング「ファイター」カラーボトル"><img src="images/movietop.png" alt=""/>
+            <figcaption>
+              <h3>チャレンジカップ公式応援ソング</h3>
+              <p>カラーボトルと我武者羅應援團</p>
+            </figcaption>
+            </a></figure>
+        </div>
+        <div class="one-third column bana">
+          <figure class="bluef">
+           <a href="program.html">
+           <img src="images/7hj.png" alt=""/>
+            <figcaption>
+              <h3>チャレンジカップ推奨プログラム</h3>
+              <p>プログラムや書籍のご案内</p>
+            </figcaption>
+            </a></figure>
+        </div>
+        <div class="one-third column bana">
+          <figure class="bluef"><a href="http://www.php.co.jp/magazine/phpex/extra.php?unique_issue_id=02153" target="_blank"><img src="images/php.png" alt=""/>
+            <figcaption>
+              <h3>7つの習慣Ｊ&reg;が雑誌に</h3>
+              <p>PHPのびのび子育て10月臨時増刊号で大特集</p>
+            </figcaption>
+            </a></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="four columns"> <a href="//www.youtube.com/embed/MqHVzOGmE6Y" class="youtube" title="三日坊主防止アプリ「みんチャレ」"><img src="images/minmv.png" width="337" alt="三日坊主防止アプリ「みんチャレ」" ></a>
+        <iframe class="sp" width="100%" height="200" src="//www.youtube.com/embed/MqHVzOGmE6Y" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="columns tmsg">
+        <h2 class="mintit"><a href="minchalle.html">みんチャレ×チャレンジカップ　チャレンジャー応援特別企画！</a></h2>
+        <p>チャレンジカップ2017では、三日坊主防止アプリ「みんチャレ」とのコラボレーション
+          企画を実施します。
+          チャレンジ達成のために、ぜひ、このアプリも活用してチャレンジしてみてください！
+          「みんチャレ」を使って目標達成したチャレンジャーには、お祝いプレゼント！</p>
+        <p>参加する方は<a href="minchalle.html">こちら</a>をご覧ください。</p>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+  <!-- tabout -->
+<!--  <section class="section categories">
+    <div class="container">
+      <div class="row">
+        <div class="scrollwrap one-half column">
+          <h3 class="section-heading"><span class="titb">News / 新着情報 </span><span class="ichiran"><a href="backnaumber.html">&#8811; 一覧へ</a></span></h3>
+          <div class="scroll">
+            <ul class="newsli">
+              <li><a href="#">
+                <div class="newsbox">
+                  <time datetime="2017.04.24" class="date">2017.04.24</time>
+                  <div class="media">メディア </div>
+                  <p>「北國新聞」で紹介されました。</p>
+                </div>
+                </a></li>
+              <li><a href="#">
+                <div class="newsbox">
+                  <time datetime="2017.04.24" class="date">2017.04.24</time>
+                  <div class="media">メディア </div>
+                  <p>「福島民友WEB版」で紹介されました。</p>
+                </div>
+                </a></li>
+              <li><a href="#">
+                <div class="newsbox">
+                  <time datetime="2017.04.24" class="date">2017.04.24</time>
+                  <div class="media">メディア </div>
+                  <p>「福島民報WEB版」で紹介されました。</p>
+                </div>
+                </a></li>
+              <li><a href="#">
+                <div class="newsbox">
+                  <time datetime="2017.04.24" class="date">2017.04.24</time>
+                  <div class="media">メディア </div>
+                  <p>「福島民報」で紹介されました。</p>
+                </div>
+                </a></li>
+              <li><a href="#">
+                <div class="newsbox">
+                  <time datetime="2017.04.23" class="date">2017.04.23</time>
+                  <div class="news">お知らせ </div>
+                  <p>チャレンジカップ2017グランプリ決定戦が早稲田大学大隈講堂で開催されました。</p>
+                </div>
+                </a></li>
+              <li><a href="#">
+                <div class="newsbox">
+                  <time datetime="2017.04.18" class="date">2017.04.18</time>
+                  <div class="media">メディア </div>
+                  <p>「毎日新聞」で紹介されました。</p>
+                </div>
+                </a></li>
+              <li><a href="#">
+                <div class="newsbox">
+                  <time datetime="2017.04.18" class="date">2017.04.18</time>
+                  <div class="media">メディア </div>
+                  <p>「毎日新聞WEB版」で紹介されました。</p>
+                </div>
+                </a></li>
+              <li><a href="#">
+                <div class="newsbox">
+                  <time datetime="2017.04.16" class="date">2017.04.16</time>
+                  <div class="media">メディア </div>
+                  <p>「毎日新聞」で紹介されました。</p>
+                </div>
+                </a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="one-half column">
+          <h3 class="section-heading"><span class="titb">Whats' new/ チャレンジカップ事務局通信</span><span class="ichiran"><a href="/official/">&#8811; 一覧へ</a></span></h3>
+          <ul class="mediali">
+            <li><a href="/official/#of0424">
+              <p class="icatch"><img src="../official/images/n170424s.jpg" width="130" height="90" alt=""/></p>
+              <div class="mda-dl">
+                <time datetime="2017.4.24" class="date">2017.4.24</time>
+                <p>チャレンジカップ2017最優秀グランプリに選ばれたのは…</p>
+              </div>
+              </a></li>
+            <li><a href="/official/#of0422">
+              <p class="icatch"><img src="../official/images/n1704142s.jpg" width="130" height="90" alt=""/></p>
+              <div class="mda-dl">
+                <time datetime="2017.4.22" class="date">2017.4.22</time>
+                <p>ファイナリスト紹介Vol.8</p>
+              </div>
+              </a></li>
+            <li><a href="/official/#of0421">
+              <p class="icatch"><img src="../official/images/n170421s.jpg" width="130" height="90" alt=""/></p>
+              <div class="mda-dl">
+                <time datetime="2017.4.21" class="date">2017.4.21</time>
+                <p>ファイナリスト紹介Vol.7</p>
+              </div>
+              </a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>-->
+</div>
+<!-- #main -->
+<section id="banners">
+  <div class="container">
+    <div class="row">
+      <div class="three columns bana">主催<br>
+        <a href="https://www.fc-education.co.jp/" target="_blank"><img src="../images/bana07.png" alt="FCEエデュケーション"/></a></div>
+      <!-- three columns bana -->
+      <!-- three columns bana -->
+      <div class="three columns bana">特別協力企業<br>
+        <a href="http://www.fce-group.jp/" target="_blank"><img src="../images/bana08.png" alt="FCEホールディングス"/></a></div>
+      <!-- three columns bana -->
+      <div class="three columns bana"><br>
+        <a href="http://www.mext.go.jp/" target="_blank"><img src="../images/bana06.png" alt="文部科学省"/></a></div>
+      <!-- three columns bana -->
+      </div>
+	  <p style="margin:15px 0 -3px;">アクティブラーナー育成コンテンツ</p>
+<div class="row">
+     <div class="three columns bana">
+        <a href="https://find-activelearning.com/" target="_blank"><img src="../images/bana-fal.png" alt="Find！アクティブラーナー　20万人の先生が活用するアクティブラーナー育成サイト"/></a></div>
+      <!-- three columns bana -->
+      <div class="three columns bana">
+        <a href="http://foresight-planner.jp" target="_blank"><img src="../images/bana-fs.png" alt="フォーサイト手帳　510校185,000人が活用中の手帳！"/></a></div>
+      <!-- three columns bana -->
+      <div class="six columns bana">
+        <a href="/support/"><img src="../images/bana.png" alt="協賛募集中"/></a></div>
+      <!-- three columns bana -->
+    </div>
+  </div>
+</section>
+<div id="top-totop">
+  <p class="pcenter"><a href="#"><img src="images/pagetophome.png" width="72" height="32" alt="PAGE Top"/></a></p>
+</div>
+<footer id="footer" role="contentinfo" class="clearfix">
+  <div class="container">
+    <div class="one-half column">
+      <p class="pleft"><img src="images/logo2.png" width="244" height="64" alt=""/></p>
+      <p class="pleft">株式会社 FCEエデュケーション<br>
+        東京都新宿区西新宿2-4-1　新宿NSビル10階<br>
+        TEL : 03-5908-1400<br>
+        MAIL: info@fc-education.co.jp</p>
+    </div>
+    <div class="one-half column">
+      <div class="fb-page" data-href="https://www.facebook.com/%E3%83%81%E3%83%A3%E3%83%AC%E3%83%B3%E3%82%B8%E3%82%AB%E3%83%83%E3%83%97-171978676179765/"
+data-width="500px"
+data-hide-cover="false"
+data-show-facepile="true"
+data-show-posts="false">
+        <div class="fb-xfbml-parse-ignore">
+          <blockquote cite="https://www.facebook.com/%E3%83%81%E3%83%A3%E3%83%AC%E3%83%B3%E3%82%B8%E3%82%AB%E3%83%83%E3%83%97-171978676179765/"> <a href="https://www.facebook.com/%E3%83%81%E3%83%A3%E3%83%AC%E3%83%B3%E3%82%B8%E3%82%AB%E3%83%83%E3%83%97-171978676179765/"> チャレンジカップ</a> </blockquote>
+        </div>
+      </div>
+    </div>
+    <!-- facebook -->
+  </div>
+  <div class="f-bt">
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <!--li><a href="contact.html">お問い合わせ</a></li-->
+          <li><a href="policy.html">プライバシーポリシー</a></li>
+          <li><a href="tokusyo.html">特定商取引法に基づく表記</a></li>
+        </ul>
+      </nav>
+      <div class="copy"> <a href="#">Copyright &copy; Challenge Cup All rights reserved.</a> </div>
+    </div>
+  </div>
+  <!-- f-bt -->
+</footer>
+<ul class="fix_btns">
+<li><a href="http://www.challenge-cup.net/cc/entry/form_entry.html" class="btn_oc"><img src="images/formicon.png" height="16" width="16"><br>
+<img src="images/side_oc.png" width="17" height="130" alt="エントリーフォーム"></a></li>
+<!--<li><a href="http://www.challenge-cup.net/grandprix.html" class="btn_doc"><img src="images/kansenicon.png" height="16" width="16"><br><img src="images/side_doc.png" width="17" height="71" alt="観戦申し込み"></a></li>-->
+</ul>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript">
+$('#kumi').animateNumber({ number: 2671 }, 1000);
+$('#ninzu').animateNumber({ number: 21553 }, 1500);
+</script>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+</body>
+</html>

@@ -3,7 +3,7 @@
   <ul id="footer_menu">
     <li><a href="<?php echo LINK_01; ?>">企業情報</a></li>
     <li><a href="<?php echo LINK_02; ?>">事業情報</a></li>
-    <li><a href="<?php echo LINK_03; ?>">IR</a></li>
+    <!-- <li><a href="<?php echo LINK_03; ?>">IR</a></li> -->
     <li><a href="<?php echo LINK_04; ?>">プレスリリース</a></li>
     <li><a href="<?php echo LINK_05; ?>">お問い合わせ</a></li>
     <li><a href="<?php echo LINK_06; ?>">プライバシーポリシー</a></li>

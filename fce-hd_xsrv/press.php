@@ -6,26 +6,23 @@ require_once "./bin/parts/variables.php";
 require_once "./bin/parts/document_header.php";
 ?>
 
-<body class="home">
+<body class="press">
 <?php
 require_once "./bin/parts/header.php";
 ?>
 
 <main>
-  <div id="KV_FIELD">
-    <div class="base_wrapper slider_wrapper">
-      <div class="slider_wrap"></div>
-      <div class="slider_wrap"></div>
-      <div class="slider_wrap"></div>
+  <div id="MV_FIELD">
+    <div class="base_wrapper">
+      <h1>プレスリリース</h1>
     </div>
   </div>
-
-  <section class="home-bnr_list">
+  <div class="pank">
     <ul class="base_wrapper">
-      <li><a href="<?php echo LINK_01; ?>">企業情報</a></li>
-      <li><a href="<?php echo LINK_02; ?>">事業情報</a></li>
+      <li><a href="/">トップ</a></li>
+      <li>プレスリリース</li>
     </ul>
-  </section>
+  </div>
 
   <section id="MOD_NEWS">
     <article class="base_wrapper">
@@ -58,6 +55,7 @@ require_once "./bin/parts/header.php";
       </div>
     </article>
   </section>
+
 </main>
 
 <?php
