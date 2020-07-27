@@ -7,7 +7,7 @@
 * ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
 
 .pc_display{display:block;}
-.sp_display{display:none;}
+.sp_display{display:none !important;}
 
 @include tab(){
   .pc_display{display:none !important;}
@@ -47,7 +47,7 @@ a{
   }
 }
 header,main,footer{
-  width:100vw;
+  width:100%;
 }
 main{
   z-index:1;

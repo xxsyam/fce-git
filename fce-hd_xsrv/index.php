@@ -14,9 +14,18 @@ require_once "./bin/parts/header.php";
 <main>
   <div id="KV_FIELD">
     <div class="base_wrapper slider_wrapper">
-      <div class="slider_wrap"></div>
-      <div class="slider_wrap"></div>
-      <div class="slider_wrap"></div>
+      <div class="slider_wrap pub">
+        <div class="slider_pict"><img src="/bin/image/kv_001_sp.jpg" class="sp_display"><img src="/bin/image/kv_001.jpg" class="pc_display"></div>
+        <div class="slider_text"><span>全世界4000万部発行　世界的ベストセラー『7つの習慣』出版</span></div>
+      </div>
+      <div class="slider_wrap fal">
+        <div class="slider_pict"><img src="/bin/image/kv_002_sp.jpg" class="sp_display"><img src="/bin/image/kv_002.jpg" class="pc_display"></div>
+        <div class="slider_text"><span>全国1000校以上・20万人の先生方が利用、オンライン教員研修サービス</span></div>
+      </div>
+      <div class="slider_wrap pat">
+        <div class="slider_pict"><img src="/bin/image/kv_003_sp.jpg" class="sp_display"><img src="/bin/image/kv_003.jpg" class="pc_display"></div>
+        <div class="slider_text"><span>「現場で作って使える」を「エンジニアに依存しない」IT活用を実現するRPA</span></div>
+      </div>
     </div>
   </div>
 

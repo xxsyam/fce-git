@@ -45,15 +45,31 @@ $(function(){
 
   // 商品一覧用
   $('#KV_FIELD .slider_wrapper').slick({
-    autoplay:true,
+    autoplay:false,
     autoplaySpeed:5000,
     dots:false,
-    centerMode: false,
+    centerMode: true,
+    centerPadding: '15%',
     slidesToShow:1,
     slidesToScroll:1,
     focusOnSelect:true,
     infinite:true,
-    arrow:true
+    arrow:true,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          centerMode: false,
+          dots:true
+        }
+      },{
+        breakpoint: 640,
+        settings: {
+          centerMode: false,
+          dots:true
+        }
+      }
+    ]
   });
 
   // お知らせ用

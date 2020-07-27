@@ -10,6 +10,13 @@ footer{
       @include fontsize(24);
       padding:35px 5%;
       color:$red-e;
+      transition: all  0.3s ease;
+
+      &:hover{
+        color:$color-z;
+        background:$red-e;
+        opacity: 1;
+      }
     }
   }
   #footer_menu{
