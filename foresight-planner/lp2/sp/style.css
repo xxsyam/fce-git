@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.section {
+    padding: 1.5em 0;
+}
+#wrap {
+    margin: 0 auto;
+    max-width: 750px;
+    width: 100%;
+}
+/* .btn
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.btn {
+    background: url(images/sp_btn_bg.png);
+    background-size: cover;
+    padding: 1em 0;
+}
+/* hyouka
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#hyouka {
+    background: #0c4572;
+}
+#hyouka p{
+    color: #fff;
+}
+/* episode
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#episode {
+    background: url(../images/koebg.png);
+}
+h3.msgep {
+    background: url(images/sp_drop.png) right center;
+    background-size: cover;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 25px;
+    padding: 10px 45px 10px 10px;
+    color: #fff;
+}
+h4.school {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1183c6;
+    margin: 10px 0;
+}
+/* drop
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#drop.menu {
+    margin: 30px auto 20px;
+}
+#drop label {
+    background: url(images/sp_drop.png) right center;
+    background-size: cover;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 25px;
+    padding: 10px 45px 10px 10px;
+    color: #fff;
+    display: block;
+    margin: 0 0 5px;
+    cursor: pointer;
+}
+#drop label:hover {
+    background: url(images/sp_drop_hover.png) right center;
+    background-size: cover;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+input[type="checkbox"].on-off{
+  display: none;
+}
+#drop.episode {
+    display: block;
+    border: 1px solid #c3c3c3;
+    margin: 10px;
+}
+input[type="checkbox"].on-off + .episode{
+  display: none;
+}
+
+input[type="checkbox"].on-off:checked + .episode{
+  display: block;
+}
+.episode {
+    padding: 1rem;
+    background: #fff;
+}
+/* form
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.formtibg {
+    background: #007ac2;
+}
+#form h2 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+	text-align:left;
+	padding:0.5em;
+}
+.form {
+    width: 85%;
+    max-width: 800px;
+    margin: 5% auto;
+    padding: 5% 5% 3%;
+    border: 1px solid #dfdfdf;
+}
+span.sample {
+    float: left;
+}
+.form .private{
+	height:160px;
+	overflow-y: scroll;
+	border-top:1px solid #CCC;
+	border-bottom:1px solid #CCC;
+	border-left:1px solid #CCC;
+	padding:15px 10px;
+	margin:0 0 30px 0;
+}
+.formset input[type="text"] {
+    background-color: #DFDFDF;
+    border-radius: 3px;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+#form strong {
+    color: #ce1111;
+}
+input.mei {
+    width: 90% !important;
+}
+input[type="checkbox"] {
+    margin: 0 5px 0 10px;
+}
+.formset label{
+	clear:both;
+	display:block;
+	padding:5px 0;
+}
+.formset span {
+    display: block;
+    color: #434343;
+    font-weight: bold;
+    vertical-align: top;
+}
+p.center {
+    text-align: center;
+}
+input[type="submit"] {
+    background: #ffea02;
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    color: #007ac2;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    height: 70px;
+}
+input[type="reset"] {
+    background: #949494;
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    color: #FFF;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    height: 70px;
+}
+textarea {
+    width: 100%;
+    margin-bottom: 0;
+}
+#thanks h1 {
+    font-weight: bold;
+    color: #007ac2;
+}
+#thanks #line {
+    padding: 2em 0 0;
+}
+#thanks #line p {
+    font-weight: bold;
+}
+.totop {
+    background: #fd0;
+    width: 40%;
+    margin: 2em auto;
+    padding: 1rem;
+    color: #007ac2;
+    font-weight: bold;
+    text-decoration: none;
+}
+p.cyuui {
+    font-weight: bold;
+}
+p.cyuui strong {
+    color: #e42727;
+}
+/* footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+footer#footer {
+    background: #007ac2;
+}
+footer#footer p {
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+footer#footer p a {
+    color: #fff;
+}

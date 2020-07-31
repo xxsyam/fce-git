@@ -220,8 +220,9 @@
 
     </section>
 
-
   </main>
+
+  <?php require_once "./footer.php";?>
 
   <script src="/bin/js/jquery-3.3.1.min.js"></script>
   <script src="/bin/js/jquery.inview.min.js"></script>

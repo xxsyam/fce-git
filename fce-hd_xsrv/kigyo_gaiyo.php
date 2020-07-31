@@ -28,7 +28,6 @@ require_once "./bin/parts/header.php";
   <section>
     <div class="base_wrapper two_line">
       <article id="MAIN_FIELD">
-        <h2>会社概要</h2>
 
         <dl>
           <dt>社名</dt>

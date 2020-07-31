@@ -15,7 +15,8 @@
   <meta property="og:image" content="">
   <meta name="twitter:card" content="summary_large_image">
 
-  <link rel="stylesheet" href="/bin/css/index.min.css">
+  <link rel="stylesheet" href="/bin/css/index.min.css?ver=<?php echo date("U"); ?>">
+  <link rel="stylesheet" href="/bin/css/icon-fonts.css">
   <link rel="stylesheet" href="/bin/css/slick.css">
   <link rel="stylesheet" href="/bin/css/slick-theme.css">
   <link rel="shortcut icon" href="/favicon.ico">
@@ -84,53 +85,58 @@
     </div>
 
     <!-- What’s FCE -->
-    <section class="whats inner anim">
+    <section class="whats anim bg-animation rd">
 
-      <h2 class="heading">What’s FCE<small>FCEグループとは</small></h2>
+      <div class="inner">
+        <h2 class="heading">What’s FCE<small>FCEグループとは</small></h2>
 
-      <div class="bg-particles anim">
-        <object class="bg1 particle animateme" type="image/svg+xml" data="/bin/image/bg_1.svg"></object>
-        <object class="bg3 particle animateme" type="image/svg+xml" data="/bin/image/bg_3.svg"></object>
-        <object class="bg2 particle animateme" type="image/svg+xml" data="/bin/image/bg_2.svg"></object>
-        <object class="bg4 particle animateme" type="image/svg+xml" data="/bin/image/bg_4.svg"></object>
+        <div class="bg-particles anim">
+          <object class="bg1 particle animateme" type="image/svg+xml" data="/bin/image/bg_1.svg"></object>
+          <object class="bg3 particle animateme" type="image/svg+xml" data="/bin/image/bg_3.svg"></object>
+          <object class="bg2 particle animateme" type="image/svg+xml" data="/bin/image/bg_2.svg"></object>
+          <object class="bg4 particle animateme" type="image/svg+xml" data="/bin/image/bg_4.svg"></object>
+        </div>
+
+        <ul class="anim-list">
+          <li class="message">
+          <h3>つくりたいのは、チャレンジあふれる未来！</h3>
+          <p>
+            これがFCEグループの想いです。	<br>
+            <br>
+            世の中にはチャレンジを阻むさまざまな社会課題があります。<br>
+            FCEグループは、こうした社会課題に向き合い、ビジネスで解決するをコンセプトに<br>
+            さまざまな事業を創造し、展開しています。<br>
+            <br>
+            そして、子どもたちから働く大人、そして、老若男女すべての方々が、<br>
+            さまざまなことに想いっきりチャレンジできる世の中をつくっていきます。
+          </p>
+        </li>
+
+        <li class="message2">
+          <h3>OneTeam=集合天才？</h3>
+          <p>
+            グループ内で共有することで、さらに大きなシナジーを発揮し、お客様に圧倒的な貢献と<br>
+            成長をもたらせるよう「ワンチーム」として取り組んでいます。
+          </p>
+        </li>
+
+        </ul>
+
+        <div class="btn_set"><span class="button wt"><a href="#">View More</a></span></div>
       </div>
-
-      <ul class="anim-list">
-        <li class="message">
-        <h3>つくりたいのは、チャレンジあふれる未来！</h3>
-        <p>
-          これがFCEグループの想いです。	<br>
-          <br>
-          世の中にはチャレンジを阻むさまざまな社会課題があります。<br>
-          FCEグループは、こうした社会課題に向き合い、ビジネスで解決するをコンセプトに<br>
-          さまざまな事業を創造し、展開しています。<br>
-          <br>
-          そして、子どもたちから働く大人、そして、老若男女すべての方々が、<br>
-          さまざまなことに想いっきりチャレンジできる世の中をつくっていきます。
-        </p>
-      </li>
-
-      <li class="message2">
-        <h3>OneTeam=集合天才？</h3>
-        <p>
-          グループ内で共有することで、さらに大きなシナジーを発揮し、お客様に圧倒的な貢献と<br>
-          成長をもたらせるよう「ワンチーム」として取り組んでいます。
-        </p>
-      </li>
-
-      </ul>
 
     </section>
 
     <!-- Team! FCE -->
-    <section class="team anim bg-animation rd">
-      <h2 class="heading">Team! FCE<small>FCEチーム</small></h2>
+    <section class="team anim">
+      <h2 class="heading">Challenge! Change! FCE<small>FCEの未来を変える事業たち</small></h2>
       <ul class="flex-center anim-list">
         <li>
           <h3><strong>教育</strong>を変える</h3>
           <p>
             子供たちに自信と可能性を、先生たちに自由と機会を。
           </p>
+          <div class="pict_wrap"><img src="/bin/image/challenge1.jpg"></div>
           <dl>
             <dt>教育に関する事業たち</dt>
             <dd>
@@ -144,6 +150,7 @@
           <p>
             子供たちに自信と可能性を、先生たちに自由と機会を。
           </p>
+          <div class="pict_wrap"><img src="/bin/image/challenge2.jpg"></div>
           <dl>
             <dt>教育に関する事業たち</dt>
             <dd>
@@ -158,6 +165,7 @@
           <p>
             子供たちに自信と可能性を、先生たちに自由と機会を。
           </p>
+          <div class="pict_wrap"><img src="/bin/image/challenge3.jpg"></div>
           <dl>
             <dt>教育に関する事業たち</dt>
             <dd>
@@ -166,30 +174,6 @@
           </dl>
         </li>
       </ul>
-    </section>
-
-    <!-- さぁ、次は何を変えようか？ -->
-    <section class="next inner anim">
-      <div class="box-right">
-        <h2 class="heading-bg anim">
-          <span>さぁ、</span>
-          <span>次は何を変えようか？</span>
-        </h2>
-
-        <div class="bg-particles anim">
-          <object class="bg1 particle" type="image/svg+xml" data="/bin/image/bg_1.svg"></object>
-          <object class="bg3 particle" type="image/svg+xml" data="/bin/image/bg_3.svg"></object>
-          <object class="bg2 particle" type="image/svg+xml" data="/bin/image/bg_2.svg"></object>
-          <object class="bg4 particle" type="image/svg+xml" data="/bin/image/bg_4.svg"></object>
-        </div>
-
-        <div class="button">
-          <a href="#">View More</a>
-        </div>
-      </div>
-      <div class="box-left photo">
-        <img src="/bin/image/img_1.png" alt="">
-      </div>
     </section>
 
     <!-- Service -->
@@ -251,6 +235,33 @@
             </a>
           </li>
         </ul>
+      </div>
+    </section>
+
+    <!-- さぁ、次は何を変えようか？ -->
+    <section class="next inner anim">
+      <div class="section-header flex-between align-end">
+        <h2 class="heading">Team!FCE<small>FCEの仲間たち</small></h2>
+      </div>
+      <div class="box-right">
+        <h2 class="heading-bg anim">
+          <span>さぁ、</span>
+          <span>次は何を変えようか？</span>
+        </h2>
+
+        <div class="bg-particles anim">
+          <object class="bg1 particle" type="image/svg+xml" data="/bin/image/bg_1.svg"></object>
+          <object class="bg3 particle" type="image/svg+xml" data="/bin/image/bg_3.svg"></object>
+          <object class="bg2 particle" type="image/svg+xml" data="/bin/image/bg_2.svg"></object>
+          <object class="bg4 particle" type="image/svg+xml" data="/bin/image/bg_4.svg"></object>
+        </div>
+
+        <div class="button">
+          <a href="#">View More</a>
+        </div>
+      </div>
+      <div class="box-left photo">
+        <img src="/bin/image/img_1.png" alt="">
       </div>
     </section>
 
@@ -382,10 +393,12 @@
 
     <!-- Recruit -->
     <section class="recruit anim bg-animation rd">
-      <h2 class="heading">Recruit<small>採用情報</small></h2>
+      <h2 class="heading"><a href="#">Recruit<small>採用情報</small></a></h2>
     </section>
 
   </main>
+
+  <?php require_once "./footer.php";?>
 
   <script src="/bin/js/jquery-3.3.1.min.js"></script>
   <script src="/bin/js/jquery.inview.min.js"></script>

@@ -28,7 +28,6 @@ require_once "./bin/parts/header.php";
   <section>
     <div class="base_wrapper two_line">
       <article id="MAIN_FIELD">
-        <h2>代表メッセージ</h2>
 
         <div class="base_unit">
           <p>私たちの世界は、誰かの「チャレンジ」でできています。<br><br>

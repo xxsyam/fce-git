@@ -28,7 +28,6 @@ require_once "./bin/parts/header.php";
   <section>
     <div class="base_wrapper two_line">
       <article id="MAIN_FIELD">
-        <h2>役員紹介</h2>
 
         <div class="yakuin_unit">
           <h3><span>株式会社FCE Holdings<br>代表取締役社長</span><strong>石川 淳悦</strong></h3>

@@ -1,0 +1,494 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Shared
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button {
+  border-radius: 100px;
+}
+
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section {
+  padding: 8rem 0 7rem;
+  text-align: center;
+}
+.section-heading,
+.section-description {
+  margin-bottom: 1.2rem;
+}
+a.btn {
+    clear: both;
+    display: block;
+    text-align: center;
+}
+.mp2em {margin: 3.5em 0 0;}
+.mp6em {margin-top: 6em;}
+.left {float: left;}
+.mt20m{margin-top: -20px;}
+
+/* mainVisual
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#header {
+    height: 0;
+}
+.main-visual{
+	background-image: url(./images/bg.jpg);
+	background-size: cover;
+}
+section#main-visual {
+    padding-bottom: 0;
+}
+.hume img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+#main-btnbg {
+    background: #fcffc4;
+    padding: 20px 0;
+    position: relative;
+}
+#line {
+    background: #abe6fa;
+    background-size: cover;
+    padding: 0.5em 0 0;
+}
+#line ul li {
+    list-style: none;
+    float: left;
+}
+#thanks .main-visual {
+    background-image: url(./images/kaihatsubg.jpg);
+    background-size: cover;
+    padding-bottom: 5rem;
+}
+#main-visual ul li {
+    list-style: none;
+    float: left;
+    width: 33.3333%;
+}
+/* kodawari
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#kodawari {
+    background: #1faefa;
+    padding: 20px 0;
+}
+#points {
+    background: url(./images/rebg.jpg);
+    padding: 6em 0;
+}
+#points .kodawari img {
+    margin-bottom: 20px;
+}
+
+/* episode
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#episode {
+    background: url(./images/koebg.jpg);
+    padding: 6em 0;
+}
+#episode h2 {
+    z-index: 999;
+    position: relative;
+}
+.msg {
+    background: url(./images/koe.png);
+    margin: -40px auto 20px;
+	z-index: 9999;
+    position: relative;
+    display: block;
+    width: 980px;
+    height: 320px;
+}
+.msg2 {
+    background: url(./images/koe2.png);
+    margin: 0 auto 20px;
+    display: block;
+    width: 980px;
+    height: 320px;
+}
+.msg3 {
+    background: url(./images/koe3.png);
+    margin: 0 auto 20px;
+    display: block;
+    width: 980px;
+    height: 320px;
+}
+.epimg {
+    float: left;
+    margin: 53px 32px;
+}
+.epimg2 {
+    float: left;
+    margin: 55px 33px;
+}
+.epimg3 {
+    margin: 58px 32px;
+    float: left;
+}
+.msgep {
+    color: #fff;
+    font-weight: bold;
+    padding-top: 33px;
+}
+.school {
+    color: #1283c6;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+p.ep {
+    width: 96.5%;
+	line-height: 1.5em;
+}
+.mt20 {
+    padding: 50px 0 20px;
+}
+.mt60 {
+    margin-top: 60px !important;
+}
+/* hyouka
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hyouka {
+    background: #fef8d0;
+    padding: 6em 0;
+}
+.kanken {
+    background: #fff;
+    padding: 1em 1.5em;
+    border: 2px solid #444;
+    min-height: 100px;
+    width: 1000px;
+}
+.kantxt {
+    width: 760px;
+    float: left;
+}
+.kanimg {
+    float: right;
+    height: 100px;
+}
+p.ranking {
+    text-align: center;
+}
+/* kaihatsu
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.kaihatsu {
+  background-image: url(./images/kaihatsubg.jpg);
+  background-size: cover;
+  padding: 6em 0;
+}
+.hiwa {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+    text-align: center;
+    padding: 3em 0;
+    font-weight: 500;
+    font-size: 1.2em;
+    width: 85%;
+    margin: 0 auto;
+}
+span.rightblue {
+    color: #09a7fc;
+}
+/* point
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.point {
+  background-image: url(./images/pointbg.png);
+  padding: 6em 0;
+}
+.pointbg {
+    background: rgba(255, 255, 255, 0.61);
+    padding: 3em;
+    height: 900px;
+}
+h3.pointTXT {
+    font-weight: bold;
+    color: #386589;
+    display: block;
+    padding-top: 60px;
+    float: left;
+}
+.po {
+    clear: both;
+}
+.poimg {
+    width: 196px;
+    margin: 0 1em;
+}
+/* form
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.formtibg {
+    background: #56c3fd;
+}
+#form h2 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+    padding-top: 1em;
+}
+.form {
+    width: 85%;
+    max-width: 800px;
+    margin: 5% auto;
+    padding: 5% 5% 3%;
+    border: 1px solid #dfdfdf;
+}
+span.sample {
+    float: left;
+}
+.form .private{
+	height:160px;
+	overflow-y: scroll;
+	border-top:1px solid #CCC;
+	border-bottom:1px solid #CCC;
+	border-left:1px solid #CCC;
+	padding:15px 10px;
+	margin:0 0 30px 0;
+}
+.formset input[type="text"]{
+	padding:10px;
+	background-color:#DFDFDF;
+	border-radius:3px;
+	border:none;
+	width:78%;
+	box-sizing:border-box;
+}
+input.mei {
+    width: 73% !important;
+}
+input[type="checkbox"] {
+    margin: 0 5px 0 10px;
+}
+.formset p {
+    font-weight: 500;
+}
+.formset label{
+	clear:both;
+	display:block;
+	padding:10px 0;
+}
+.formset span {
+    display: inline-block;
+    color: #434343;
+    width: 20%;
+    font-weight: bold;
+    vertical-align: top;
+}
+.formset strong {
+    color: #ce1111;
+}
+p.center {
+    text-align: center;
+}
+input[type="submit"] {
+    background: #ffea02;
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    color: #007ac2;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    height: 70px;
+}
+input[type="reset"] {
+    background: #949494;
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    color: #FFF;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    height: 70px;
+}
+textarea {
+    width: 78%;
+    margin-bottom: 0;
+}
+#thanks h1 {
+    font-weight: bold;
+    color: #007ac2;
+}
+#thanks #line {
+    padding: 2em 0 0;
+}
+#thanks #line p {
+    font-weight: bold;
+}
+.totop {
+    background: #fd0;
+    width: 40%;
+    margin: 2em auto;
+    padding: 1rem;
+    color: #007ac2;
+    font-weight: bold;
+    text-decoration: none;
+}
+p.cyuui {
+    font-weight: bold;
+}
+p.cyuui strong {
+    color: #e42727;
+}
+/* footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#footer {
+    background: #56c3fd;
+}
+#footer p img {
+    text-align: center;
+    padding-top: 2em;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+#footer a {
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    background: #f06479;
+    color: #fff;
+    text-decoration: none;
+}
+footer#footer p:last-child {
+    margin-bottom: 0;
+}
+
+ @media screen and (max-width: 1200px) {
+
+ }
+ @media screen and (max-width: 1199px) {
+h1.logo img {
+    width: 40%;
+    height: auto;
+}
+.step img {
+    width: 40%;
+}
+a.btn img {
+    width: 98%;
+}
+#line ul {
+    display: none;
+}
+#episode {
+    padding: 3em 0;
+}
+#episode h2 img {
+    width: 100%;
+}
+.msg, .msg2, .msg3 {
+    background: #fff;
+    width: 94%;
+    height: auto;
+    padding: 3%;
+}
+.epimg, .epimg2, .epimg3 {
+    float: none;
+    text-align: center;
+    margin: 2% auto;
+}
+h3.msgep {
+    background: #1283c6;
+    padding: 2%;
+    font-size: 1.2em;
+}
+.hero-heading img {
+    width: 100%;
+}
+#hyouka img {
+    width: 100%;
+}
+.kanken {
+    width: 90%;
+    padding: 5%;
+}
+.kantxt {
+    width: 100%;
+}
+.kanimg {
+    width: 35%;
+}
+#kaihatsu h2 img {
+    width: 100%;
+}
+.hiwa {
+    width: 96%;
+    padding: 2%;
+    font-size: 1em;
+}
+.hiwa br {
+    display: none;
+}
+#form h2 {
+    font-size: 1.3em;
+}
+.formset label {
+    width: 100%;
+}
+.formset span {
+    width: 100%;
+}
+.formset input[type="text"] {
+    width: 100%;
+}
+#point {
+    display: none;
+}
+textarea {
+    width: 100%;
+}
+.totop {
+    width: 60%;
+}
+#footer p img {
+    width: 100%;
+}
+}
+ @media screen and (max-width: 680px) {
+h1.logo img {
+    width: 80%;
+    height: auto;
+}
+.step img {
+    width: 80%;
+    height: auto;
+}
+#main-visual {
+    padding-top: 130px;
+}
+.hyouka {
+    padding: 3em 0;
+}
+
+ }
+
+
+#mv_text {
+    text-align: center;
+    color: #ea0f67;
+    font-size: 55px;
+    font-weight: bold;
+    font-family: auto;
+    text-shadow: 2px 2px 0 #fff;
+}
+
+
+/* Bigger than 550 */
+@media (min-width: 550px) {
+.section {
+    padding: 12rem 0 11rem;
+}
+}
+/* Bigger than 1100*/
+@media (min-width: 1100px) {
+.section {
+    padding: 15em 0 3em;
+}
+}

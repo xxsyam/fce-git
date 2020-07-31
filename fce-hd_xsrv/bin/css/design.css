@@ -639,6 +639,10 @@ aside nav ul li:not(:last-of-type) {
 	background-image: url("/bin/image/mv_kigyo.jpg");
 }
 
+.press #MV_FIELD {
+	background-image: url("/bin/image/mv_kigyo.jpg");
+}
+
 footer #page_top {
 	border-top: 1px solid #ef001f;
 	border-bottom: 1px solid #ef001f;
@@ -970,95 +974,112 @@ footer small {
 	}
 }
 
-.home-bnr_list ul {
+.home-bnr_list .base_wrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	align-content: center;
 	text-align: center;
 	flex-direction: row;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	justify-content: space-between;
+	align-items: flex-start;
 }
 
-@media (max-width: 480px) {
-	.home-bnr_list ul {
+@media (max-width: 798px) {
+	.home-bnr_list .base_wrapper {
 		flex-direction: column;
 	}
 }
 
-.home-bnr_list ul li {
-	margin: 0;
-	width: calc(100% / 2.1);
+.home-bnr_list .base_wrapper dl {
+	width: 48%;
 }
 
-@media (max-width: 480px) {
-	.home-bnr_list ul li {
-		width: calc(100%);
-	}
-	.home-bnr_list ul li:nth-of-type(1) {
-		margin-bottom: 10px !important;
+@media (max-width: 798px) {
+	.home-bnr_list .base_wrapper dl {
+		width: 100%;
 	}
 }
 
-@media (max-width: 480px) and (max-width: 798px) {
-	.home-bnr_list ul li:nth-of-type(1) {
-		margin-bottom: 7.69231px !important;
-	}
-}
-
-@media (max-width: 480px) and (max-width: 480px) {
-	.home-bnr_list ul li:nth-of-type(1) {
-		margin-bottom: 5px !important;
-	}
-}
-
-.home-bnr_list ul li a {
+.home-bnr_list .base_wrapper dl dt a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	align-content: center;
 	text-align: center;
 	flex-direction: row;
-	flex-wrap: nowrap;
-	padding: 85px 3%;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-content: flex-end;
+	font-size: 24px;
+	font-size: 2.4rem;
+	padding: 190px 0 10px 10px;
+	max-height: 200px;
 	color: #fff;
-	font-size: 16px;
-	font-size: 1.6rem;
+	background: #ccc;
 }
 
 @media (max-width: 1023px) {
-	.home-bnr_list ul li a {
-		font-size: 16px;
-		font-size: 1.6rem;
+	.home-bnr_list .base_wrapper dl dt a {
+		font-size: 24px;
+		font-size: 2.4rem;
 	}
 }
 
 @media (max-width: 798px) {
-	.home-bnr_list ul li a {
-		font-size: 15.68px;
-		font-size: 1.568rem;
+	.home-bnr_list .base_wrapper dl dt a {
+		font-size: 23.52px;
+		font-size: 2.352rem;
 	}
 }
 
 @media (max-width: 480px) {
-	.home-bnr_list ul li a {
-		font-size: 14.7392px;
-		font-size: 1.47392rem;
+	.home-bnr_list .base_wrapper dl dt a {
+		font-size: 22.1088px;
+		font-size: 2.21088rem;
 	}
 }
 
-@media (max-width: 480px) {
-	.home-bnr_list ul li a {
-		padding: 45px 3%;
+@media (max-width: 798px) {
+	.home-bnr_list .base_wrapper dl dt a {
+		padding-top: 170px;
+		font-size: 22px;
+		font-size: 2.2rem;
 	}
 }
 
-.home-bnr_list ul li:nth-of-type(1) {
+@media (max-width: 798px) and (max-width: 1023px) {
+	.home-bnr_list .base_wrapper dl dt a {
+		font-size: 22px;
+		font-size: 2.2rem;
+	}
+}
+
+@media (max-width: 798px) and (max-width: 798px) {
+	.home-bnr_list .base_wrapper dl dt a {
+		font-size: 21.56px;
+		font-size: 2.156rem;
+	}
+}
+
+@media (max-width: 798px) and (max-width: 480px) {
+	.home-bnr_list .base_wrapper dl dt a {
+		font-size: 20.2664px;
+		font-size: 2.02664rem;
+	}
+}
+
+.home-bnr_list .base_wrapper dl dd {
+	text-align: left;
+	padding: 15px 0;
+}
+
+.home-bnr_list .base_wrapper dl:nth-of-type(1) dt a {
 	background: url("/bin/image/home-bnr_kigyo.jpg") no-repeat center center/cover;
 }
 
-.home-bnr_list ul li:nth-of-type(2) {
+.home-bnr_list .base_wrapper dl:nth-of-type(2) dt a {
 	background: url("/bin/image/home-bnr_jigyo.jpg") no-repeat center center/cover;
 }
 

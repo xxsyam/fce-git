@@ -6,6 +6,7 @@
       <ul class="flex-center align-center pc">
         <li><a href="/_template/about.php">ABOUT</a></li>
         <li><a href="/_template/service.php">SERVICE</a></li>
+        <li><a href="/_template/team.php">Team！FCE</a></li>
         <li><a href="/_template/face.php">FaCE！</a></li>
         <li><a href="/_template/news.php">NEWS</a></li>
         <li><a href="#" target="_blank">RECRUIT</a></li>
@@ -21,31 +22,29 @@
         <div class="globalmenu-block flex-between">
           <dl>
             <dt class="link-heading"><a href="/_template/about.php">ABOUT</a></dt>
-            <dd class="link-detail"><a href="#">STARTING POINT</a></dd>
-            <dd class="link-detail"><a href="#">History</a></dd>
-            <dd class="link-detail"><a href="#">TEAM！FCE</a></dd>
-            <dd class="link-detail"><a href="#">会社概要</a></dd>
+            <dd class="link-detail"><a href="/_template/starting_point.php">STARTING POINT</a></dd>
+            <dd class="link-detail"><a href="/_template/history.php">History</a></dd>
+            <dd class="link-detail"><a href="/_template/gaiyo.php">会社概要</a></dd>
           </dl>
           <dl>
             <dt class="link-heading"><a href="/_template/service.php">SERVICE</a></dt>
-            <dd class="link-detail"><a href="#">教育改革</a></dd>
-            <dd class="link-detail"><a href="#">働き方改革</a></dd>
-            <dd class="link-detail"><a href="#">出版</a></dd>
-            <dd class="link-detail"><a href="#">ストアビジネス</a></dd>
+            <dd class="link-detail"><a href="/_template/service.php">教育改革</a></dd>
+            <dd class="link-detail"><a href="/_template/service.php">働き方改革</a></dd>
+            <dd class="link-detail"><a href="/_template/service.php">出版</a></dd>
+            <dd class="link-detail"><a href="/_template/service.php">ストアビジネス</a></dd>
           </dl>
           <dl>
-            <dt class="link-heading"><a href="/_template/face.php">FaCE！</a></dt>
-            <dd class="link-detail"><a href="#">仲間たち</a></dd>
-            <dd class="link-detail"><a href="#">出来事</a></dd>
-            <dd class="link-detail"><a href="#">ビジネス</a></dd>
-            <dd class="link-detail"><a href="#">カルチャー</a></dd>
-            <dd class="link-detail"><a href="#">お知らせ</a></dd>
+            <dt class="link-heading"><a href="/_template/team.php">Team!FCE</a></dt>
+            <dd class="link-detail"><a href="#">グループ各社代表紹介</a></dd>
+            <dd class="link-detail"><a href="#">社員紹介</a></dd>
           </dl>
           <dl>
-            <dt class="link-heading"><a href="/_template/news.php">NEWS</a></dt>
-            <dd class="link-detail"><a href="#">露出</a></dd>
-            <dd class="link-detail"><a href="#">プレスリリース</a></dd>
-            <dd class="link-detail"><a href="#">お知らせ</a></dd>
+            <dt class="link-heading"><a href="/_template/face.php">FaCE!</a></dt>
+            <dd class="link-detail"><a href="/_template/face.php">仲間たち</a></dd>
+            <dd class="link-detail"><a href="/_template/face.php">出来事</a></dd>
+            <dd class="link-detail"><a href="/_template/face.php">ビジネス</a></dd>
+            <dd class="link-detail"><a href="/_template/face.php">カルチャー</a></dd>
+            <dd class="link-detail"><a href="/_template/face.php">お知らせ</a></dd>
           </dl>
         </div>
         <div class="globalmenu-block">
@@ -68,6 +67,7 @@
 
         <div class="globalmenu-bottom">
           <ul>
+            <li><a href="#">NEWS</a></li>
             <li><a href="#">お問い合わせ</a></li>
             <li><a href="#">ご利用案内</a></li>
             <li><a href="#">プライバシーポリシー</a></li>

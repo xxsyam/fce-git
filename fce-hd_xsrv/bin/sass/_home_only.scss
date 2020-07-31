@@ -8,45 +8,54 @@
     padding:0 3%;
   }
 
-  ul{
-    @include Flex_Center();
+  .base_wrapper{
+    @include Flex_Center(row,wrap);
     justify-content: space-between;
+    align-items: flex-start;
 
-    @include  sp(){
+    @include tab(){
       flex-direction: column;
     }
 
-    li{
-      margin:0;
-      width:calc(100% / 2.1);
+    dl{
+      width:48%;
 
-      @include  sp(){
-        width:calc(100%);
+      @include tab(){
+        width: 100%;
+      }
 
-        &:nth-of-type(1){
-          @include mb(10);
+      dt{
+
+        a{
+          @include Flex_Center(row,wrap);
+          justify-content: flex-start;
+          align-content: flex-end;
+          @include fontsize(24);
+          padding:190px 0 10px 10px;
+          max-height:200px;
+
+          color:$color-z;
+          background:$bk-c;
+
+          @include tab(){
+            padding-top:170px;
+            @include fontsize(22);
+          }
         }
       }
 
-      a{
-        @include Flex_Center();
-        padding:85px 3%;
-        color:$color-z;
-        @include fontsize(16);
-
-        @include  sp(){
-          padding:45px 3%;
-        }
+      dd{
+        text-align: left;
+        padding:15px 0;
       }
 
-      &:nth-of-type(1){
-        background:url("#{$image_path}/home-bnr_kigyo.jpg") no-repeat center center / cover;
-      }
-      &:nth-of-type(2){
-        background:url("#{$image_path}/home-bnr_jigyo.jpg") no-repeat center center / cover;
-      }
+      &:nth-of-type(1) dt a{ background:url("#{$image_path}/home-bnr_kigyo.jpg") no-repeat center center / cover; }
+      &:nth-of-type(2) dt a{ background:url("#{$image_path}/home-bnr_jigyo.jpg") no-repeat center center / cover; }
     }
   }
+
+
+
 }
 
 

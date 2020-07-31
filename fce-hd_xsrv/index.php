@@ -30,10 +30,10 @@ require_once "./bin/parts/header.php";
   </div>
 
   <section class="home-bnr_list">
-    <ul class="base_wrapper">
-      <li><a href="<?php echo LINK_01; ?>">企業情報</a></li>
-      <li><a href="<?php echo LINK_02; ?>">事業情報</a></li>
-    </ul>
+    <div class="base_wrapper">
+      <dl><dt><a href="<?php echo LINK_01; ?>">企業情報</a></dt><dd>テキストテキスト</dd></dl>
+      <dl><dt><a href="<?php echo LINK_02; ?>">事業情報</a></dt><dd>テキストテキスト</dd></dl>
+    </div>
   </section>
 
   <section id="MOD_NEWS">

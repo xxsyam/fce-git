@@ -18,7 +18,7 @@ html{
   }
 }
 body {
-  font-family: 'Ubuntu', 'Noto Sans JP', sans-serif;
+  font-family: 'Noto Sans JP', 'Ubuntu',sans-serif;
   font-feature-settings: "palt";
   -webkit-tap-highlight-color: transparent;
 }
@@ -125,7 +125,8 @@ img {
 .wrapper{
   padding-top: 57px;
   @include pc{
-    padding-top: 87px;
+    // padding-top: 87px;
+     padding-top: 70px;
   }
   position: relative;
   @include z-index(contents);
@@ -401,7 +402,26 @@ h2{
       width: 220%;
     }
   }
+
+  &.wt{
+    a{
+      border: 2px solid #fff;
+      color: #fff;
+
+      &:hover{
+        color:$red;
+      }
+      &:before{
+        background:$red;
+      }
+      &:after{
+        background: #fff;
+      }
+    }
+  }
 }
+
+
 
 // レイアウトFlex *PCのみflexの場合 classを使用
 @include pc{
