@@ -202,18 +202,18 @@ header nav ul:nth-of-type(1) li:last-of-type a {
 }
 
 header nav ul:nth-of-type(2) {
-	margin-top: 10px !important;
+	margin-top: 15px !important;
 }
 
 @media (max-width: 798px) {
 	header nav ul:nth-of-type(2) {
-		margin-top: 7.69231px !important;
+		margin-top: 11.53846px !important;
 	}
 }
 
 @media (max-width: 480px) {
 	header nav ul:nth-of-type(2) {
-		margin-top: 5px !important;
+		margin-top: 7.5px !important;
 	}
 }
 
@@ -636,7 +636,7 @@ aside nav ul li:not(:last-of-type) {
 }
 
 .jigyo #MV_FIELD {
-	background-image: url("/bin/image/mv_jigyo.jpg");
+	background-image: url("/bin/image/mv_kigyo.jpg");
 }
 
 footer #page_top {
@@ -833,8 +833,29 @@ footer small {
 	padding: 5px 3%;
 	color: #fff;
 	background: #808080;
-	font-size: 14px;
-	font-size: 1.4rem;
+	font-size: 13px;
+	font-size: 1.3rem;
+}
+
+@media (max-width: 1023px) {
+	footer small {
+		font-size: 13px;
+		font-size: 1.3rem;
+	}
+}
+
+@media (max-width: 798px) {
+	footer small {
+		font-size: 12.74px;
+		font-size: 1.274rem;
+	}
+}
+
+@media (max-width: 480px) {
+	footer small {
+		font-size: 11.9756px;
+		font-size: 1.19756rem;
+	}
 }
 
 .pank {
@@ -1318,8 +1339,8 @@ footer small {
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	align-content: flex-end;
-	font-size: 30px;
-	font-size: 3rem;
+	font-size: 24px;
+	font-size: 2.4rem;
 	padding: 190px 0 10px 10px;
 	max-height: 200px;
 	color: #fff;
@@ -1328,22 +1349,22 @@ footer small {
 
 @media (max-width: 1023px) {
 	#KIGYO_HOME-LISTS .base_wrapper dl dt a {
-		font-size: 30px;
-		font-size: 3rem;
+		font-size: 24px;
+		font-size: 2.4rem;
 	}
 }
 
 @media (max-width: 798px) {
 	#KIGYO_HOME-LISTS .base_wrapper dl dt a {
-		font-size: 29.4px;
-		font-size: 2.94rem;
+		font-size: 23.52px;
+		font-size: 2.352rem;
 	}
 }
 
 @media (max-width: 480px) {
 	#KIGYO_HOME-LISTS .base_wrapper dl dt a {
-		font-size: 27.636px;
-		font-size: 2.7636rem;
+		font-size: 22.1088px;
+		font-size: 2.21088rem;
 	}
 }
 
@@ -1464,6 +1485,62 @@ footer small {
 @media (max-width: 480px) {
 	.second_pages h2 {
 		margin-bottom: 42.5px !important;
+	}
+}
+
+.second_pages h2 span, .second_pages h2 strong {
+	display: block;
+}
+
+.second_pages h2 strong {
+	font-size: 32px;
+	font-size: 3.2rem;
+}
+
+@media (max-width: 1023px) {
+	.second_pages h2 strong {
+		font-size: 32px;
+		font-size: 3.2rem;
+	}
+}
+
+@media (max-width: 798px) {
+	.second_pages h2 strong {
+		font-size: 31.36px;
+		font-size: 3.136rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.second_pages h2 strong {
+		font-size: 29.4784px;
+		font-size: 2.94784rem;
+	}
+}
+
+.second_pages h2 span {
+	font-size: 22px;
+	font-size: 2.2rem;
+}
+
+@media (max-width: 1023px) {
+	.second_pages h2 span {
+		font-size: 22px;
+		font-size: 2.2rem;
+	}
+}
+
+@media (max-width: 798px) {
+	.second_pages h2 span {
+		font-size: 21.56px;
+		font-size: 2.156rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.second_pages h2 span {
+		font-size: 20.2664px;
+		font-size: 2.02664rem;
 	}
 }
 
@@ -1892,14 +1969,7 @@ footer small {
 
 .jigyo #MAIN_FIELD h3 {
 	display: flex;
-	align-items: flex-end;
-}
-
-@media (max-width: 640px) {
-	.jigyo #MAIN_FIELD h3 {
-		flex-direction: column;
-		align-items: baseline;
-	}
+	flex-direction: column;
 }
 
 .jigyo #MAIN_FIELD h3 span, .jigyo #MAIN_FIELD h3 strong {
@@ -1909,7 +1979,6 @@ footer small {
 .jigyo #MAIN_FIELD h3 span {
 	font-size: 16px;
 	font-size: 1.6rem;
-	margin-bottom: 10px !important;
 }
 
 @media (max-width: 1023px) {
@@ -1933,22 +2002,9 @@ footer small {
 	}
 }
 
-@media (max-width: 798px) {
-	.jigyo #MAIN_FIELD h3 span {
-		margin-bottom: 7.69231px !important;
-	}
-}
-
-@media (max-width: 480px) {
-	.jigyo #MAIN_FIELD h3 span {
-		margin-bottom: 5px !important;
-	}
-}
-
 .jigyo #MAIN_FIELD h3 strong {
 	font-size: 30px;
 	font-size: 3rem;
-	margin-right: 30px;
 }
 
 @media (max-width: 1023px) {
@@ -1972,8 +2028,25 @@ footer small {
 	}
 }
 
-.jigyo #MAIN_FIELD .base_unit:nth-of-type(1) {
-	border: none;
+.jigyo #MAIN_FIELD .base_unit:nth-of-type(4) {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 85px !important;
+}
+
+@media (max-width: 798px) {
+	.jigyo #MAIN_FIELD .base_unit:nth-of-type(4) {
+		padding-bottom: 65.38462px !important;
+	}
+}
+
+@media (max-width: 480px) {
+	.jigyo #MAIN_FIELD .base_unit:nth-of-type(4) {
+		padding-bottom: 42.5px !important;
+	}
+}
+
+.jigyo #MAIN_FIELD .base_unit:last-of-type {
+	border-bottom: none;
 }
 
 .jigyo #MAIN_FIELD .flex_unit {
@@ -2243,16 +2316,16 @@ footer small {
 	color: #ef001f;
 }
 
-.jigyo #MAIN_FIELD .base_unit:nth-of-type(3) .lnk_type:after, .jigyo #MAIN_FIELD .base_unit:nth-of-type(5) .lnk_type:after {
+.jigyo #MAIN_FIELD .base_unit:nth-of-type(2) .lnk_type:after, .jigyo #MAIN_FIELD .base_unit:nth-of-type(4) .lnk_type:after {
 	content: "";
 	display: inline-block;
 }
 
-.jigyo #MAIN_FIELD .base_unit:nth-of-type(3) .lnk_type:after {
+.jigyo #MAIN_FIELD .base_unit:nth-of-type(2) .lnk_type:after {
 	width: 30%;
 }
 
-.jigyo #MAIN_FIELD .base_unit:nth-of-type(5) .lnk_type:after {
+.jigyo #MAIN_FIELD .base_unit:nth-of-type(4) .lnk_type:after {
 	width: 60%;
 }
 

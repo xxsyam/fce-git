@@ -27,31 +27,12 @@ require_once "./bin/parts/header.php";
   <section>
     <div class="base_wrapper">
       <article id="MAIN_FIELD">
-        <h2>事業情報</h2>
 
         <div class="base_unit">
-          <h3><strong>失敗も成功も。</strong><span>さまざまな事業創造を通じて蓄積してきた３つの強み</span></h3>
-
-          <div class="flex_unit three arw_type">
-            <div class="box_unit">
-              <h4><strong>0→1</strong><span>生み出す</span></h4>
-              <div class="box">私たちの事業開発の基点は環境変化と現場。<br>長年培ってきた事業開発のKFSを設定し、スピードをもったトライアルの実施によって事業を立ち上げます。</div>
-            </div>
-            <div class="box_unit">
-              <h4><strong>1→10</strong><span>成長させる</span></h4>
-              <div class="box">継続した成果を出せるよう要因分析や仮説検証を徹底的に繰り返します。<br>成果創出までのプロセスの「標準化」を行い、再現性の高い仕組み化を図ります。</div>
-            </div>
-            <div class="box_unit">
-              <h4><strong>10>…</strong><span>拡げる</span></h4>
-              <div class="box">事業の効率化を図る。また、単に「販売する」のではなく、お客様の未来のためにともにありたい姿を描き、現状や課題をしっかり理解した上で、本質的な解決策として提案することが私たちの信念です。</div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="base_unit">
-          <h3><strong>違いは武器だ。</strong><span>各事業の顧客構造やナレッジ、テクノロジーを結集し、次の成功に活かす。</span></h3>
-          <div class="pict_wrap"><img src="/bin/image/knowledge_pict.png"></div>
+          <h3><strong>違いは武器だ。</strong><span>違いが、シナジーを創り出す。<br>
+私たちは、「Education」「Working」「Life」という3つの事業領域を軸に培ってきた本質的なナレッジ、蓄積されたノウハウをもとに、各業界の常識だけにとらわれない、「新しい視点」を持ったビジネスを行います。<br>
+そして、「チャレンジあふれる未来をつくる」ために必要な新規事業創造に挑み続けます。 </span></h3>
+          <!--div class="pict_wrap"><img src="/bin/image/knowledge_pict.png"></div-->
         </div>
 
         <div class="base_unit">
@@ -124,6 +105,26 @@ require_once "./bin/parts/header.php";
               <a href="<?php echo LINK_11; ?>" target="_blank">Webサイトを見る</a>
             </div>
           </div>
+        </div>
+
+        <div class="base_unit">
+          <h3><strong>&amp;New Business</strong><span>さまざまな事業創造を通じて蓄積した<br>各事業の顧客構造やナレッジ、テクノロジーを結集し、次の成功に活かします。</span></h3>
+
+          <div class="flex_unit three arw_type">
+            <div class="box_unit">
+              <h4><strong>0→1</strong><span>生み出す</span></h4>
+              <div class="box">私たちの事業開発の基点は環境変化と現場。<br>長年培ってきた事業開発のKFSを設定し、スピードをもったトライアルの実施によって事業を立ち上げます。</div>
+            </div>
+            <div class="box_unit">
+              <h4><strong>1→10</strong><span>成長させる</span></h4>
+              <div class="box">継続した成果を出せるよう要因分析や仮説検証を徹底的に繰り返します。<br>成果創出までのプロセスの「標準化」を行い、再現性の高い仕組み化を図ります。</div>
+            </div>
+            <div class="box_unit">
+              <h4><strong>10>…</strong><span>拡げる</span></h4>
+              <div class="box">事業の効果性を高める。また、単に「販売する」のではなく、お客様の未来のためにともにありたい姿を描き、現状や課題をしっかり理解した上で、本質的な解決策として提案することが私たちの信念です。</div>
+            </div>
+          </div>
+
         </div>
 
       </article>

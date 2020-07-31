@@ -1,0 +1,2 @@
+Redirect permanent / https://fce-publishing.co.jp/kenjya/
+order deny,allow
