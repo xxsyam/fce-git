@@ -1,0 +1,99 @@
+
+// Animation setting
+@keyframes active_menu{
+  from{
+    top: -100vw;
+    height:0;
+  }
+  to{
+    top: 0;
+    height:100vh;
+  }
+}
+@keyframes hidden_menu{
+  from{
+    top: 0;
+  }
+  to{
+    top: -100vw;
+  }
+}
+@keyframes line{
+  to{
+    width: 1px;
+  }
+}
+@keyframes toTop{
+  from{
+    transform: translateY(0);
+  }
+  to{
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+@keyframes toBottom{
+  from{
+    transform: translateY(0);
+  }
+  to{
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+@keyframes fadeInUp{
+  from{
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes arrow-r{
+  0% {transform: translateX(0px);}
+  100% {transform: translateX(10px);}
+}
+@keyframes slideOutRight{
+  to{
+    transform: translateX(9999px);
+  }
+}
+@keyframes anim {
+  to{
+    transform: translate(0) skew(0) rotate(0) scale(1);
+  }
+}
+@keyframes fadeOut{
+  from{
+    opacity: 1;
+    filter:blur(0);
+  }
+  to{
+    opacity: 0;
+    filter:blur(10px);
+  }
+}
+@keyframes mvLeft{
+  0%{
+    transform: translateY(0) scale(1);
+  }
+  85%{
+    transform: translate(10rem,7rem) scale(2);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes mvRight {
+  0%{
+    transform: translateY(0) scale(1);
+  }
+  85%{
+    transform: translate(0rem,-3rem) scale(1.8);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}

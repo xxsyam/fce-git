@@ -9,13 +9,6 @@ add_theme_support( 'post-thumbnails' );
 
 /**
 * 【 WP基本機能関連 】
-*  - ビジュアルエディタ用CSSを提供
-*/
-add_editor_style();
-add_editor_style('editor-style.css');
-
-/**
-* 【 WP基本機能関連 】
 *  - 余計なヘッダ要素を削除
 */
 remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
@@ -60,7 +53,6 @@ function remove_block_library_style() {
   wp_dequeue_style( 'wp-block-library' );
   wp_dequeue_style( 'wp-block-library-theme' );
 }
-
 
 /**
 * * 【 WP基本機能関連 】
@@ -133,35 +125,6 @@ function remove_image_attribute($html){
 
 /**
 * 【 WP基本機能関連 】
-*  - titleタグを整形 ＊ head タグ内にはtitleを書かないでこれをfunctionに記述しておく。
-*/
-//add_theme_support( 'title-tag' );
-
-/**
-* 【 WP基本機能関連 】
-*  - 絶対パス->相対パスに変更
-*/
-/**class relative_URI {
-  public function __construct() {
-    add_action('get_header', array(&$this, 'get_header'), 1);
-    add_action('wp_footer', array(&$this, 'wp_footer'), 99999);
-  }
-  protected function replace_relative_URI($content) {
-    $home_url = trailingslashit(get_home_url('/'));
-    $top_url = preg_replace( '/^(https?:\/\/.+?)\/(.*)$/', '$1', $home_url );
-    return str_replace( $top_url, '', $content );
-  }
-  public function get_header(){
-    ob_start(array(&$this, 'replace_relative_URI'));
-  }
-  public function wp_footer(){
-    ob_end_flush();
-  }
-}
-$relative_URI = new relative_URI();*/
-
-/**
-* 【 WP基本機能関連 】
 *  - スラッグを管理画面に表示
 */
 function add_posts_columns($columns) {
@@ -176,6 +139,7 @@ function add_posts_column_row($column_name, $post_id) {
       echo esc_attr($slug);
   }
 }
+//add_filter( 'manage_edit-post_sortable_columns', 'add_posts_columns_slug' );
 add_filter( 'manage_posts_columns', 'add_posts_columns');
 add_action( 'manage_posts_custom_column', 'add_posts_column_row', 10, 2);
 
@@ -191,6 +155,7 @@ function add_page_column_row($column_name, $post_id) {
       echo esc_attr($slug);
   }
 }
+add_filter( 'manage_edit-page_sortable_columns', 'add_page_columns_name' );
 add_filter( 'manage_pages_columns', 'add_page_columns');
 add_action( 'manage_pages_custom_column', 'add_page_column_row', 10, 2);
 
@@ -198,60 +163,47 @@ add_action( 'manage_pages_custom_column', 'add_page_column_row', 10, 2);
 * 【 WP基本機能関連 】
 *  - 固定ページにカテゴリ追加
 */
-add_action( 'init', 'add_categories_for_pages' ) ;
-function add_categories_for_pages(){
-  register_taxonomy_for_object_type( 'category', 'page' ) ;
-}
-add_action( 'pre_get_posts', 'nobita_merge_page_categories_at_category_archive' ) ;
-function nobita_merge_page_categories_at_category_archive( $query ){
-  if ( $query->is_category== true && $query->is_main_query()){
-    $query->set( 'post_type', array( 'post', 'page', 'nav_menu_item' )) ;
-  }
-}
+//add_action( 'init', 'add_categories_for_pages' ) ;
+//function add_categories_for_pages(){
+//  register_taxonomy_for_object_type( 'category', 'page' ) ;
+//}
+//add_action( 'pre_get_posts', 'nobita_merge_page_categories_at_category_archive' ) ;
+//function nobita_merge_page_categories_at_category_archive( $query ){
+//  if ( $query->is_category== true && $query->is_main_query()){
+//    $query->set( 'post_type', array( 'post', 'page', 'nav_menu_item' )) ;
+//  }
+//}
 
 /**
 * 【 WP基本機能関連 】
 *  - カテゴリーアーカイブに固定ページを含める
 */
-function add_page_to_category_archive( $query ) {
-  if ( $query->is_category== true && $query->is_main_query() ) {
-    $query->set('post_type', array( 'post', 'page' ));
-  }
-}
-add_action( 'pre_get_posts', 'add_page_to_category_archive' );
+//function add_page_to_category_archive( $query ) {
+//  if ( $query->is_category== true && $query->is_main_query() ) {
+//    $query->set('post_type', array( 'post', 'page' ));
+//  }
+//}
+//add_action( 'pre_get_posts', 'add_page_to_category_archive' );
 
 /**
 * 【 WP基本機能関連 】
 *  - 固定ページでタグを利用
 */
-function add_tag_to_page() {
- register_taxonomy_for_object_type('post_tag', 'page');
-}
-add_action('init', 'add_tag_to_page');
-
-function add_tag_to_face() {
- register_taxonomy_for_object_type('post_tag', 'face');
-}
-add_action('init', 'add_tag_to_face');
-
+// function add_tag_to_page() {
+//  register_taxonomy_for_object_type('post_tag', 'page');
+// }
+// add_action('init', 'add_tag_to_page');
 
 /**
 * 【 WP基本機能関連 】
 *  - タグアーカイブに固定ページを含める
 */
-function add_page_to_tag_archive( $obj ) {
-  if ( is_tag() ) {
-    $obj->query_vars['post_type'] = array( 'post', 'page' );
-  }
-}
-add_action( 'pre_get_posts', 'add_page_to_tag_archive' );
-
-function add_face_to_tag_archive( $obj ) {
-  if ( is_tag() ) {
-    $obj->query_vars['post_type'] = array( 'post', 'face' );
-  }
-}
-add_action( 'pre_get_posts', 'add_face_to_tag_archive' );
+// function add_page_to_tag_archive( $obj ) {
+//   if ( is_tag() ) {
+//     $obj->query_vars['post_type'] = array( 'post', 'page' );
+//   }
+// }
+// add_action( 'pre_get_posts', 'add_page_to_tag_archive' );
 
 /**
 * 【 機能拡張 】
@@ -261,9 +213,8 @@ function register_my_menus() {
   register_nav_menus( array(
   //'「メニューの位置」の識別子' => 'メニューの説明の文字列',
     'main-menu'  => 'ヘッダメニュー',
-    'footer-menu_a'  => 'Footer：A',
-    'footer-menu_b'  => 'Footer：B',
-    'footer-menu_c'  => 'Footer：C',
+    'sub-menu'  => 'サブメニュー',
+    'footer-menu_a'  => 'CONTENTS INFO：メイン',
   ) );
 }
 add_action( 'after_setup_theme', 'register_my_menus' );
@@ -331,6 +282,27 @@ function shortcode_up() {
 
 /**
 * 【 機能拡張 】
+*  - テーマ用imageへのパスを取得（固定ページ内）
+*  - <img src="theme_image/image.jpg"> のような感じで記述
+*/
+function imagepassshort($arg) {
+$content = str_replace('"theme_image/', '"' . get_bloginfo('template_directory') . '/bin/image/', $arg);
+return $content;
+}
+add_action('the_content', 'imagepassshort');
+
+/**
+* 【 機能拡張 】
+*  - ホームURLのパスを取得（固定ページ内）
+*  - [home]でWPホームまでのパスを取得。
+*/
+function shortcode_url() {
+  return get_bloginfo('url');
+}
+add_shortcode('home', 'shortcode_url');
+
+/**
+* 【 機能拡張 】
 *  - 固定ページ内にページング機能追加
 *
 * ▽ループ処理部分に以下を追記 -> * は削除する。
@@ -374,6 +346,7 @@ function wpcf7_validation_textarea_hiragana($result, $tag){
 */
 add_action( 'admin_menu', 'remove_menus' );
 function remove_menus(){
+
   if( current_user_can( 'author' ) ){ //投稿者用設定
     remove_menu_page( 'index.php' ); //ダッシュボード
     //remove_menu_page( 'edit.php' ); //投稿メニュー
@@ -441,27 +414,26 @@ add_action('upload_mimes', 'add_file_types_to_uploads');
 
 /**
 * 【 機能拡張設定 】
-*  -「投稿」->「お知らせ」に変更
+*  -「投稿」->「Face!」に変更
 */
 function change_post_menu_label() {
   global $menu;
   global $submenu;
-  $menu[5][0] = 'NEWS';
-  $submenu['edit.php'][5][0] = 'NEWS一覧';
-  $submenu['edit.php'][10][0] = '新しいNEWS';
-  $submenu['edit.php'][16][0] = 'タグ';
+  $menu[5][0] = 'Face!';
+  $submenu['edit.php'][5][0] = 'Face!一覧';
+  $submenu['edit.php'][10][0] = '新しいFace!';
 }
 function change_post_object_label() {
   global $wp_post_types;
   $labels = &$wp_post_types['post']->labels;
-  $labels->name = 'NEWS';
-  $labels->singular_name = 'NEWS';
-  $labels->add_new = _x('追加', 'NEWS');
-  $labels->add_new_item = 'NEWSの新規追加';
-  $labels->edit_item = 'NEWSの編集';
-  $labels->new_item = '新規NEWS';
-  $labels->view_item = 'NEWSを表示';
-  $labels->search_items = 'NEWSを検索';
+  $labels->name = 'Face!';
+  $labels->singular_name = 'Face!';
+  $labels->add_new = _x('追加', 'Face!');
+  $labels->add_new_item = 'Face!の新規追加';
+  $labels->edit_item = 'Face!の編集';
+  $labels->new_item = '新規Face!';
+  $labels->view_item = 'Face!を表示';
+  $labels->search_items = 'Face!を検索';
   $labels->not_found = '記事が見つかりませんでした';
   $labels->not_found_in_trash = 'ゴミ箱に記事は見つかりませんでした';
 }
@@ -764,8 +736,6 @@ function pagination($pages = '', $range = 1)
      }
 }
 
-
-
 /**
 * 【 機能拡張設定 】
 *  - コンタクトフォームに各種表示追加
@@ -858,21 +828,56 @@ function posts_join_custom_fields( $join, $query ) {
 }
 add_filter( 'posts_join', 'posts_join_custom_fields', 10, 2 );
 
+/**
+ * 【 機能拡張設定 】
+ * 一覧に表示カテゴリ追加
+*/
+//サムネイルカラム追加
+function customize_manage_posts_columns($columns) {
+	$columns['thumbnail'] = __('Thumbnail');
+//	$columns['flg_demae'] = '出前可否';
+//	$columns['demae_type'] = '出前タイプ';
+	return $columns;
+}
+add_filter( 'manage_posts_columns', 'customize_manage_posts_columns' );
+
+//サムネイル画像追加
+function customize_manage_posts_custom_column($column_name, $post_id) {
+	if ( 'thumbnail' == $column_name) {
+		$thum = get_the_post_thumbnail($post_id, 'small', array( 'style'=>'width:100px;height:auto;' ));
+	} if ( isset($thum) && $thum ) {
+		echo $thum;
+	} else {
+		//echo __('None');
+	}
+}
+add_action( 'manage_posts_custom_column', 'customize_manage_posts_custom_column', 10, 2 );
 
 // カスタムフィールド追加
-function custom_posts_column( $column_name, $post_id ) {
-  if ( $column_name == 'flg_demae' || $column_name == 'demae_type') {
-    $cf_flg_demae = get_post_meta( $post_id, $column_name, true );
-	if(is_array($cf_flg_demae)){
-		foreach($cf_flg_demae as $key=>$value){
-			echo $value." ";
-		}
-	}else{
-		echo ( $cf_flg_demae ) ? $cf_flg_demae : '－';
-	}
-  }
-}
-add_action( 'manage_posts_custom_column', 'custom_posts_column', 10, 2 );
+// function custom_posts_column( $column_name, $post_id ) {
+//   if ( $column_name == 'flg_demae' || $column_name == 'demae_type') {
+//     $cf_flg_demae = get_post_meta( $post_id, $column_name, true );
+// 	if(is_array($cf_flg_demae)){
+// 		foreach($cf_flg_demae as $key=>$value){
+// 			echo $value." ";
+// 		}
+// 	}else{
+// 		echo ( $cf_flg_demae ) ? $cf_flg_demae : '－';
+// 	}
+//   }
+// }
+// add_action( 'manage_posts_custom_column', 'custom_posts_column', 10, 2 );
 
+/**
+ * 【 機能拡張設定 】
+ * 検索結果に含めないように記事IDで設定
+*/
+function wp_search_filter1( $query ) {
+    if ( $query->is_search && !is_admin() ){
+        $query->set( 'post__not_in', array( 1,2 ) );
+    }
+    return $query;
+}
+add_action( 'pre_get_posts', 'wp_search_filter1' );
 
 ?>

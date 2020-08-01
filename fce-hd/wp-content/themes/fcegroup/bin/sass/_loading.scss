@@ -1,0 +1,21 @@
+
+// ローディング
+.loading{
+  width: 100%; height: 100vh;
+  position: fixed;
+  left: 0; top:0;
+  @include z-index(loading);
+  @include Flex_Center();
+  background: $bk-d;
+  color: $color-z;
+  animation:fadeOut $easeInOutExpo 1.2s 1.5s  forwards,
+            slideOutRight $easeInOutExpo .5s 2.7s  forwards;
+
+  .logo{
+    width: 25%;
+    max-width: 128px;
+    margin: auto;
+    z-index: 1;
+    animation: fadeOut .85s .8s forwards;
+  }
+}

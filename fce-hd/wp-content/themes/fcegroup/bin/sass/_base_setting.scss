@@ -1,0 +1,81 @@
+/*
+* ＊＊＊＊＊＊＊＊＊＊ Origin Design Settings
+* Written by  VAF
+* @author     VAF
+* @copyright  Author
+* @version    1.2.5 (xx/06/2020)
+* ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+
+.pc_display{display:block;}
+.sp_display,.tab_display{display:none !important;}
+
+@include tab(){
+  .pc_display {display:none !important;}
+  .tab_display{display:block !important;}
+  .sp_display {display:none !important;}
+}
+@include sp-w(){
+  .pc_display {display:none !important;}
+  .tab_display{display:none !important;}
+  .sp_display {display:block !important;}
+}
+
+html,body{
+  overflow-x: hidden;
+}
+input{
+  line-height:1;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  @include fontsize(16);
+  font-family:$base-font;
+  font-weight: 400;
+  line-height:1.8;
+  color:$bk-a;
+  font-feature-settings: "palt";
+  -webkit-tap-highlight-color: transparent;
+}
+header,main,footer,section,a,nav,.base_section{
+  position:relative;
+  z-index:1;
+}
+a{
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+
+  &:hover{
+    opacity:0.75;
+  }
+}
+header,main,footer{
+  width:100%;
+}
+main{
+  z-index:1;
+}
+section{
+  z-index:1;
+  article{
+  }
+}
+.base_section{
+}
+.base_wrapper{
+  @include Max-Wrap();
+  @include tab-w(){
+    padding:0 5%;
+  }
+}
+.pict_wrap{
+  img{
+    width:100%; height:auto;
+    max-width:100%;
+  }
+}
+object{
+  pointer-events: none;
+}

@@ -1,0 +1,20 @@
+
+// Bottoms Margin / Padding setting
+.mb10{ @include mb(10); }
+.mb20{ @include mb(20); }
+.mb30{ @include mb(30); }
+.mb40{ @include mb(40); }
+.mb50{ @include mb(50); }
+.pb10{ @include pb(10); }
+.pb20{ @include pb(20); }
+.pb30{ @include pb(30); }
+.pb40{ @include pb(40); }
+.pb50{ @include pb(50); }
+
+// Text Align setting
+.al{ text-align: left !important; }
+.ar{ text-align: right !important; }
+.ac,.ac img{
+  margin:auto;
+  text-align: center !important;
+}

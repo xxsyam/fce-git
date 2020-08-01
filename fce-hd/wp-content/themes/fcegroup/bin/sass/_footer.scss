@@ -1,0 +1,69 @@
+
+// Footer setting
+footer{
+  .mod_bwp{
+    @include Inner-Wrap();
+    @include Flex_Center();
+    padding:35px 0;
+    @include tab-w(){
+      padding:35px 5%;
+    }
+
+    img{
+      max-width:100px;
+    }
+
+    p{
+      margin-left:35px;
+      text-align: left;
+    }
+
+    @include sp-w(){
+      flex-direction: column;
+      p{ margin:15px 0 0; }
+    }
+  }
+
+  .footer_wrapper{
+    background:$bk-d;
+    @include pt(50);
+    @include pb(50);
+
+    .base_wrapper{
+      display: flex;
+      justify-content: space-between;
+      margin:auto;
+
+      dl{
+        width:calc(100% / 5.1);
+
+        dt{
+          @include mb(10);
+          @include fontsize(16);
+          font-weight:600;
+        }
+        dd{
+          @include pt(5);
+          @include pb(5);
+        }
+      }
+
+      @include sp-w{
+        flex-wrap: wrap;
+
+        dl{
+          width:50%;
+          @include mb(35);
+        }
+      }
+    }
+  }
+
+  small{
+    display: block;
+    background:$bk-e;
+    padding:5px 3%;
+    @include fontsize(13);
+    text-align: center;
+  }
+}

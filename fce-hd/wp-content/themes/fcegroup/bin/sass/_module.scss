@@ -1,0 +1,128 @@
+
+// ローディング
+.loading{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  @include z-index(loading);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $bk-d;
+  color: $color-z;
+  animation:fadeOut $easeInOutExpo 1.2s 1.5s  forwards,
+            slideOutRight $easeInOutExpo .5s 2.7s  forwards;
+
+  .logo{
+    width: 25%;
+    max-width: 128px;
+    margin: auto;
+    z-index: 1;
+    animation: fadeOut .85s .8s forwards;
+  }
+}
+
+// 背景ライン
+.bg-stripe{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0;
+  z-index: -1;
+  display: flex;
+  justify-content: space-around;
+
+  .line{
+    width: 12.5%;
+    min-height: 100vh;
+    background: $bk-d;
+    animation: line $easeInOutExpo 1s 1.8s both;
+  }
+}
+
+// 背景の三角
+.bg-triangle{
+  width: 100%; height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  animation: fadeInUp $easeOutQuint 2s 3.5s both;
+  will-change: transform, opacity;
+
+  svg{
+    @include sp{
+      max-width: 80px;
+    }
+    position: absolute;
+    left: 0; top: 0;
+    z-index: -1;
+    &.svg-to-top{
+      animation: toTop linear 2s infinite both;
+      right: 0;
+    }
+    &.svg-to-bottom{
+      animation: toBottom linear 2s infinite both;
+    }
+  }
+}
+
+// ボタン型リンク
+.button{
+  max-width: 270px;
+  margin: 0 auto;
+
+  a{
+    display:inline-block;
+    padding: .8rem 1.5rem !important;
+    border: 2px solid $color-y;
+    text-align: center;
+    color: $color-z;
+    position: relative;
+    overflow: hidden;
+    @include z-index(contents);
+    &:hover{
+      color: $color-y;
+    }
+    &:before{
+      @include pseudo;
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      left: 0;
+      background: $color-y;
+      z-index: -1;
+    }
+    &:after{
+      @include pseudo;
+      width: 0;
+      height: 100%;
+      bottom: 0;
+      left: -60%;
+      background: $color-z;
+      transform: skew(50deg);
+      transition: all $easeOutQuint 1s;
+      z-index: -1;
+    }
+    &:hover:after{
+      width: 220%;
+    }
+  }
+
+  &.wt{
+    a{
+      border: 2px solid $color-z;
+      color: $color-z;
+
+      &:hover{
+        color:$red;
+      }
+      &:before{
+        background:$red;
+      }
+      &:after{
+        background: $color-z;
+      }
+    }
+  }
+}

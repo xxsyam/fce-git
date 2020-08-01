@@ -9,13 +9,13 @@
 <html <?php language_attributes(); ?> class="no-js"><!--<![endif]-->
 <head prefix="og: http://ogp.me/ns#">
 <meta charset="<?php bloginfo( 'charset' ); ?>">
+<?php get_template_part('php/variables'); ?>
 <?php wp_head(); ?>
-
 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="format-detection" content="telephone=no">
-<meta name="author" content="FCE Holdings. All Rights Reserved.">
-<meta name="copyright" content="FCE Holdings. All Rights Reserved.">
+<meta name="author" content="<?php echo COPYRIGHT;?>">
+<meta name="copyright" content="<?php echo COPYRIGHT;?>">
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
 <meta http-equiv="expires" content="0">
@@ -142,37 +142,36 @@ if(!empty($title)) {
 <?php if ( !is_home() && !is_front_page() ) : ?>
 <?php endif; ?>
 <!-- favicon -->
-<meta name="msapplication-TileImage" content="/bin/image/favicons/mstile-144x144.png">
-<link rel="icon" type="image/vnd.microsoft.icon" href="/bin/image/favicons/favicon.ico">
-<link rel="apple-touch-icon" sizes="60x60" href="/bin/image/favicons/apple-touch-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/bin/image/favicons/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/bin/image/favicons/apple-touch-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/bin/image/favicons/apple-touch-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/bin/image/favicons/apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/bin/image/favicons/apple-touch-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="36x36" href="/bin/image/favicons/icon-36x36.png">
-<link rel="icon" type="image/png" sizes="48x48" href="/bin/image/favicons/icon-48x48.png">
-<link rel="icon" type="image/png" sizes="72x72" href="/bin/image/favicons/icon-72x72.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/bin/image/favicons/icon-96x96.png">
-<link rel="icon" type="image/png" sizes="128x128" href="/bin/image/favicons/icon-128x128.png">
-<link rel="icon" type="image/png" sizes="144x144" href="/bin/image/favicons/icon-144x144.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/bin/image/favicons/icon-16x16.png">
-<link rel="icon" type="image/png" sizes="24x24" href="/bin/image/favicons/icon-24x24.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/bin/image/favicons/icon-32x32.png">
-<link rel="manifest" href="/bin/image/favicons/manifest.json">
+<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/bin/image/favicons/mstile-144x144.png">
+<link rel="icon" type="image/vnd.microsoft.icon" href="<?php echo get_template_directory_uri(); ?>/bin/image/favicons/favicon.ico">
+<link rel="apple-touch-icon" sizes="60x60" href="<?php echo get_template_directory_uri(); ?>/bin/image/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/bin/image/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/bin/image/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="<?php echo get_template_directory_uri(); ?>/bin/image/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="<?php echo get_template_directory_uri(); ?>/bin/image/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/bin/image/favicons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="36x36" href="<?php echo get_template_directory_uri(); ?>/bin/image/favicons/icon-36x36.png">
+<link rel="icon" type="image/png" sizes="48x48" href="<?php echo get_template_directory_uri(); ?>/bin/image/favicons/icon-48x48.png">
+<link rel="icon" type="image/png" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/bin/image/favicons/icon-72x72.png">
+<link rel="icon" type="image/png" sizes="96x96" href="<?php echo get_template_directory_uri(); ?>/bin/image/favicons/icon-96x96.png">
+<link rel="icon" type="image/png" sizes="128x128" href="<?php echo get_template_directory_uri(); ?>/bin/image/favicons/icon-128x128.png">
+<link rel="icon" type="image/png" sizes="144x144" href="<?php echo get_template_directory_uri(); ?>/bin/image/favicons/icon-144x144.png">
+<link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri(); ?>/bin/image/favicons/icon-16x16.png">
+<link rel="icon" type="image/png" sizes="24x24" href="<?php echo get_template_directory_uri(); ?>/bin/image/favicons/icon-24x24.png">
+<link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/bin/image/favicons/icon-32x32.png">
+<link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/bin/image/favicons/manifest.json">
 <!--[if IE]>
-<link rel="shortcut icon" href="/bin/image/favicons/favicon.ico">
+<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/bin/image/favicons/favicon.ico">
 <![endif]-->
 
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-<link rel="stylesheet" href="/bin/css/__init.css" media="print,screen">
-<link rel="stylesheet" href="/bin/css/format.css" media="print,screen">
-<link rel="stylesheet" href="/bin/css/design.min.css?ver=<?php echo date("Ym"); ?>" media="print,screen">
-<link rel="stylesheet" href="/bin/css/print.css?ver=<?php echo date("Ym"); ?>" media="print">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css?ver=<?php echo date("Ymd"); ?>">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bin/css/__init.css?ver=<?php echo date("U"); ?>" media="print,screen">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bin/css/format.css" media="print,screen">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bin/css/design.min.css?ver=<?php echo date("U"); ?>" media="print,screen">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bin/css/__print.css?ver=<?php echo date("Ym"); ?>" media="print">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css?ver=<?php echo date("Ym"); ?>">
 </head>
 
-<body id="body" <?php body_class(); ?>>
+<body <?php body_class(); ?>>
 
-<header class="header">
-</header>
+<?php get_template_part('php/templates/mod-header_nav'); ?>

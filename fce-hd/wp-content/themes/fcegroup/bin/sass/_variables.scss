@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+$bin_path:/bin/image;
+$image_path:/wp/wp-content/themes/progear/bin/image;
+$media_path:/wp/wp-content/uploads;
+
+$base_bg: #fff;
+
+$bk-a:#333;
+$bk-b:#555;
+$bk-c:#ccc;
+$bk-d:#f0f0f0;
+$bk-e:#ebebeb;
+
+$red:#ef001f;
+$blue:#0070cf;
+$yellow:#0070cf;
+
+$color-y:#000;
+$color-z:#fff;
+
+$designSize: 1440;
+$easeInOutExpo: cubic-bezier(0.87, 0, 0.13, 1);
+$easeInCubic: cubic-bezier(0.32, 0, 0.67, 0);
+$easeInOutCubic: cubic-bezier(0.65, 0, 0.35, 1);
+$easeOutExpo: cubic-bezier(0.16, 1, 0.3, 1);
+$easeOutQuint: cubic-bezier(0.22, 1, 0.36, 1);
+
+$layer: (
+  loading: 40,
+  header: 30,
+  contents: 20,
+  particle: 10
+);
+
+$base-font: 'Noto Sans JP','Ubuntu', 游ゴシック体, YuGothic, "Yu Gothic M", "游ゴシック Medium", "Yu Gothic Medium", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN W3", HiraKakuProN-W3, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+
+//$mincho-font:'Noto Serif JP', serif;
+
+$text-shadow:0 0 5px rgba($bk-a , 0.5);
+
+@mixin fontsize($size: 24, $base: 16) {
+  @if $size == 10  {
+    font-size: $size + px;
+    font-size: ($size / ($base * 0.625)) + rem;
+  } @else if $size == 12 {
+    font-size: $size + px;
+    font-size: ($size / ($base * 0.625)) + rem;
+  } @else if $size == 14 {
+    font-size: $size + px;
+    font-size: ($size / ($base * 0.625)) + rem;
+  } @else {
+    font-size: $size + px;
+    font-size: ($size / ($base * 0.625)) + rem;
+  }
+}
+
+@function rem($pixels, $context: 16){
+  @return $pixels / $context * 1rem;
+}
+@function percent($value){
+  @return $value / $designSize * 100%;
+}
+
+@mixin mb($size) {
+  margin-bottom: $size + px !important;
+}
+@mixin pb($size) {
+  padding-bottom: $size + px !important;
+}
+
+@mixin mt($size) {
+  margin-top: $size + px !important;
+}
+@mixin pt($size) {
+  padding-top: $size + px !important;
+}
+
+@mixin Flex_Center($direction:row,$wrap:nowrap){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+@mixin Flex_Wrapper($direction:row,$wrap:wrap,$justify:flex-start){
+  display: flex;
+  justify-content:$justify;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $ieopacity: ($opacity * 100);
+  filter: alpha(opacity=$ieopacity);
+}
+
+@mixin ellipsis() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin z-index($key){
+  z-index:map-get($layer, $key);
+}
+
+@mixin pseudo{
+  width: 100%;
+  display: block;
+  position: absolute;
+  content: "";
+}
+
+$max-wrap:1200px;
+$inner-wrap:1100px;
+$inner-wrap_m:980px;
+$inner-wrap_s:780px;
+$inner-wrap_ss:640px;
+
+@mixin Max-Wrap(){
+  margin:auto;
+  max-width:$max-wrap;
+}
+@mixin Inner-Wrap(){
+  margin:auto;
+  max-width:$inner-wrap;
+}
+@mixin Inner-WrapM(){
+  margin:auto;
+  max-width:$inner-wrap_m;
+}
+@mixin Inner-WrapS(){
+  margin:auto;
+  max-width:$inner-wrap_s;
+}
+
+$wide:1400px;
+$pc:    1200px;
+$tab-o: 1100px;
+$tab-w: 1099px;
+$tab:   1098px;
+$sp-o:  541px;
+$sp-w:  540px;
+$sp:    480px;
+
+@mixin wide(){
+  @media (min-width: ($wide)){
+    @content;
+  }
+}
+@mixin pc(){
+  @media (min-width: ($pc)){
+    @content;
+  }
+}
+@mixin tab-o(){
+  @media (min-width: ($tab-o)){
+    @content;
+  }
+}
+@mixin tab-w(){
+  @media (max-width: ($tab-w)){
+    @content;
+  }
+}
+@mixin tab(){
+  @media (max-width: ($tab)){
+    @content;
+  }
+}
+@mixin sp-o(){
+  @media (min-width: ($sp-o)){
+    @content;
+  }
+}
+@mixin sp-w(){
+  @media (max-width: ($sp-w)){
+    @content;
+  }
+}
+@mixin sp(){
+  @media (max-width: ($sp)){
+    @content;
+  }
+}
+@mixin Font_Icon-VAF(){
+  display:inline-block;
+  font-family: 'vaf-fonts' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
