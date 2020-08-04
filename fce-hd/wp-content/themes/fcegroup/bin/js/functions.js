@@ -108,22 +108,16 @@ $(document).ready(function() {
 
 // inview関連
 $(function() {
-  $('.dummy').on('inview', function(event, isInView) {
+  $('.fIUp').on('inview', function(event, isInView) {
     if (isInView) {
     //表示領域に入った時
-      $(this).addClass('fadeInDown');
+      $(this).addClass('fIUp');
+      $(this).css('opacity',1);
     } else {
     //表示領域から出た時
-      $(this).removeClass('fadeInDown');
+      $(this).removeClass('fIUp');
       $(this).css('opacity',0); //非表示にしておく
     }
   });
-  $('.dummy').on('inview', function(event, isInView) {
-    if (isInView) {
-      $(this).addClass('fadeInDown');
-    } else {
-      $(this).removeClass('fadeInDown');
-      $(this).css('opacity',0);
-    }
-  });
+
 });

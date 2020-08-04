@@ -16,9 +16,9 @@
       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
         y="0px" viewBox="0 0 1158.1 816.3" style="enable-background:new 0 0 1158.1 816.3;" xml:space="preserve">
       <style type="text/css">
-        .st0{fill:#FFF100;}
-        .st1{fill:#EF001F;}
-        .st2{fill:#35ABEB;}
+        .st0{fill:<?php echo yerrow;?>;}
+        .st1{fill:<?php echo red;?>;}
+        .st2{fill:<?php echo blue;?>;}
       </style>
       <path id="y3" class="particle y3 st0" d="M946.8,0l-192,173.2l19.8,190.1L946.8,0z"/>
       <path id="r1" class="particle r1 st1" d="M774.5,363.3l-98.1,336.8L0,627.7L774.5,363.3z"/>
@@ -26,8 +26,94 @@
       <path id="b2" class="particle b2 st2" d="M774.4,363.3l283,99l100.7-333.6L774.4,363.3z"/>
       </svg>
     </div>
-
   </div>
+
+  <section class="whats anim bg-animation rd">
+    <div class="inner">
+      <h2 class="heading fIUp">What’s FCE<small class="fIUp">FCEグループとは</small></h2>
+
+      <div class="bg-particles anim">
+        <object class="bg1 particle animateme" type="image/svg+xml" data="/bin/image/bg_1.svg"></object>
+        <object class="bg3 particle animateme" type="image/svg+xml" data="/bin/image/bg_5.svg"></object>
+        <object class="bg2 particle animateme" type="image/svg+xml" data="/bin/image/bg_2.svg"></object>
+        <object class="bg4 particle animateme" type="image/svg+xml" data="/bin/image/bg_4.svg"></object>
+      </div>
+
+      <ul class="anim-list">
+        <li class="message">
+          <h3 class="fIUp">つくりたいのは、チャレンジあふれる未来！</h3>
+          <p class="fIUp">
+            これがFCEグループの想いです。	<br>
+            <br>
+            世の中にはチャレンジを阻むさまざまな社会課題があります。<br>
+            FCEグループは、こうした社会課題に向き合い、ビジネスで解決するをコンセプトに<br>
+            さまざまな事業を創造し、展開しています。<br>
+            <br>
+            そして、子どもたちから働く大人、そして、老若男女すべての方々が、<br>
+            さまざまなことに想いっきりチャレンジできる世の中をつくっていきます。
+          </p>
+        </li>
+
+        <li class="message2">
+          <h3 class="fIUp">OneTeam=集合天才？</h3>
+          <p class="fIUp">
+            グループ内で共有することで、さらに大きなシナジーを発揮し、お客様に圧倒的な貢献と<br>
+            成長をもたらせるよう「ワンチーム」として取り組んでいます。
+          </p>
+        </li>
+      </ul>
+
+      <div class="btn_set fIUp"><span class="button wt"><a href="#">View More</a></span></div>
+    </div>
+  </section>
+
+  <section class="team anim">
+    <h2 class="heading fIUp">Challenge! Change! FCE<small class="fIUp">FCEの未来を変える事業たち</small></h2>
+    <ul class="flex-center anim-list">
+      <li class="fIUp">
+        <h3><strong>教育</strong>を変える</h3>
+        <p>
+          子供たちに自信と可能性を、先生たちに自由と機会を。
+        </p>
+        <div class="pict_wrap"><img src="/bin/image/challenge1.jpg"></div>
+        <dl>
+          <dt>教育に関する事業たち</dt>
+          <dd>
+            株式会社FCEエデュケーション<br>
+            株式会社Findアクティブラーナー
+          </dd>
+        </dl>
+      </li>
+      <li class="fIUp">
+        <h3><strong>働く</strong>を変える</h3>
+        <p>
+          子供たちに自信と可能性を、先生たちに自由と機会を。
+        </p>
+        <div class="pict_wrap"><img src="/bin/image/challenge2.jpg"></div>
+        <dl>
+          <dt>教育に関する事業たち</dt>
+          <dd>
+            株式会社FCEエデュケーション<br>
+            株式会社Findアクティブラーナー<br>
+            株式会社Findアクティブラーナー
+          </dd>
+        </dl>
+      </li>
+      <li class="fIUp">
+        <h3><strong>人生</strong>を変える</h3>
+        <p>
+          子供たちに自信と可能性を、先生たちに自由と機会を。
+        </p>
+        <div class="pict_wrap"><img src="/bin/image/challenge3.jpg"></div>
+        <dl>
+          <dt>教育に関する事業たち</dt>
+          <dd>
+            株式会社FCEエデュケーション
+          </dd>
+        </dl>
+      </li>
+    </ul>
+  </section>
 
 </main>
 <?php get_footer(); ?>

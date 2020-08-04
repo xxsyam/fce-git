@@ -17,4 +17,10 @@ define('GROUPLINK_06', "//find-activelearning.com/");
 define('GROUPLINK_07', "//diningedge.co.jp/");
 //FCE Holdings
 define('GROUPLINK_08', "//fce-hd.co.jp/");
+
+// 色設定
+define('yerrow', "#fff100");
+define('red'   , "#ef001f");
+define('blue'  , "#35abeb");
+define('white' , "#fff");
 ?>

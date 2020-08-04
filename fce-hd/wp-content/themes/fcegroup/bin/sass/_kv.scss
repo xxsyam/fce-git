@@ -1,0 +1,137 @@
+
+// メインビジュアル
+.main-visual,.catch,.lead{
+  position: relative;
+}
+.main-visual{
+  width: 100%;
+  min-height: 100vh;
+  display:flex;
+  align-items: center;
+  @include sp-w{
+    min-height: 90vh;
+  }
+
+  .catch{
+    @include fontsize(84);
+    @include sp-w{
+      @include fontsize(42);
+    }
+    font-weight: 700;
+    letter-spacing: rem(5);
+    @include z-index(contents);
+    animation: fadeInUp $easeOutQuint 2s 4s both;
+  }
+
+  .lead{
+    @include fontsize(20);
+    @include sp-o{
+      @include fontsize(28);
+    }
+    line-height: 1.78;
+    @include z-index(contents);
+    animation: fadeInUp $easeOutQuint 2s 5s both;
+  }
+
+  .particle-left{
+    width: 100%; max-width:800px;
+    position: absolute;
+    @include z-index(particle);
+    left: -4rem; bottom:45%;
+    max-height: 50%;
+
+    @include sp-w{
+      bottom:35%;
+    }
+    @include sp{
+      bottom:25%;
+    }
+
+
+    .b1,.y1{
+      position: absolute;
+      top: 0;
+    }
+
+    .b1{
+      width: 33%;
+      left: -1.8%;
+      transform: translate(-999px, -999px) rotate(180deg);
+      animation: anim $easeInOutCubic 1s 3s forwards;
+    }
+    .y1{
+      width: 85%;
+      position: absolute;
+      left: 10%;
+      transform: translate(999px, -1999px) rotate(-90deg);
+      animation: anim $easeInOutCubic 1s forwards;
+    }
+    transform: skew(-70deg);
+    animation: anim $easeOutQuint 3s 3.2s forwards,
+               mvLeft $easeInCubic 4s 3s;
+  }
+
+  .particle-right{
+    width: 80%;
+    max-width: 1270px;
+    position: absolute;
+    @include z-index(particle);
+    right: -10%; bottom:0;
+    max-height: 90vh;
+
+    @include tab{
+      width: 100%;
+      max-height: 75vh;
+    }
+    @include sp-w{
+      max-height: 90vh;
+    }
+
+    .y2,.b2,.y3,.r1{
+      position: absolute;
+      animation: anim $easeInOutCubic 1s forwards;
+    }
+
+    .y2{
+      width: 16.9%;
+      top: -2%;
+      left: 63%;
+      transform: translate(-1999px, -1999px) rotate(180deg);
+    }
+    .b2{
+      width: 34%;
+      top: 13%;
+      left: 65%;
+      transform: translate(-999px, -1999px) rotate(180deg);
+    }
+    .y3{
+      width: 31%;
+      top: 41%;
+      right: 4%;
+      transform: translate(0px, -1999px) rotate(-360deg);
+    }
+    .r1{
+      width: 65%;
+      left: 0;
+      top: 41%;
+      transform: translate(0px, -999px) scale(2) rotate(180deg);
+    }
+
+    transform: rotate(-50deg);
+    animation: anim $easeOutQuint 2.5s 3.5s forwards,
+               mvRight $easeInCubic 4s 3s;
+  }
+
+  @for $i from 1 through 8 {
+    .particle:nth-child(#{$i}){
+      animation-delay: 3000 + $i * 220ms;
+    }
+  }
+}
+
+// Home Only setting
+.home{
+  .main-visual{
+
+  }
+}

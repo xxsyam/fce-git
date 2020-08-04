@@ -40,7 +40,6 @@ body{
 }
 header,main,footer,section,a,nav,.base_section{
   position:relative;
-  z-index:1;
 }
 a{
   display: inline-block;
@@ -70,12 +69,205 @@ section{
     padding:0 5%;
   }
 }
+.inner{
+  width:90%;
+  @include Max-Wrap();
+}
+.wrapper{
+  position: relative;
+  @include z-index(contents);
+}
+h2, h3, ul, dl, p{
+  position: relative;
+  @include z-index(contents);
+}
 .pict_wrap{
+  position: relative;
   img{
+    position: relative;
     width:100%; height:auto;
     max-width:100%;
+    z-index: 1;
   }
 }
 object{
   pointer-events: none;
+}
+
+// 背景アニメーション
+.bg-animation{
+  color: $color-z;
+  position: relative;
+  @include pt(120);
+  @include pb(120);
+
+  &:after{
+    @include pseudo;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: $easeOutExpo 1s;
+    will-change: width;
+    transform: skewY(0);
+  }
+  > * {
+    position: relative;
+    @include z-index(contents);
+  }
+  &.inview{
+    &:after{
+      width: 100%;
+      transform: skewY(-5deg);
+    }
+  }
+  &.rd:after{
+    background: $red;
+  }
+  &.bl:after{
+    background: $blue;
+  }
+  &.yr:after{
+    background: $yellow;
+  }
+}
+
+// パーティクル
+.bg-particles{
+  width: 46%;
+  height: 100%;
+  max-height: 200px;
+  @include pc{
+    width: 40%;
+    max-height: 900px;
+  }
+  @include z-index(particle);
+  position: absolute;
+
+  object{
+    transform: translateY(100px);
+    @include pc{
+      transform: translateY(350px);
+    }
+    transform-origin: top;
+    transition: all $easeOutQuint .5s;
+    will-change: transform, opacity;
+  }
+  .bg1,.bg2,.bg3,.bg4{
+    position: absolute;
+  }
+  .bg1{
+    width: 47%;
+    left: 4%;
+    top: 0;
+    transition-delay: 300ms;
+  }
+  .bg2{
+    width: 47%;
+    left: 10%;
+    top: 50%;
+    transition-delay: 600ms;
+  }
+  .bg3{
+    width: 75%;
+    left: -10%;
+    top: 45%;
+    transition-delay: 900ms;
+  }
+  .bg4{
+    width: 46%;
+    right: 10%;
+    top: 53%;
+    transition-delay: 1200ms;
+  }
+}
+.inview.bg-particles object{
+  transform: translateY(0);
+}
+
+// 見出し
+h2{
+  @include fontsize(60);
+  font-weight: 700;
+  @include mb(35);
+
+  @include sp-w(){
+    @include fontsize(48);
+  }
+  &.heading{
+    small{
+      display: block;
+      @include fontsize(14);
+      font-weight: normal;
+    }
+  }
+  &.sub_heading{
+    display:inline-block;
+    @include fontsize(22);
+    @include mb(10);
+    @include pb(10);
+    border-bottom:1px solid $color-z;
+
+    small{
+      margin-left:15px;
+      @include fontsize(14);
+      font-weight: normal;
+    }
+  }
+}
+
+.anim h2{
+  opacity: 0;
+  will-change: transform;
+}
+.anim.inview h2{
+}
+
+// 見出し帯あり
+.heading-bg{
+  span{
+    margin-bottom: rem(10);
+    padding: .2em .5em;
+    display: inline-block;
+    position: relative;
+    line-height: 1.2;
+    color: transparent;
+    transition: all ease 1s 1s;
+    will-change: color;
+    &:after{
+      @include pseudo;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background: $color-y;
+      animation: fadeInUp $easeOutQuint 2s 3s both;
+      will-change: width;
+      z-index: -1;
+    }
+    @for $i from 1 through 2 {
+      &:nth-child(#{$i})::after{
+        transition-delay: $i * 400ms;
+      }
+    }
+  }
+  &.inview span{
+    color: $color-z;
+    &:after{
+      width: 100%;
+    }
+  }
+  &.rd span:after{
+    background: $red;
+  }
+}
+
+// リスト
+.anim-list li{
+  position: relative;
+}
+
+// FadeIn Item
+.fIUp{
+  animation: fIUp cubic-bezier(0.22, 1, 0.36, 1) 2s;
 }

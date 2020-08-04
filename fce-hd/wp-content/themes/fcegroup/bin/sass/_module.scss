@@ -69,20 +69,22 @@
 
 // ボタン型リンク
 .button{
-  max-width: 270px;
+  display: inline-block;
   margin: 0 auto;
 
   a{
     display:inline-block;
-    padding: .8rem 1.5rem !important;
+    padding: 1.2rem 1.5rem !important;
     border: 2px solid $color-y;
     text-align: center;
+    line-height: 1;
     color: $color-z;
     position: relative;
     overflow: hidden;
     @include z-index(contents);
     &:hover{
       color: $color-y;
+      opacity: 1;
     }
     &:before{
       @include pseudo;
@@ -113,15 +115,19 @@
     a{
       border: 2px solid $color-z;
       color: $color-z;
+      display: inline-block;
+      min-width:270px;
 
       &:hover{
         color:$red;
+        opacity: 1;
       }
       &:before{
         background:$red;
       }
       &:after{
         background: $color-z;
+        opacity: 1;
       }
     }
   }
