@@ -271,3 +271,25 @@ h2{
 .fIUp{
   animation: fIUp cubic-bezier(0.22, 1, 0.36, 1) 2s;
 }
+
+// Flex Center
+@include pc{
+  .flex-between,.flex-center{
+    display: flex;
+  }
+  .flex-between{
+    justify-content: space-between;
+  }
+  .flex-center{
+    justify-content: center;
+  }
+  .flex-wrap{
+    flex-wrap: wrap;
+  }
+  .align-center{
+    align-items: center;
+  }
+  .align-end{
+    align-items: flex-end;
+  }
+}

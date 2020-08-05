@@ -143,6 +143,7 @@ $pc:    1200px;
 $tab-o: 1100px;
 $tab-w: 1099px;
 $tab:   1098px;
+$tab-s: 780px;
 $sp-o:  541px;
 $sp-w:  540px;
 $sp:    480px;
@@ -169,6 +170,11 @@ $sp:    480px;
 }
 @mixin tab(){
   @media (max-width: ($tab)){
+    @content;
+  }
+}
+@mixin tab-s(){
+  @media (max-width: ($tab-s)){
     @content;
   }
 }

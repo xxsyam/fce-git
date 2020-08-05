@@ -46,8 +46,8 @@ require_once "./bin/parts/header.php";
           </div>
 
           <div class="sub_unit">
-            <h4>企業家マインド<span>NewBusinessCreator&HumanvalueInnovator</span></h4>
-            <p>私たちが目指すのは「起」業家でなく「企」業家。社会を変える「企て」をもった存在でありたいと考えています。そのために、自ら機会を創り出すNew Business Creater、関わる方々の可能性を信じ続けるHuman Value Innovatorとしての覚悟を持ち続けます。</p>
+            <h4>企業家マインド</h4>
+            <p>NewBusinessCreator&HumanvalueInnovator<br>私たちが目指すのは「起」業家でなく「企」業家。社会を変える「企て」をもった存在でありたいと考えています。そのために、自ら機会を創り出すNew Business Creater、関わる方々の可能性を信じ続けるHuman Value Innovatorとしての覚悟を持ち続けます。</p>
           </div>
         </div>
 
@@ -59,8 +59,7 @@ require_once "./bin/parts/header.php";
           </div>
           <div class="sub_unit">
             <h4>自制・自律し、誠実であり続ける</h4>
-            <p>自らの「成長」をもってお客様・社員・社会の革新に貢献することこそが「Human Value Innovator 」の本質であると捉え<br>
-              お客様、組織、自分との約束に常に「誠実」であり続けることによって日々成長します</p>
+            <p>自らの「成長」をもってお客様・社員・社会の革新に貢献することこそが「Human Value Innovator 」の本質であると捉え、お客様、組織、自分との約束に常に「誠実」であり続けることによって日々成長します</p>
           </div>
           <div class="sub_unit">
             <h4>想像し、創造する</h4>
@@ -90,10 +89,14 @@ require_once "./bin/parts/header.php";
         </div>
 
         <div class="base_unit">
+          <h2><strong>Company Name</strong><span>社名にこめた想い</span></h2>
           <h3 class="img_title"><object type="image/svg+xml" data="/bin/image/logo-fce.svg"></object></h3>
-          <p>FCEとは、FutureCreatedbyEntrepreneurs!の頭文字を取っています。<br>
-            私たち一人ひとりが企業家マインドを持ち、チャレンジあふれる未来を創り出す主体でありたいと考えています。<br>
-            また、私たちのシンボルは社会の課題に対して企業家マインドをもった個が集まり、大きなシナジーを生み出す「集合天才」を表しています。</p>
+          <div class="sub_unit">
+            <h4>起業家たちよ、未来を変えろ！</h4>
+            <p>FCEとは、FutureCreatedbyEntrepreneurs!の頭文字を取っています。<br>
+              私たち一人ひとりが企業家マインドを持ち、チャレンジあふれる未来を創り出す主体でありたいと考えています。<br>
+              また、私たちのシンボルは社会の課題に対して企業家マインドをもった個が集まり、大きなシナジーを生み出す「集合天才」を表しています。</p>
+          </div>
         </div>
 
         <div class="fcehd_unit">

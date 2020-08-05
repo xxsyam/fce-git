@@ -2,12 +2,19 @@
 $(function(){
   $('.menu-trigger').on('click', function() {
     $(this).toggleClass('active');
-    $('.spnav').toggleClass('active');
+    if($('.spnav').hasClass("active")){
+      $('.spnav').removeClass("active");
+      $('.spnav').addClass("disactive");
+    }else{
+      $('.spnav').removeClass("disactive");
+      $('.spnav').addClass("active");
+    }
     return false;
   });
   $('.spnav.active a').on('click', function() {
     $('.spnav.active').removeClass('active');
     $('.menu-trigger').removeClass('active');
+    $('.spnav').toggleClass('disactive');
     var speed = 500;
     var href= $(this).attr("href");
     var target = $(href == "#" || href == "" ? 'html' : href);

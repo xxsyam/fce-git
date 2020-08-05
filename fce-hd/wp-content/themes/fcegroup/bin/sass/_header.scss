@@ -16,20 +16,26 @@ header{
   }
 
   .spnav{
-    display:none;
+    transition: all  0.7s ease;
+    position: fixed;
+    top:-200vh; left:0;
+    width:100%; height:100vh;
+    z-index:90000;
+    border: 7px solid $red;
+    background: $color-z;
+    color: $red;
 
     &.active{
       display:flex;
       flex-wrap:wrap;
       align-items:center;
       overflow-y: scroll;
-      position: fixed;
-      left:0; top:0;
-      width:100%; height:100vh;
-      border: 7px solid $red;
-      background: $color-z;
-      color: $red;
+      top:0;
       animation: active_menu 0.5s ease-in-out 0s;
+    }
+
+    &.disactive{
+      animation: hidden_menu 0.5s ease-in-out 0s;
     }
     padding: 5% 5% 1.5%;
 
@@ -189,10 +195,6 @@ header{
           font-size: fontsize(14);
         }
       }
-    }
-
-    .spnav{
-      display:none;
     }
   }
 }

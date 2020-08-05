@@ -2,7 +2,7 @@
 // Animation setting
 @keyframes active_menu{
   from{
-    top: -100vw;
+    top: -100vh;
     height:0;
   }
   to{
@@ -13,9 +13,11 @@
 @keyframes hidden_menu{
   from{
     top: 0;
+    height:100vh;
   }
   to{
-    top: -100vw;
+    top: -100vh;
+    height:0;
   }
 }
 @keyframes line{

@@ -26,7 +26,13 @@
       @include fontsize(32);
     }
     span{
-      @include fontsize(22);
+      @include fontsize(16);
+
+      &:nth-of-type(2){
+        @include fontsize(22);
+        font-weight:bold;
+        @include mt(35);
+      }
     }
   }
 

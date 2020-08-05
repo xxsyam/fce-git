@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @keyframes active_menu {
 	from {
-		top: -100vw;
+		top: -100vh;
 		height: 0;
 	}
 	to {
@@ -13,9 +13,11 @@
 @keyframes hidden_menu {
 	from {
 		top: 0;
+		height: 100vh;
 	}
 	to {
-		top: -100vw;
+		top: -100vh;
+		height: 0;
 	}
 }
 
@@ -484,6 +486,27 @@ h2.sub_heading small {
 	animation: fIUp cubic-bezier(0.22, 1, 0.36, 1) 2s;
 }
 
+@media (min-width: 1200px) {
+	.flex-between, .flex-center {
+		display: flex;
+	}
+	.flex-between {
+		justify-content: space-between;
+	}
+	.flex-center {
+		justify-content: center;
+	}
+	.flex-wrap {
+		flex-wrap: wrap;
+	}
+	.align-center {
+		align-items: center;
+	}
+	.align-end {
+		align-items: flex-end;
+	}
+}
+
 header {
 	position: fixed;
 	z-index: 90000;
@@ -507,7 +530,16 @@ header .logo {
 }
 
 header .spnav {
-	display: none;
+	transition: all  0.7s ease;
+	position: fixed;
+	top: -200vh;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 90000;
+	border: 7px solid #ef001f;
+	background: #fff;
+	color: #ef001f;
 	padding: 5% 5% 1.5%;
 }
 
@@ -516,15 +548,12 @@ header .spnav.active {
 	flex-wrap: wrap;
 	align-items: center;
 	overflow-y: scroll;
-	position: fixed;
-	left: 0;
 	top: 0;
-	width: 100%;
-	height: 100vh;
-	border: 7px solid #ef001f;
-	background: #fff;
-	color: #ef001f;
 	animation: active_menu 0.5s ease-in-out 0s;
+}
+
+header .spnav.disactive {
+	animation: hidden_menu 0.5s ease-in-out 0s;
 }
 
 header .spnav .nav_header, header .spnav .nav_block, header .spnav .group_list {
@@ -683,9 +712,6 @@ header .nav_bottom ul li {
 		margin: 0 0 0 0.25rem;
 		padding: 0.6875rem 1.5rem;
 		font-size: fontsize(14);
-	}
-	header .spnav {
-		display: none;
 	}
 }
 
@@ -1252,14 +1278,51 @@ footer small {
 	text-align: center;
 }
 
+.team ul {
+	margin: auto;
+	max-width: 1200px;
+	display: flex;
+	justify-content: space-between;
+}
+
+@media (max-width: 780px) {
+	.team ul {
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 540px) {
+	.team ul {
+		flex-direction: column;
+		justify-content: center;
+		padding: 0 5%;
+	}
+}
+
 .team ul li {
-	max-width: 283px;
+	max-width: 30%;
 	margin: 0 2.5%;
 }
 
-@media (max-width: 480px) {
+.team ul li:nth-of-type(2) {
+	top: 100px;
+}
+
+.team ul li:nth-of-type(3) {
+	top: 200px;
+}
+
+@media (max-width: 780px) {
 	.team ul li {
+		max-width: 45%;
 		margin: 0 auto 3rem;
+		top: 0 !important;
+	}
+}
+
+@media (max-width: 540px) {
+	.team ul li {
+		max-width: 95%;
 	}
 }
 

@@ -29,8 +29,7 @@ require_once "./bin/parts/header.php";
       <article id="MAIN_FIELD">
 
         <div class="base_unit">
-          <h3><strong>違いは武器だ。</strong><span>違いが、シナジーを創り出す。<br>
-私たちは、「Education」「Working」「Life」という3つの事業領域を軸に培ってきた本質的なナレッジ、蓄積されたノウハウをもとに、各業界の常識だけにとらわれない、「新しい視点」を持ったビジネスを行います。<br>
+          <h3><strong>違いが、シナジーを創り出す。</strong><span>私たちは、「Education」「Working」「Life」という3つの事業領域を軸に培ってきた本質的なナレッジ、蓄積されたノウハウをもとに、各業界の常識だけにとらわれない、「新しい視点」を持ったビジネスを行います。<br>
 そして、「チャレンジあふれる未来をつくる」ために必要な新規事業創造に挑み続けます。 </span></h3>
           <!--div class="pict_wrap"><img src="/bin/image/knowledge_pict.png"></div-->
         </div>

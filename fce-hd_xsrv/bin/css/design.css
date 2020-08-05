@@ -1540,28 +1540,68 @@ footer small {
 }
 
 .second_pages h2 span {
-	font-size: 22px;
-	font-size: 2.2rem;
+	font-size: 16px;
+	font-size: 1.6rem;
 }
 
 @media (max-width: 1023px) {
 	.second_pages h2 span {
+		font-size: 16px;
+		font-size: 1.6rem;
+	}
+}
+
+@media (max-width: 798px) {
+	.second_pages h2 span {
+		font-size: 15.68px;
+		font-size: 1.568rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.second_pages h2 span {
+		font-size: 14.7392px;
+		font-size: 1.47392rem;
+	}
+}
+
+.second_pages h2 span:nth-of-type(2) {
+	font-size: 22px;
+	font-size: 2.2rem;
+	font-weight: bold;
+	margin-top: 35px !important;
+}
+
+@media (max-width: 1023px) {
+	.second_pages h2 span:nth-of-type(2) {
 		font-size: 22px;
 		font-size: 2.2rem;
 	}
 }
 
 @media (max-width: 798px) {
-	.second_pages h2 span {
+	.second_pages h2 span:nth-of-type(2) {
 		font-size: 21.56px;
 		font-size: 2.156rem;
 	}
 }
 
 @media (max-width: 480px) {
-	.second_pages h2 span {
+	.second_pages h2 span:nth-of-type(2) {
 		font-size: 20.2664px;
 		font-size: 2.02664rem;
+	}
+}
+
+@media (max-width: 798px) {
+	.second_pages h2 span:nth-of-type(2) {
+		margin-top: 26.92308px !important;
+	}
+}
+
+@media (max-width: 480px) {
+	.second_pages h2 span:nth-of-type(2) {
+		margin-top: 17.5px !important;
 	}
 }
 
