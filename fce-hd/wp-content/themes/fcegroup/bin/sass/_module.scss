@@ -73,10 +73,13 @@
   margin: 0 auto;
 
   a{
-    display:inline-block;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height:100%; width:100%;
     padding: 1.2rem 1.5rem !important;
     border: 2px solid $color-y;
-    text-align: center;
     line-height: 1;
     color: $color-z;
     position: relative;
@@ -130,5 +133,30 @@
         opacity: 1;
       }
     }
+  }
+}
+
+// Slick上書き
+.slick-prev,.slick-next{
+}
+.slick-slide li a,.slick-slide img{
+  width:100%;
+}
+.slick-dots{
+  position: relative;
+  bottom:auto;
+  display: flex;
+  justify-content: center;
+  width:auto;
+  flex-wrap: nowrap !important;
+
+  li{
+    @include Flex_Center();
+    width:20px !important;
+    margin:0 .2% !important;
+  }
+  li.slick-active button:before{
+    color:$color-z;
+    opacity: 1;
   }
 }

@@ -67,7 +67,7 @@
     </div>
   </section>
 
-  <section class="team anim">
+  <section class="challenge anim">
     <h2 class="heading fIUp">Challenge! Change! FCE<small class="fIUp">FCEの未来を変える事業たち</small></h2>
     <ul class="flex-center anim-list">
       <li class="fIUp">
@@ -113,6 +113,87 @@
         </dl>
       </li>
     </ul>
+  </section>
+
+  <section class="service anim bg-animation bl">
+    <div class="inner">
+      <div class="section-header">
+        <h2 class="heading fIUp">Service<small class="fIUp">商品・サービス</small></h2>
+        <div class="button fIUp"><a href="#">View More</a></div>
+      </div>
+      <ul class="flex-center anim-list fIUp">
+        <li>
+          <a href="#" class="hover-effect">
+            <figure class="hover-img">
+              <img src="/bin/image/service_1.png" alt="">
+            </figure>
+            パソコン業務はロボに任せる時代へ！
+            プログラミングの知識不要！事務
+            職でも直感的に操作できるRPA
+          </a>
+        </li>
+        <li>
+          <a href="#" class="hover-effect">
+            <figure class="hover-img">
+              <img src="/bin/image/service_2.png" alt="">
+            </figure>
+            パソコン業務はロボに任せる時代へ！
+            プログラミングの知識不要！事務
+            職でも直感的に操作できるRPA
+          </a>
+        </li>
+        <li>
+          <a href="#" class="hover-effect">
+            <figure class="hover-img">
+              <img src="/bin/image/service_3.png" alt="">
+            </figure>
+            パソコン業務はロボに任せる時代へ！
+            プログラミングの知識不要！事務
+            職でも直感的に操作できるRPA
+          </a>
+        </li>
+        <li>
+          <a href="#" class="hover-effect">
+            <figure class="hover-img">
+              <img src="/bin/image/service_4.png" alt="">
+            </figure>
+            パソコン業務はロボに任せる時代へ！
+            プログラミングの知識不要！事務
+            職でも直感的に操作できるRPA
+          </a>
+        </li>
+        <li>
+          <a href="#" class="hover-effect">
+            <figure class="hover-img">
+              <img src="/bin/image/service_4.png" alt="">
+            </figure>
+            スライド動作確認用
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="next inner anim">
+    <div class="section-header">
+      <h2 class="heading fIUp">Team!FCE<small class="fIUp">FCEの仲間たち</small></h2>
+    </div>
+    <div class="box-right">
+      <h2 class="heading-bg anim">
+        <span>さぁ、</span>
+        <span>次は何を変えようか？</span>
+      </h2>
+
+      <div class="bg-particles anim">
+        <object class="bg1 particle" type="image/svg+xml" data="/bin/image/bg_1.svg"></object>
+        <object class="bg3 particle" type="image/svg+xml" data="/bin/image/bg_3.svg"></object>
+        <object class="bg2 particle" type="image/svg+xml" data="/bin/image/bg_2.svg"></object>
+        <object class="bg4 particle" type="image/svg+xml" data="/bin/image/bg_4.svg"></object>
+      </div>
+
+      <div class="button fIUp"><a href="#">View More</a></div>
+    </div>
+    <div class="box-left photo fIUp"><img src="/bin/image/img_1.png" alt=""></div>
   </section>
 
 </main>
