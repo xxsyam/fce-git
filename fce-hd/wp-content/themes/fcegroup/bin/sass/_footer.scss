@@ -2,25 +2,31 @@
 // Footer setting
 footer{
   .mod_bwp{
-    @include Inner-Wrap();
-    @include Flex_Center();
+    position: relative;
+    z-index: 30000;
     padding:35px 0;
     @include tab-w(){
       padding:35px 5%;
     }
+    background:$color-z;
 
-    img{
-      max-width:100px;
-    }
+    .mod_bwp-wrap{
+      @include Inner-Wrap();
+      @include Flex_Center();
 
-    p{
-      margin-left:35px;
-      text-align: left;
-    }
+      img{
+        max-width:100px;
+      }
 
-    @include sp-w(){
-      flex-direction: column;
-      p{ margin:15px 0 0; }
+      p{
+        margin-left:35px;
+        text-align: left;
+      }
+
+      @include sp-w(){
+        flex-direction: column;
+        p{ margin:15px 0 0; }
+      }
     }
   }
 

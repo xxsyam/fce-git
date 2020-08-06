@@ -63,7 +63,7 @@
         </li>
       </ul>
 
-      <div class="btn_set fIUp"><span class="button wt"><a href="#">View More</a></span></div>
+      <div class="btn_set fIUp"><span class="button wt"><a href="<?php echo esc_url( home_url( '/' ) ); ?>about">View More</a></span></div>
     </div>
   </section>
 
@@ -119,57 +119,21 @@
     <div class="inner">
       <div class="section-header">
         <h2 class="heading fIUp">Service<small class="fIUp">商品・サービス</small></h2>
-        <div class="button fIUp"><a href="#">View More</a></div>
+        <div class="button fIUp"><a href="<?php echo esc_url( home_url( '/' ) ); ?>service">View More</a></div>
       </div>
       <ul class="flex-center anim-list fIUp">
+        <?php if ( have_posts() ) : query_posts('post_type=service&posts_per_page=10'); ?>
+          <?php while (have_posts()) : the_post(); ?>
         <li>
-          <a href="#" class="hover-effect">
+          <a href="<?php the_field('out_links'); ?>" class="hover-effect" target="_blank">
             <figure class="hover-img">
-              <img src="/bin/image/service_1.png" alt="">
+              <img src="<?php the_post_thumbnail_url( 'medium' );?>" alt="">
             </figure>
-            パソコン業務はロボに任せる時代へ！
-            プログラミングの知識不要！事務
-            職でも直感的に操作できるRPA
+            <?php the_field('catch_text'); ?>
           </a>
         </li>
-        <li>
-          <a href="#" class="hover-effect">
-            <figure class="hover-img">
-              <img src="/bin/image/service_2.png" alt="">
-            </figure>
-            パソコン業務はロボに任せる時代へ！
-            プログラミングの知識不要！事務
-            職でも直感的に操作できるRPA
-          </a>
-        </li>
-        <li>
-          <a href="#" class="hover-effect">
-            <figure class="hover-img">
-              <img src="/bin/image/service_3.png" alt="">
-            </figure>
-            パソコン業務はロボに任せる時代へ！
-            プログラミングの知識不要！事務
-            職でも直感的に操作できるRPA
-          </a>
-        </li>
-        <li>
-          <a href="#" class="hover-effect">
-            <figure class="hover-img">
-              <img src="/bin/image/service_4.png" alt="">
-            </figure>
-            パソコン業務はロボに任せる時代へ！
-            プログラミングの知識不要！事務
-            職でも直感的に操作できるRPA
-          </a>
-        </li>
-        <li>
-          <a href="#" class="hover-effect">
-            <figure class="hover-img">
-              <img src="/bin/image/service_4.png" alt="">
-            </figure>
-            スライド動作確認用
-          </a>
-        </li>
+          <?php endwhile;?>
+        <?php endif; ?>
       </ul>
     </div>
   </section>
@@ -191,9 +155,124 @@
         <object class="bg4 particle" type="image/svg+xml" data="/bin/image/bg_4.svg"></object>
       </div>
 
-      <div class="button fIUp"><a href="#">View More</a></div>
+      <div class="button fIUp"><a href="<?php echo esc_url( home_url( '/' ) ); ?>team">View More</a></div>
     </div>
     <div class="box-left photo fIUp"><img src="/bin/image/img_1.png" alt=""></div>
+  </section>
+
+  <section class="face anim">
+    <div class="inner">
+      <div class="section-header">
+        <h2 class="heading fIUp">FaCE！<small class="fIUp">FCEの素顔系メディア</small></h2>
+        <nav class="face-nav fIUp">
+          <ul>
+            <?php
+            //一番親階層のカテゴリをすべて取得
+            $categories = get_categories('parent=0');
+
+            //取得したカテゴリへの各種処理
+            foreach($categories as $val){
+              //カテゴリのリンクURLを取得
+              $cat_link = get_category_link($val->cat_ID);
+              //親カテゴリのリスト出力
+              echo '<li>';
+              echo '<a href="' . $cat_link . '">' . $val -> name . '</a>';
+
+              //子カテゴリのIDを配列で取得。配列の長さを変数に格納
+              $child_cat_num = count(get_term_children($val->cat_ID,'category'));
+
+              //子カテゴリが存在する場合
+              if($child_cat_num > 0){
+                //子カテゴリの一覧取得条件
+                $category_children_args = array('parent'=>$val->cat_ID);
+                //子カテゴリの一覧取得
+                $category_children = get_categories($category_children_args);
+                //子カテゴリの数だけリスト出力
+                foreach($category_children as $child_val){
+                  $cat_link = get_category_link($child_val -> cat_ID);
+                  echo '<li><a href="' . $cat_link . '">' . $child_val -> name . '</a></li>';
+                }
+              }
+              echo '</ul>';
+            }
+            ?>
+          </ul>
+        </nav>
+      </div>
+      <ul class="articles anim-list fIUp">
+        <?php if ( have_posts() ) : query_posts('post_type=post&posts_per_page=6'); ?>
+          <?php while (have_posts()) : the_post(); ?>
+        <li>
+
+            <figure class="hover-img">
+              <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url( 'medium' );?>" alt=""></a>
+            </figure>
+            <dl>
+              <dt class="flex-between align-end">
+                <?php
+                  $category = get_the_category();
+                  if ( $category[0] ) {
+                    echo '<a href="' . get_category_link( $category[0]->term_id ) . '">' . $category[0]->cat_name . '</a>';
+                  }
+                ?>
+                <span class="date"><?php echo get_the_date('Y.m.d'); ?></span>
+              </dt>
+              <dd><a href="<?php the_permalink(); ?>">
+                <?php
+                if(mb_strlen($post->post_title, 'UTF-8')>40){
+                  $title= mb_substr($post->post_title, 0, 40, 'UTF-8');
+                  echo $title.'…';
+                }else{
+                  echo $post->post_title;
+                }
+                ?></a></dd>
+            </dl>
+        </li>
+          <?php endwhile;?>
+        <?php endif; ?>
+      </ul>
+      <div class="button fIUp"><a href="<?php echo esc_url( home_url( '/' ) ); ?>face">View More</a></div>
+    </div>
+  </section>
+
+  <section class="news inner">
+    <div class="section-header flex-between align-end">
+      <h2 class="heading fIUp">News<small class="fIUp">新着情報</small></h2>
+      <div class="button fIUp">
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>news">View More</a>
+      </div>
+    </div>
+    <ul>
+      <?php if ( have_posts() ) : query_posts('post_type=news&posts_per_page=5'); ?>
+        <?php while (have_posts()) : the_post(); ?>
+      <li class="fIUp">
+        <time><?php echo get_the_date('Y.m.d'); ?></time>
+        <span class="meta">お知らせ</span>
+        <span class="text">
+          <?php
+            $custom_fields = get_post_meta( $post->ID , 'out_links' , true );
+            if(empty( $custom_fields ) === false){ ?>
+              <a href="<?php the_field('out_links'); ?>" target="_blank">
+            <?php }else{ ?>
+              <a href="<?php the_permalink(); ?>">
+            <?php } ?>
+          <?php
+          if(mb_strlen($post->post_title, 'UTF-8')>100){
+            $title= mb_substr($post->post_title, 0, 100, 'UTF-8');
+            echo $title.'…';
+          }else{
+            echo $post->post_title;
+          }
+          ?>
+        </a></span>
+      </li>
+        <?php endwhile;?>
+      <?php endif; ?>
+    </ul>
+  </section>
+
+  <section class="recruit anim bg-animation rd">
+    <h2 class="heading fIUp"><a href="#">Recruit<small>採用情報</small></a></h2>
   </section>
 
 </main>

@@ -11,10 +11,13 @@ $(function(){
     }
     return false;
   });
-  $('.spnav.active a').on('click', function() {
-    $('.spnav.active').removeClass('active');
+  $('.spnav a').on('click', function() {
     $('.menu-trigger').removeClass('active');
-    $('.spnav').toggleClass('disactive');
+    if($('.spnav').hasClass("disactive")){
+      $('.spnav').removeClass("disactive");
+    }else{
+      $('.spnav').removeClass("active");
+    }
     var speed = 500;
     var href= $(this).attr("href");
     var target = $(href == "#" || href == "" ? 'html' : href);

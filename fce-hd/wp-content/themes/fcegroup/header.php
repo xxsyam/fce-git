@@ -171,7 +171,10 @@ if(!empty($title)) {
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bin/css/__print.css?ver=<?php echo date("Ym"); ?>" media="print">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css?ver=<?php echo date("Ym"); ?>">
 </head>
-
+<?php if ( is_home() || is_front_page() ) : ?>
 <body <?php body_class(); ?>>
+<?php else : ?>
+<body <?php body_class(); ?> id="second_pages">
+<?php endif; ?>
 
 <?php get_template_part('php/templates/mod-header_nav'); ?>

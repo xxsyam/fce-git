@@ -1,4 +1,43 @@
 
 // second pages
-.second_pages{
+#second_pages{
+  // ローディングがないのでdelayを0に
+  .bg-stripe .line{
+    animation-delay: 0s;
+  }
+  .wrapper{
+    margin-top: 65px;
+    animation: fadeInUp $easeOutQuint 1.5s 2.2s both;
+  }
+
+  .main-visual{
+    margin-bottom: 13rem;
+    padding: rem(136) 0 rem(46);
+    position: relative;
+    min-height:auto;
+
+    &:after{
+      transition-delay: 2s;
+      transform: skewY(0deg);
+    }
+    .breadcrumb {
+      margin-top: rem(130);
+      a{
+        display: inline;
+      }
+    }
+    .main-bg{
+      width: 68%;
+      position: absolute;
+      right: -5%;
+      bottom: -14%;
+      @include pc{
+        bottom: -47%;
+      }
+      animation: fadeInUp $easeOutQuint 1s 3s both;
+    }
+    .heading,.breadcrumb{
+      color:$color-y;
+    }
+  }
 }

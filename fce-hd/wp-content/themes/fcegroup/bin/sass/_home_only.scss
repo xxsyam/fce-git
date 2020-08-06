@@ -145,7 +145,6 @@
 }
 
 .service{
-
   .section-header{
     margin-bottom: 6rem;
     display: flex;
@@ -184,35 +183,59 @@
   padding: 8rem 0;
   min-height:100vh;
 
-  h2{
+  @include sp-w{
+    min-height:auto;
+    @include mb(35);
   }
-  .box-left{
-    position: absolute;
-    left: 0;
-    z-index: 11;
 
-    @include sp{
-      top: 25rem;
+  h2{
+    @include fontsize(60);
+    @include sp-w{
+      @include fontsize(42);
     }
-    @include pc{
+
+    span{
+      padding: .5em .8em !important;
+    }
+    @include tab-w{
+      span:last-of-type{
+        display: block;
+      }
+    }
+  }
+
+  .box-left{
+    @include tab-so{
       width: 60%;
-      top: 18rem;
+      top: 28rem;
+      position: absolute;
+      left: 0;
+      z-index: 11;
+    }
+
+    img{
+      width:100%;
     }
   }
   .button{
-    @include sp{
-      margin-top: 20rem;
-    }
-    @include pc{
-      margin-top: 16rem;
-    }
+    position: absolute;
+    right:0; bottom:0;
+    min-width:270px;
   }
-  @include pc{
-    .box-right{
-      width: 52%;
+
+  .box-right{
+    @include tab-so{
+      width: 48%; height:58%;
       position: absolute;
       right: 0;
     }
+    h2{
+      @include fontsize(42);
+      @include sp-w{
+        @include fontsize(32);
+      }
+    }
+
   }
   .bg-particles{
     width: 77%;
@@ -220,5 +243,225 @@
     position: absolute;
     left: 35%;
     top: -16%;
+    z-index: 1;
+  }
+}
+
+.face{
+  position: relative;
+
+  .section-header{
+    margin-bottom: 6rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    @include tab-s {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    h2{
+      @include mb(0);
+      @include tab-s {
+        @include mb(25);
+      }
+    }
+  }
+
+  &-nav{
+    @include fontsize(14);
+    font-weight: bold;
+
+    @include tab-s {
+      width: 100%;
+    }
+
+    ul{
+      display:flex;
+      justify-content: space-between;
+
+      @include tab-s {
+        justify-content: center;
+      }
+
+      @include sp-w {
+        flex-wrap: wrap;
+      }
+
+      li{
+        a{
+          padding:5px 10px;
+        }
+      }
+    }
+  }
+  .articles {
+    margin-bottom: 3rem;
+    @include pc {
+      margin-bottom: 5rem;
+    }
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    li{
+      width: 48%;
+      @include tab-o{
+        width: 28%;
+      }
+      @include sp-w {
+        width:  100%;
+      }
+      margin: 0 0 3rem 0;
+      box-shadow: 11px 13px 27px rgba($color-y, .08);
+
+      &:nth-child(3n){
+        margin-right: 0;
+      }
+
+      a{
+        display:block;
+
+        img{ width:100%; }
+      }
+
+      dl{
+        padding: rem(35) rem(20) rem(20);
+        background: $color-z;
+
+        dt{
+          a{
+            @include Flex_Center();
+            max-width:100px;
+            padding: 0 2rem;
+            background: $color-y;
+            color: $color-z;
+            @include fontsize(14);
+          }
+        }
+        .date{
+          color: $bk-f;
+          @include fontsize(14);
+        }
+        dd{
+          margin-top: rem(20);
+          line-height: 1.8;
+          font-weight: bold;
+          @include fontsize(16);
+          padding-bottom:2rem;
+        }
+      }
+    }
+  }
+
+  .button{
+    @include Flex_Center();
+
+    a{
+      min-width: 270px;
+      max-width: 270px;
+    }
+  }
+}
+
+.news{
+  display: flex;
+  position: relative;
+  @include pt(80);
+  @include pb(80);
+
+  @include tab-s{
+    flex-wrap: wrap;
+    margin-bottom: 10rem;
+  }
+
+  .section-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right:10%;
+    position: relative;
+
+    @include tab-w{
+      h2{
+        margin-bottom:3rem;
+      }
+    }
+
+    @include tab-s{
+      margin-right:0;
+      width:100%;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .button{
+      width:100%;
+      @include tab-s{
+        margin: 0 0 0 auto;
+        max-width:78px;
+        height:78px;
+        max-height:78px;
+      }
+    }
+
+  }
+  ul{
+    li{
+      margin-bottom:0;
+      display: flex;
+      padding:15px 0;
+      border-bottom:1px solid $bk-c;
+
+      @include tab{
+        flex-wrap: wrap;
+      }
+
+      time,span{
+        display:inline-block;
+        line-height:1.7;
+      }
+
+      time{
+        min-width:80px;
+      }
+      span.meta{
+        min-width:130px;
+        margin:0 15px auto;
+        padding:3px 10px;
+        text-align: center;
+        background:$bk-d;
+        @include fontsize(13);
+      }
+      span.text{
+        @include tab{
+          width:100%;
+        }
+      }
+    }
+  }
+}
+
+.recruit{
+  padding-top:18rem;
+  @include Flex_Center();
+  min-height:100vh;
+  @include mb(-80);
+
+  h2{
+    @include mb(80);
+    @include Flex_Center();
+
+    &:after{
+      content:"\e913";
+      font-size:52px;
+      margin-left:10px;
+      @include Font_Icon-VAF();
+
+      animation: arrow-r 1s ease infinite alternate;
+    }
+
   }
 }
