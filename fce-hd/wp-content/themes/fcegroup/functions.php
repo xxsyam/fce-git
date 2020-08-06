@@ -139,25 +139,8 @@ function add_posts_column_row($column_name, $post_id) {
       echo esc_attr($slug);
   }
 }
-//add_filter( 'manage_edit-post_sortable_columns', 'add_posts_columns_slug' );
 add_filter( 'manage_posts_columns', 'add_posts_columns');
 add_action( 'manage_posts_custom_column', 'add_posts_column_row', 10, 2);
-
-function add_page_columns($columns) {
-  $columns['slug'] = "スラッグ";
-  echo '<style>.fixed .column-slug {width: 8%;}</style>';
-  return $columns;
-}
-function add_page_column_row($column_name, $post_id) {
-  if( $column_name == 'slug' ) {
-      $post = get_post($post_id);
-      $slug = $post->post_name;
-      echo esc_attr($slug);
-  }
-}
-add_filter( 'manage_edit-page_sortable_columns', 'add_page_columns_name' );
-add_filter( 'manage_pages_columns', 'add_page_columns');
-add_action( 'manage_pages_custom_column', 'add_page_column_row', 10, 2);
 
 /**
 * 【 WP基本機能関連 】
@@ -880,4 +863,44 @@ function wp_search_filter1( $query ) {
 }
 add_action( 'pre_get_posts', 'wp_search_filter1' );
 
+
+function post_tag_checkbox() {
+  global $wp_rewrite;
+  $rewrite = array(
+    'slug' => get_option('tag_base') ? get_option('tag_base') : 'tag',
+    'with_front' => ! get_option('tag_base') || $wp_rewrite->using_index_permalinks(),
+    'ep_mask' => EP_TAGS,
+  );
+
+  $labels = array(
+    'name' => _x( 'Tags', 'taxonomy general name' ),
+    'singular_name' => _x( 'Tag', 'taxonomy singular name' ),
+    'search_items' => __( 'Search Tags' ),
+    'popular_items' => __( 'Popular Tags' ),
+    'all_items' => __( 'All Tags' ),
+    'parent_item' => null,
+    'parent_item_colon' => null,
+    'edit_item' => __( 'Edit Tag' ),
+    'view_item' => __( 'View Tag' ),
+    'update_item' => __( 'Update Tag' ),
+    'add_new_item' => __( 'Add New Tag' ),
+    'new_item_name' => __( 'New Tag Name' ),
+    'separate_items_with_commas' => __( 'Separate tags with commas' ),
+    'add_or_remove_items' => __( 'Add or remove tags' ),
+    'choose_from_most_used' => __( 'Choose from the most used tags' ),
+    'not_found' => __( 'No tags found.' )
+  );
+
+  register_taxonomy( 'post_tag', 'post', array(
+    'hierarchical' => true,
+    'query_var' => 'tag',
+    'rewrite' => $rewrite,
+    'public' => true,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    '_builtin' => true,
+    'labels' => $labels
+  ));
+}
+add_action( 'init', 'post_tag_checkbox', 1 );
 ?>

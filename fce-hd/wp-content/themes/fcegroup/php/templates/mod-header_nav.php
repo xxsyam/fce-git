@@ -8,7 +8,7 @@
         <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>service">SERVICE</a></li>
         <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>team">Team！FCE</a></li>
         <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>face">FaCE！</a></li>
-        <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>news">NEWS</a></li>
+        <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>newslist">NEWS</a></li>
         <li><a href="#" target="_blank">RECRUIT</a></li>
         <li class="button"><a href="//fce-hd.co.jp/" target="_blank">FCE Holdingsサイトへ</a></li>
       </ul>
@@ -42,11 +42,11 @@
         </dl>
         <dl>
           <dt><a href="<?php echo esc_url( home_url( '/' ) ); ?>face">FaCE!</a></dt>
-          <dd><a href="<?php echo esc_url( home_url( '/' ) ); ?>face">仲間たち</a></dd>
-          <dd><a href="<?php echo esc_url( home_url( '/' ) ); ?>face">出来事</a></dd>
-          <dd><a href="<?php echo esc_url( home_url( '/' ) ); ?>face">ビジネス</a></dd>
-          <dd><a href="<?php echo esc_url( home_url( '/' ) ); ?>face">カルチャー</a></dd>
-          <dd><a href="<?php echo esc_url( home_url( '/' ) ); ?>face">お知らせ</a></dd>
+          <dd><a href="<?php echo esc_url( home_url( '/' ) ); ?>face/people">仲間たち</a></dd>
+          <dd><a href="<?php echo esc_url( home_url( '/' ) ); ?>face/event">出来事</a></dd>
+          <dd><a href="<?php echo esc_url( home_url( '/' ) ); ?>face/work">ビジネス</a></dd>
+          <dd><a href="<?php echo esc_url( home_url( '/' ) ); ?>face/culture">カルチャー</a></dd>
+          <dd><a href="<?php echo esc_url( home_url( '/' ) ); ?>face/info">お知らせ</a></dd>
         </dl>
       </div>
       <div class="group_list">
@@ -68,7 +68,7 @@
       </div>
       <div class="nav_bottom">
         <ul>
-          <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>news">NEWS</a></li>
+          <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>newslist">NEWS</a></li>
           <li><a href="#">お問い合わせ</a></li>
           <li><a href="#">ご利用案内</a></li>
           <li><a href="#">プライバシーポリシー</a></li>

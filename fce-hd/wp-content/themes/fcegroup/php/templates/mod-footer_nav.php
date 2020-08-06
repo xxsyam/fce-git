@@ -18,15 +18,15 @@
 </dl>
 <dl>
   <dt><a href="<?php echo esc_url( home_url( '/' ) ); ?>face">FaCE!</a></dt>
-  <dd><a href="<?php echo esc_url( home_url( '/' ) ); ?>face">仲間たち</a></dd>
-  <dd><a href="<?php echo esc_url( home_url( '/' ) ); ?>face">出来事</a></dd>
-  <dd><a href="<?php echo esc_url( home_url( '/' ) ); ?>face">ビジネス</a></dd>
-  <dd><a href="<?php echo esc_url( home_url( '/' ) ); ?>face">カルチャー</a></dd>
-  <dd><a href="<?php echo esc_url( home_url( '/' ) ); ?>face">お知らせ</a></dd>
+  <dd><a href="<?php echo esc_url( home_url( '/' ) ); ?>face/people">仲間たち</a></dd>
+  <dd><a href="<?php echo esc_url( home_url( '/' ) ); ?>face/event">出来事</a></dd>
+  <dd><a href="<?php echo esc_url( home_url( '/' ) ); ?>face/work">ビジネス</a></dd>
+  <dd><a href="<?php echo esc_url( home_url( '/' ) ); ?>face/culture">カルチャー</a></dd>
+  <dd><a href="<?php echo esc_url( home_url( '/' ) ); ?>face/info">お知らせ</a></dd>
 </dl>
 <dl>
   <dt>COMPANY</dt>
-  <dd><a href="<?php echo esc_url( home_url( '/' ) ); ?>news">NEWS</a></dd>
+  <dd><a href="<?php echo esc_url( home_url( '/' ) ); ?>newslist">NEWS</a></dd>
   <dd><a href="#">お問い合わせ</a></dd>
   <dd><a href="#">プライバシーポリシー</a></dd>
   <dd><a href="#">行動計画</a></dd>

@@ -166,6 +166,7 @@
         <h2 class="heading fIUp">FaCE！<small class="fIUp">FCEの素顔系メディア</small></h2>
         <nav class="face-nav fIUp">
           <ul>
+            <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>face/all">ALL</a></li>
             <?php
             //一番親階層のカテゴリをすべて取得
             $categories = get_categories('parent=0');
@@ -174,9 +175,6 @@
             foreach($categories as $val){
               //カテゴリのリンクURLを取得
               $cat_link = get_category_link($val->cat_ID);
-              //親カテゴリのリスト出力
-              echo '<li>';
-              echo '<a href="' . $cat_link . '">' . $val -> name . '</a>';
 
               //子カテゴリのIDを配列で取得。配列の長さを変数に格納
               $child_cat_num = count(get_term_children($val->cat_ID,'category'));
@@ -199,9 +197,22 @@
           </ul>
         </nav>
       </div>
+
       <ul class="articles anim-list fIUp">
-        <?php if ( have_posts() ) : query_posts('post_type=post&posts_per_page=6'); ?>
-          <?php while (have_posts()) : the_post(); ?>
+        <?php
+        // 条件の設定
+        $args = Array(
+          'post_type' => 'post',
+          'posts_per_page' => 6,
+        );
+
+        // クエリの定義
+        $wp_query = new WP_Query( $args );
+
+        if ( $wp_query->have_posts() ) {
+          while ( $wp_query->have_posts() ) {
+            $wp_query->the_post();
+        ?>
         <li>
 
             <figure class="hover-img">
@@ -228,8 +239,11 @@
                 ?></a></dd>
             </dl>
         </li>
-          <?php endwhile;?>
-        <?php endif; ?>
+        <?php
+          }
+        }
+        wp_reset_postdata();
+        ?>
       </ul>
       <div class="button fIUp"><a href="<?php echo esc_url( home_url( '/' ) ); ?>face">View More</a></div>
     </div>
@@ -239,32 +253,35 @@
     <div class="section-header flex-between align-end">
       <h2 class="heading fIUp">News<small class="fIUp">新着情報</small></h2>
       <div class="button fIUp">
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>news">View More</a>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>newslist">View More</a>
       </div>
     </div>
+
     <ul>
-      <?php if ( have_posts() ) : query_posts('post_type=news&posts_per_page=5'); ?>
+      <?php if ( have_posts() ) : query_posts('post_type=newslist&posts_per_page=5'); ?>
         <?php while (have_posts()) : the_post(); ?>
       <li class="fIUp">
         <time><?php echo get_the_date('Y.m.d'); ?></time>
-        <span class="meta">お知らせ</span>
-        <span class="text">
+
           <?php
-            $custom_fields = get_post_meta( $post->ID , 'out_links' , true );
-            if(empty( $custom_fields ) === false){ ?>
-              <a href="<?php the_field('out_links'); ?>" target="_blank">
-            <?php }else{ ?>
-              <a href="<?php the_permalink(); ?>">
-            <?php } ?>
-          <?php
-          if(mb_strlen($post->post_title, 'UTF-8')>100){
-            $title= mb_substr($post->post_title, 0, 100, 'UTF-8');
-            echo $title.'…';
-          }else{
-            echo $post->post_title;
+          $terms = get_the_terms($post->ID, 'news');
+          if ( $terms ) {
+            echo "<span class=\"meta ".$terms[0]->slug."\">".$terms[0]->name."</span>";
           }
           ?>
-        </a></span>
+
+        <span class="text">
+          <?php if(empty($post->post_content)) { ?>
+            <?php
+              $custom_fields = get_post_meta( $post->ID , 'link_url' , true );
+              if(empty( $custom_fields ) === false){ ?>
+                <a href="<?php the_field('link_url'); ?>" target="<?php the_field('open_type'); ?>"><?php the_title(); ?></a>
+              <?php }else{ ?>
+                <?php the_title(); ?>
+              <?php } ?>
+          <?php } else { ?>
+          <?php the_content();?>
+          <?php } ?></span>
       </li>
         <?php endwhile;?>
       <?php endif; ?>

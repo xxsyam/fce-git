@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for archive.php
+ * The template for category.php
  *
  * @since 2020.06.xx
  * @version 1.0
